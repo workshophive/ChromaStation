@@ -1,0 +1,143 @@
+- type: species
+  id: Watcher
+  name: species-name-watcher
+  roundStart: true
+  prototype: MobWatcher
+  sprites: MobWatcherSprites
+  markingLimits: MobWatcherMarkingLimits
+  dollPrototype: MobWatcherDummy
+  skinColoration: Hues # todo: make DarkHues
+  bonusTraitPoints: 1
+  minAge: 18
+  maxAge: 250
+  youngAge: 80
+  oldAge: 175
+  sexes:
+    - Male
+    - Female
+    - Unsexed
+  minHeight: 0.55
+  defaultHeight: 0.75
+  maxHeight: 1.05
+  minWidth: 0.5
+  defaultWidth: 0.75
+  maxWidth: 1.1
+
+- type: speciesBaseSprites
+  id: MobWatcherSprites
+  sprites:
+    Head: MobWatcherHead
+    Snout: MobWatcherAMFS
+    HeadTop: MobWatcherAMFS
+    Tail: MobHumanoidAnyMarking
+    Chest: MobWatcherTorso
+    Eyes: MobWatcherEyes
+    LArm: MobWatcherLArm
+    RArm: MobWatcherRArm
+    LHand: MobWatcherLHand
+    RHand: MobWatcherRHand
+    LLeg: MobWatcherLLeg
+    RLeg: MobWatcherRLeg
+    LFoot: MobWatcherLFoot
+    RFoot: MobWatcherRFoot
+
+- type: markingPoints
+  id: MobWatcherMarkingLimits
+  points:
+    HeadTop:
+      points: 1
+      required: false # change to required later, add defaultMarkings Tail
+
+- type: humanoidBaseSprite
+  id: MobWatcherAMFS # any marking follow skin
+  markingsMatchSkin: true
+  
+- type: humanoidBaseSprite
+  id: MobWatcherHead
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Watcher/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobWatcherHeadMale
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Watcher/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobWatcherHeadFemale
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Watcher/parts.rsi
+    state: head_f
+
+- type: humanoidBaseSprite
+  id: MobWatcherTorso
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Watcher/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobWatcherTorsoMale
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Watcher/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobWatcherTorsoFemale
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Watcher/parts.rsi
+    state: torso_f
+
+- type: humanoidBaseSprite
+  id: MobWatcherLLeg
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Watcher/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobWatcherLHand
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Watcher/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobWatcherEyes
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Watcher/parts.rsi
+    state: eyes
+
+- type: humanoidBaseSprite
+  id: MobWatcherLArm
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Watcher/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobWatcherLFoot
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Watcher/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobWatcherRLeg
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Watcher/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobWatcherRHand
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Watcher/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobWatcherRArm
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Watcher/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobWatcherRFoot
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Watcher/parts.rsi
+    state: r_foot

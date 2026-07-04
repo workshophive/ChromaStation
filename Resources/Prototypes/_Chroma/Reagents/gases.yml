@@ -1,0 +1,69 @@
+- type: reagent
+  id: livingWater
+  name: reagent-name-livingWater
+  desc: reagent-desc-livingWater
+  physicalDesc: reagent-physical-desc-translucent
+  flavor: water
+  slippery: true
+  color: "#32d69e"
+  recognizable: true
+  metabolisms:
+    Gas:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Plasmaman
+          shouldHave: false
+        scaleByQuantity: true
+        ignoreResistances: true
+        damage:
+          types:
+            Caustic: 0.5
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
+        scaleByQuantity: true
+        ignoreResistances: true
+        damage:
+          types:
+            Caustic: 1.5
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Shock: -0.66
+            Heat: -0.66
+            Poison: -0.66
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2 # less than regular water, in exchange for healing shock, heat, & poison
+        
+- type: reagent
+  id: Sestril
+  name: reagent-name-sestril
+  desc: reagent-desc-sestril
+  physicalDesc: reagent-physical-desc-gaseous
+  flavor: sestril
+  color: "#ffee9e"
+  boilingPoint: -195.8
+  meltingPoint: -210.0
+  metabolisms:
+    Gas:
+      effects:
+      - !type:Oxygenate
+        factor: 10 # highly oxygenating for watchers
+        conditions:
+        - !type:OrganType
+          type: Watcher
+      - !type:ModifyLungGas
+        conditions: 
+        - !type:OrganType
+          type: Watcher
+        ratios:
+          Oxygen: 1.0
+          Sestril: -1.0

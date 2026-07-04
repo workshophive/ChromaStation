@@ -1,0 +1,5 @@
+- type: entity
+  parent: BaseMobSpeciesOranig
+  id: BaseMobWatcher
+  name: Urist McSestril
+  abstract: true

@@ -1,0 +1,23 @@
+- type: gas
+  id: 9
+  name: gases-living-water-vapor
+  specificHeat: 40
+  heatCapacityRatio: 1.33
+  molarMass: 32 # living ocean water is denser than regular water vapor
+  gasOverlaySprite: /Textures/Effects/atmospherics.rsi
+  gasOverlayState: water_vapor
+  color: d0f7ea
+  reagent: livingWater
+  
+- type: gas
+  id: 10
+  name: gases-sestril
+  specificHeat: 300 # half of Frezon
+  heatCapacityRatio: 1.7 # same as plasma
+  molarMass: 25
+  gasOverlaySprite: /Textures/Effects/atmospherics.rsi
+  gasOverlayState: frezon_old
+  gasMolesVisible: 0.2
+  color: fff9dc
+  reagent: Sestril
+  pricePerMole: 0.25
