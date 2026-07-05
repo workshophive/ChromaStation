@@ -1,0 +1,142 @@
+- type: entity
+  id: PartTequsti
+  parent: BaseItem
+  name: "tequsti body part"
+  abstract: true
+  components:
+    - type: Sprite
+      netsync: false
+      sprite: _Chroma/Mobs/Species/Tequsti/parts.rsi
+    - type: Icon
+      sprite: _Chroma/Mobs/Species/Tequsti/parts.rsi
+    - type: Damageable
+      damageContainer: OrganicPart
+    - type: BodyPart
+    - type: ContainerContainer
+      containers:
+        bodypart: !type:Container
+          ents: []
+
+- type: entity
+  id: TorsoTequsti
+  name: "tequsti torso"
+  parent: PartTequsti
+  components:
+    - type: Sprite
+      state: "torso_m"
+    - type: Icon
+      state: "torso_m"
+    - type: BodyPart
+      partType: Torso
+
+- type: entity
+  id: HeadTequsti
+  name: "tequsti head"
+  parent: PartTequsti
+  components:
+    - type: Sprite
+      state: "head_m"
+    - type: Icon
+      state: "head_m"
+    - type: BodyPart
+      partType: Head
+    - type: Input
+      context: "ghost"
+    - type: MovementSpeedModifier
+      baseWalkSpeed: 0
+      baseSprintSpeed: 0
+    - type: InputMover
+    - type: GhostOnMove
+
+- type: entity
+  id: LeftArmTequsti
+  name: "left tequsti arm"
+  parent: PartTequsti
+  components:
+    - type: Sprite
+      state: "l_arm"
+    - type: Icon
+      state: "l_arm"
+    - type: BodyPart
+      partType: Arm
+      symmetry: Left
+
+- type: entity
+  id: RightArmTequsti
+  name: "right tequsti arm"
+  parent: PartTequsti
+  components:
+    - type: Sprite
+      state: "r_arm"
+    - type: Icon
+      state: "r_arm"
+    - type: BodyPart
+      partType: Arm
+      symmetry: Right
+
+- type: entity
+  id: LeftHandTequsti
+  name: "left tequsti hand"
+  parent: PartTequsti
+  components:
+    - type: Sprite
+      state: "l_hand"
+    - type: Icon
+      state: "l_hand"
+    - type: BodyPart
+      partType: Hand
+      symmetry: Left
+
+- type: entity
+  id: LeftLegTequsti
+  name: "left tequsti leg"
+  parent: PartTequsti
+  components:
+    - type: Sprite
+      state: "l_leg"
+    - type: Icon
+      state: "l_leg"
+    - type: BodyPart
+      partType: Leg
+      symmetry: Left
+    - type: MovementBodyPart
+
+- type: entity
+  id: RightLegTequsti
+  name: "right tequsti leg"
+  parent: PartTequsti
+  components:
+    - type: Sprite
+      state: "r_leg"
+    - type: Icon
+      state: "r_leg"
+    - type: BodyPart
+      partType: Leg
+      symmetry: Right
+    - type: MovementBodyPart
+
+- type: entity
+  id: LeftFootTequsti
+  name: "left tequsti foot"
+  parent: PartTequsti
+  components:
+    - type: Sprite
+      state: "l_foot"
+    - type: Icon
+      state: "l_foot"
+    - type: BodyPart
+      partType: Foot
+      symmetry: Left
+
+- type: entity
+  id: RightFootTequsti
+  name: "right tequsti foot"
+  parent: PartTequsti
+  components:
+    - type: Sprite
+      state: "r_foot"
+    - type: Icon
+      state: "r_foot"
+    - type: BodyPart
+      partType: Foot
+      symmetry: Right

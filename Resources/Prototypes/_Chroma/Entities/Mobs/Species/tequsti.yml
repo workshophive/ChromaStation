@@ -1,0 +1,82 @@
+- type: entity
+  save: false
+  name: Urist McVulture
+  paret: BaseMobSpeciesOrganic
+  id: BaseMobTequsti
+  abstract: true
+  components:
+  - type: Hunger
+    baseDecayRate: 0.02
+  - type: Thirst
+    baseDecayRate: 0.02
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.32
+        density: 160
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: UnableToWield
+  - type: Body
+    prototype: Tequsti
+    requiredLegs: 2
+  - type: HumanoidAppearance
+    species: Tequsti
+    hideLayersOnEquip:
+    - Snout
+    - HeadTop
+  - type: Icon
+    sprite: _Chroma/Mobs/Species/Tequsti/parts.rsi
+    state: full
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Tequsti
+  - type: Bloodstream
+    bloodMaxVolume: 400 # 100 more than default. big.
+    bloodReagent: GoldenBlood
+  - type: MobThresholds
+    thresholds:
+    0: Alive
+    160: Critical
+    240: Dead
+  - type: Barotrauma
+    damage:
+      types:
+        Blunt: 0.05
+  - type: MeleeWeapon
+    soundHit:
+      collection: AlienClaw
+    angle: 30
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Piercing: 5
+  - type: StaminaResistance
+    damageCoefficient: 0.75 # stun hits from 4 to 5
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+      - id: FoodMeatChicken
+        amount: 5
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - AnomalyHost
+    - CanPilot
+    - FootstepSound
+
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobTequstiDummy
+  cateogires: [ HideSpawnMenu ]
+  components:
+  - type: HumanoidAppearance
+    species: Tequsti
+    hideLayersOnEquip:
+    - Snout
+    - HeadTop
