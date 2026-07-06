@@ -15,6 +15,7 @@ species-name-ipc = IPC
 species-name-shadowkin = Shadowkin
 species-name-plasmaman = Plasmaman
 species-name-shell = Shell
+species-name-scurret = Scurret
 
 ## Misc species things
 

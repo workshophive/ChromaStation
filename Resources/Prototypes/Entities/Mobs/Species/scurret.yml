@@ -1,0 +1,168 @@
+# agony hell world
+
+- type: entity
+  id: BaseMobScurret
+  parent: BaseMobSpeciesOrganic
+  abstract: true
+  components:
+  - type: Hunger
+  - type: Thirst
+  - type: HumanoidAppearance
+    species: Scurret
+  - type: Puller
+    needsHands: false
+  - type: Carriable
+  - type: Icon
+    sprite: Mobs/Species/Scurret/parts.rsi
+    state: full
+  - type: Body
+    prototype: Scurret
+    requiredLegs: 2
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      60: Critical
+      125: Dead
+  - type: Temperature
+    currentTemperature: 310.15
+    specificHeat: 42
+  - type: TemperatureDamage
+    heatDamageThreshold: 360
+    coldDamageThreshold: 285
+  - type: Butcherable # you monster.
+    spawned:
+    - id: FootMeat
+      amount: 4
+  - type: Speech
+    speechVerb: Wawa
+    speechSounds: Wawa
+    allowedEmotes: ['Thump','Squeak']
+  - type: TypingIndicator
+    proto: moth
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    angle: 30
+    animation: WeaponArcBite
+    damage:
+      types:
+        Piercing: 5 # nerfed from wizden
+  - type: Inventory
+    templateId: digitigrade
+    displacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Scurret/displacement.rsi
+            state: jumpsuit
+      id:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Scurret/displacement.rsi
+            state: id
+      gloves:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Scurret/displacement.rsi
+            state: gloves
+      neck:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Scurret/displacement.rsi
+            state: neck
+      ears:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Scurret/displacement.rsi
+            state: ears
+      eyes:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Scurret/displacement.rsi
+            state: eyes
+      head:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Scurret/displacement.rsi
+            state: head
+      mask:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Scurret/displacement.rsi
+            state: mask
+      back:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Scurret/displacement.rsi
+            state: back
+  - type: Hands
+    leftHandDisplacement:
+      sizeMaps:
+        32:
+          sprite: Mobs/Species/Scurret/displacement.rsi
+          state: hand
+  - type: BodyEmotes
+    soundsId: Reptilian
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - FootstepSound
+    - CanPilot
+    - VimPilot
+    - AnomalyHost
+    
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobScurretDummy
+  categories: [HideSpawnMenu]
+  components:
+  - type: HumanoidAppearance
+    species: Scurret
+  - type: Inventory
+    templateId: digitigrade
+    displacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Scurret/displacement.rsi
+            state: jumpsuit
+      id:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Scurret/displacement.rsi
+            state: id
+      gloves:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Scurret/displacement.rsi
+            state: gloves
+      neck:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Scurret/displacement.rsi
+            state: neck
+      ears:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Scurret/displacement.rsi
+            state: ears
+      eyes:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Scurret/displacement.rsi
+            state: eyes
+      head:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Scurret/displacement.rsi
+            state: head
+      mask:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Scurret/displacement.rsi
+            state: mask
+      back:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Scurret/displacement.rsi
+            state: back

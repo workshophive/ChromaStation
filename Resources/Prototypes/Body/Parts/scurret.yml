@@ -1,16 +1,16 @@
 - type: entity
-  id: PartTequsti
+  id: PartScurret
   parent: BaseItem
-  name: "tequsti body part"
+  name: "scurret body part"
   abstract: true
   components:
     - type: Sprite
       netsync: false
-      sprite: _Chroma/Mobs/Species/Tequsti/parts.rsi
+      sprite: Mobs/Species/Scurret/parts.rsi
     - type: Icon
-      sprite: _Chroma/Mobs/Species/Tequsti/parts.rsi
+      sprite: Mobs/Species/Scurret/parts.rsi
     - type: Damageable
-      damageContainer: OrganicPart
+      damageContainer: OrganicPart # Shitmed
     - type: BodyPart
     - type: ContainerContainer
       containers:
@@ -18,9 +18,9 @@
           ents: []
 
 - type: entity
-  id: TorsoTequsti
-  name: "tequsti torso"
-  parent: PartTequsti
+  id: TorsoScurret
+  name: "scurret torso"
+  parent: PartScurret
   components:
     - type: Sprite
       state: "torso_m"
@@ -30,9 +30,9 @@
       partType: Torso
 
 - type: entity
-  id: HeadTequsti
-  name: "tequsti head"
-  parent: PartTequsti
+  id: HeadScurret
+  name: "scurret head"
+  parent: PartScurret
   components:
     - type: Sprite
       state: "head_m"
@@ -49,9 +49,9 @@
     - type: GhostOnMove
 
 - type: entity
-  id: LeftArmTequsti
-  name: "left tequsti arm"
-  parent: PartTequsti
+  id: LeftArmScurret
+  name: "left scurret arm"
+  parent: PartScurret
   components:
     - type: Sprite
       state: "l_arm"
@@ -62,9 +62,9 @@
       symmetry: Left
 
 - type: entity
-  id: RightArmTequsti
-  name: "right tequsti arm"
-  parent: PartTequsti
+  id: RightArmScurret
+  name: "right scurret arm"
+  parent: PartScurret
   components:
     - type: Sprite
       state: "r_arm"
@@ -75,9 +75,9 @@
       symmetry: Right
 
 - type: entity
-  id: LeftHandTequsti
-  name: "left tequsti hand"
-  parent: PartTequsti
+  id: LeftHandScurret
+  name: "left scurret hand"
+  parent: PartScurret
   components:
     - type: Sprite
       state: "l_hand"
@@ -88,9 +88,22 @@
       symmetry: Left
 
 - type: entity
-  id: LeftLegTequsti
-  name: "left tequsti leg"
-  parent: PartTequsti
+  id: RightHandScurret
+  name: "right scurret hand"
+  parent: PartScurret
+  components:
+    - type: Sprite
+      state: "r_hand"
+    - type: Icon
+      state: "r_hand"
+    - type: BodyPart
+      partType: Hand
+      symmetry: Right
+
+- type: entity
+  id: LeftLegScurret
+  name: "left scurret leg"
+  parent: PartScurret
   components:
     - type: Sprite
       state: "l_leg"
@@ -102,9 +115,9 @@
     - type: MovementBodyPart
 
 - type: entity
-  id: RightLegTequsti
-  name: "right tequsti leg"
-  parent: PartTequsti
+  id: RightLegScurret
+  name: "right scurret leg"
+  parent: PartScurret
   components:
     - type: Sprite
       state: "r_leg"
@@ -116,9 +129,9 @@
     - type: MovementBodyPart
 
 - type: entity
-  id: LeftFootTequsti
-  name: "left tequsti foot"
-  parent: PartTequsti
+  id: LeftFootScurret
+  name: "left scurret foot"
+  parent: PartScurret
   components:
     - type: Sprite
       state: "l_foot"
@@ -129,9 +142,9 @@
       symmetry: Left
 
 - type: entity
-  id: RightFootTequsti
-  name: "right tequsti foot"
-  parent: PartTequsti
+  id: RightFootScurret
+  name: "right scurret foot"
+  parent: PartScurret
   components:
     - type: Sprite
       state: "r_foot"

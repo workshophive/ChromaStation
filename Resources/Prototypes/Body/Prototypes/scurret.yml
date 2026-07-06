@@ -1,46 +1,50 @@
 - type: body
-  id: Tequsti
-  name: "Tequsti"
+  id: Scurret
+  name: "scurret"
   root: torso
   slots:
     head:
-      part: HeadTequsti
+      part: HeadScurret
       connections:
       - torso
       organs:
         brain: OrganHumanBrain
         eyes: OrganHumanEyes
     torso:
-      part: TorsoTequsti
+      part: TorsoScurret
       connections:
       - right arm
       - left arm
       - right leg
-      - left leg
-      - head
+      - left leg 
+      - head # Shitmed
       organs:
-        heart: OrganHumanHeart
-        stomach: OrganReptilianStomach
-        liver: OrganHumanLiver
-        kidneys: OrganHumanKidneys
+        heart: OrganAnimalHeart
         lungs: OrganHumanLungs
+        stomach: OrganReptilianStomach
+        liver: OrganAnimalLiver
+        kidneys: OrganHumanKidneys
     right arm:
-      part: RightArmTequsti
+      part: RightArmScurret
+      connections:
+      - right hand
     left arm:
-      part: LeftArmTequsti
+      part: LeftArmScurret
       connections:
       - left hand
+    right hand:
+      part: RightHandScurret
     left hand:
-      part: LeftHandTequsti
+      part: LeftHandScurret
     right leg:
-      part: RightLegTequsti
+      part: RightLegScurret
       connections:
       - right foot
     left leg:
-      part: LeftLegTequsti
+      part: LeftLegScurret
       connections:
       - left foot
     right foot:
-      part: RightFootTequsti
-    left foot: 
-      part: LeftFootTequsti
+      part: RightFootScurret
+    left foot:
+      part: LeftFootScurret
