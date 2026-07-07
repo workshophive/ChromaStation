@@ -94,7 +94,8 @@ language-Xeeplian-description =
 
 language-Scurry-name = Scurry
 language-Scurry-description = 	
-	A language of both gestures and speech, mostly only comprehensible to the scurrets.
+    A language of both gestures and speech, mostly only comprehensible to the scurrets.
+    If it's even possible for other species to learn is beyond most.
 
 # Animal Languages
 

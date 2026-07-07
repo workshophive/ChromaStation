@@ -59,53 +59,53 @@
       jumpsuit:
         sizeMaps:
           32:
-            sprite: Mobs/Species/Scurret/displacement.rsi
+            sprite: Mobs/Species/Scurret/displacements.rsi
             state: jumpsuit
       id:
         sizeMaps:
           32:
-            sprite: Mobs/Species/Scurret/displacement.rsi
+            sprite: Mobs/Species/Scurret/displacements.rsi
             state: id
       gloves:
         sizeMaps:
           32:
-            sprite: Mobs/Species/Scurret/displacement.rsi
+            sprite: Mobs/Species/Scurret/displacements.rsi
             state: gloves
       neck:
         sizeMaps:
           32:
-            sprite: Mobs/Species/Scurret/displacement.rsi
+            sprite: Mobs/Species/Scurret/displacements.rsi
             state: neck
       ears:
         sizeMaps:
           32:
-            sprite: Mobs/Species/Scurret/displacement.rsi
+            sprite: Mobs/Species/Scurret/displacements.rsi
             state: ears
       eyes:
         sizeMaps:
           32:
-            sprite: Mobs/Species/Scurret/displacement.rsi
+            sprite: Mobs/Species/Scurret/displacements.rsi
             state: eyes
       head:
         sizeMaps:
           32:
-            sprite: Mobs/Species/Scurret/displacement.rsi
+            sprite: Mobs/Species/Scurret/displacements.rsi
             state: head
       mask:
         sizeMaps:
           32:
-            sprite: Mobs/Species/Scurret/displacement.rsi
+            sprite: Mobs/Species/Scurret/displacements.rsi
             state: mask
       back:
         sizeMaps:
           32:
-            sprite: Mobs/Species/Scurret/displacement.rsi
+            sprite: Mobs/Species/Scurret/displacements.rsi
             state: back
   - type: Hands
     leftHandDisplacement:
       sizeMaps:
         32:
-          sprite: Mobs/Species/Scurret/displacement.rsi
+          sprite: Mobs/Species/Scurret/displacements.rsi
           state: hand
   - type: BodyEmotes
     soundsId: Reptilian
@@ -130,45 +130,45 @@
       jumpsuit:
         sizeMaps:
           32:
-            sprite: Mobs/Species/Scurret/displacement.rsi
+            sprite: Mobs/Species/Scurret/displacements.rsi
             state: jumpsuit
       id:
         sizeMaps:
           32:
-            sprite: Mobs/Species/Scurret/displacement.rsi
+            sprite: Mobs/Species/Scurret/displacements.rsi
             state: id
       gloves:
         sizeMaps:
           32:
-            sprite: Mobs/Species/Scurret/displacement.rsi
+            sprite: Mobs/Species/Scurret/displacements.rsi
             state: gloves
       neck:
         sizeMaps:
           32:
-            sprite: Mobs/Species/Scurret/displacement.rsi
+            sprite: Mobs/Species/Scurret/displacements.rsi
             state: neck
       ears:
         sizeMaps:
           32:
-            sprite: Mobs/Species/Scurret/displacement.rsi
+            sprite: Mobs/Species/Scurret/displacements.rsi
             state: ears
       eyes:
         sizeMaps:
           32:
-            sprite: Mobs/Species/Scurret/displacement.rsi
+            sprite: Mobs/Species/Scurret/displacements.rsi
             state: eyes
       head:
         sizeMaps:
           32:
-            sprite: Mobs/Species/Scurret/displacement.rsi
+            sprite: Mobs/Species/Scurret/displacements.rsi
             state: head
       mask:
         sizeMaps:
           32:
-            sprite: Mobs/Species/Scurret/displacement.rsi
+            sprite: Mobs/Species/Scurret/displacements.rsi
             state: mask
       back:
         sizeMaps:
           32:
-            sprite: Mobs/Species/Scurret/displacement.rsi
+            sprite: Mobs/Species/Scurret/displacements.rsi
             state: back
