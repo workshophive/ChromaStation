@@ -1,15 +1,15 @@
 <Document>
   # Species
 
-  Nanotrasen employs a variety of sapient species.
+  NanoTrasen employs a variety of sapient species, from both the concurrent plane and abberrant ones from realms beyond..
 
   <Box>
   <GuideEntityEmbed Entity="MobArachnid" Caption="Arachnid"/>
   <GuideEntityEmbed Entity="MobDiona" Caption="Diona"/>
   <GuideEntityEmbed Entity="MobHuman" Caption="Human"/>
+  <GuideEntityEmbed Entity="MobMoth" Caption="Moth Person"/>
   </Box>
   <Box>
-  <GuideEntityEmbed Entity="MobMoth" Caption="Moth Person"/>
   <GuideEntityEmbed Entity="MobOni" Caption="Oni"/>
   <GuideEntityEmbed Entity="MobReptilian" Caption="Reptilian"/>
   <GuideEntityEmbed Entity="MobSlimePerson" Caption="Slime Person"/>
@@ -18,10 +18,7 @@
   </Box>
   <Box>
   <GuideEntityEmbed Entity="MobXelthia" Caption="Xelthia"/>
-  </Box>
-
-  # Parkstation specific species
-  <Box>
   <GuideEntityEmbed Entity="MobIPCDummy" Caption="I.P.C."/>
   </Box>
+
 </Document>
