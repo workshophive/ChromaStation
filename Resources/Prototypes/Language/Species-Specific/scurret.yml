@@ -1,0 +1,21 @@
+- type: language
+  id: Scurry
+  isVisibleLanguage: true
+  speech:
+    fontId: OnlyYou
+  obfuscation:
+    !type:SyllableObfuscation
+    minSyllables: 2
+    maxSyllables: 5
+    replacement:
+    - wa
+    - wawa
+    - waa
+    - wwa
+    - waaaw
+    - warrl
+    - lraa
+    - rra
+    - ar
+    - rw
+    - wrrr

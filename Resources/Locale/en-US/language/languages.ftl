@@ -92,6 +92,10 @@ language-Xeeplian-description =
     Our language is highly advanced, efficient and to the point.
     We have taken a liking to mimic some of the inferior lifeforms' babbling in the further pursuit of Our goals.
 
+language-Scurry-name = Scurry
+language-Scurry-description = 	
+	A language of both gestures and speech, mostly only comprehensible to the scurrets.
+
 # Animal Languages
 
 language-Cat-name = Cat

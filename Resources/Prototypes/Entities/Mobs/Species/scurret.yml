@@ -46,6 +46,13 @@
     damage:
       types:
         Piercing: 5 # nerfed from wizden
+  - type: LanguageKnowledge
+    speaks:
+    - TauCetiBasic
+    - Scurry
+    understands:
+    - TauCetiBasic
+    - Scurry
   - type: Inventory
     templateId: digitigrade
     displacements:
