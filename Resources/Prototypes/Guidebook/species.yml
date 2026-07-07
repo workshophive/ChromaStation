@@ -19,7 +19,6 @@
     - Xelthia
     # ImpStation additions
     - Thaven
-    - Shell
 
 - type: guideEntry
   id: Arachnid
@@ -60,6 +59,8 @@
   id: IPC
   name: species-name-ipc
   text: "/ServerInfo/Guidebook/Mobs/IPC.xml"
+  children:
+  - Shell
 
 - type: guideEntry
   id: Harpy
