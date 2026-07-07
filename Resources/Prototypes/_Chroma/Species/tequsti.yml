@@ -1,0 +1,137 @@
+- type: species
+  id: Tequsti
+  name: species-name-tequsti
+  roundStart: true
+  prototype: MobTequsti
+  sprites: MobTequstiSprites
+  markingLimits: MobTequstiMarkingLimits
+  dollPrototype: MobTequstiDummy
+  skinColoration: "#545d6e"
+  skinColoration: Hues
+  naming: FirstDashFirst
+  maleFirstNames: names_reptilian_male # replace with tequsti names later
+  femaleFirstNames: names_reptilian_female # replace with tequsti names later
+  minAge: 23
+  maxAge: 250
+  youngAge: 90
+  oldAge: 175
+  sexes:
+  - Unsexed
+
+- type: speciesBaseSprites
+  id: MobTequstiSprites
+  sprites:
+    Head: MobTequstiHead
+    Snout: MobTequstiAnyMarking
+    HeadTop: MobTequstiAnyMarking
+    HeadSide: MobTequstiAnyMarking
+    Tail: MobTequstiAnyMarking
+    Chest: MobTequstiChest
+    Eyes: MobTequstiEyes
+    LArm: MobTequstiLArm
+    RArm: MobTequstiRArm
+    LHand: MobTequstiLHand
+    LLeg: MobTequstiLLeg
+    RLeg: MobTequstiRLeg
+    LFoot: MobTequstiLFoot
+    RFoot: MobTequstiRFoot
+    
+- type: markingPoints
+  id: MobTequstiMarkingLimits
+  points:
+    Snout:
+      points: 1
+      required: false
+    HeadTop: 
+      points: 1
+      required: false
+    Arms:
+      points: 1
+      required: false
+
+- type: humanoidBaseSprite
+  id: MobTequstiAnyMarking
+
+- type: humanoidBaseSprite
+  id: MobTequstiHead
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Tequsti/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobTequstiHeadMale
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Tequsti/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobTequstiHeadFemale
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Tequsti/parts.rsi
+    state: head_f
+
+- type: humanoidBaseSprite
+  id: MobTequstiTorso
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Tequsti/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobTequstiTorsoMale
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Tequsti/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobTequstiTorsoFemale
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Tequsti/parts.rsi
+    state: torso_f
+
+- type: humanoidBaseSprite
+  id: MobTequstiLLeg
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Tequsti/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobTequstiLHand
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Tequsti/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobTequstiEyes
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Tequsti/parts.rsi
+    state: eyes
+
+- type: humanoidBaseSprite
+  id: MobTequstiLArm
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Tequsti/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobTequstiLFoot
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Tequsti/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobTequstiRLeg
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Tequsti/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobTequstiRArm
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Tequsti/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobTequstiRFoot
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Tequsti/parts.rsi
+    state: r_foot
