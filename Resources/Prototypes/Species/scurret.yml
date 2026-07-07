@@ -28,7 +28,7 @@
     LHand: MobScurretLHand
     RHand: MobScurretRHand
     LLeg: MobScurretLLeg
-    RLeg: MobScurretRleg
+    RLeg: MobScurretRLeg
     LFoot: MobScurretLFoot
     RFoot: MobScurretRFoot
 

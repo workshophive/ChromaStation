@@ -26,9 +26,8 @@
   - type: Temperature
     currentTemperature: 310.15
     specificHeat: 42
-  - type: TemperatureDamage
-    heatDamageThreshold: 360
-    coldDamageThreshold: 285
+    heatDamageThreshold: 390 # increased range
+    coldDamageThreshold: 255
   - type: Butcherable # you monster.
     spawned:
     - id: FootMeat
