@@ -9,6 +9,9 @@
       type:
         !type:SimpleColoring
           color: "#594942"
+  sprites:
+    - sprite: _Chroma/Mobs/Customization/Nightmare/nightmare_horns.rsi
+      state: baseHorns
       
 # Ears
 - type: marking
@@ -20,3 +23,6 @@
     default:
       type:
         !type:SkinColoring
+  sprites:
+    - sprite: _Chroma/Mobs/Customization/Nightmare/nightmare_ears.rsi
+      state: baseEars
