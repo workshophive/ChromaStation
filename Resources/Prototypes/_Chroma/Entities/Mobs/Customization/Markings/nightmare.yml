@@ -1,0 +1,20 @@
+# Horns
+- type: marking
+  id: BaseHornsNightmare
+  bodyPart: Head
+  markingCategory: HeadTop
+  speciesRestriction: [Nightmare]
+  coloring:
+    default:
+      !type:SimpleColoring
+      color: "#594942"
+      
+# Ears
+- type: marking
+  id: BaseEarsNightmare
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [Nightmare]
+  coloring:
+    default:
+      !type:SkinColoring

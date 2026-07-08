@@ -1,0 +1,155 @@
+- type: entity
+  id: PartNightmare
+  parent: BaseItem
+  name: "Nightmare body part"
+  abstract: true
+  components:
+    - type: Sprite
+      netsync: false
+      sprite: _Chroma/Mobs/Species/Nightmare/parts.rsi
+    - type: Icon
+      sprite: _Chroma/Mobs/Species/Nightmare/parts.rsi
+    - type: Damageable
+      damageContainer: OrganicPart # Shitmed
+    - type: BodyPart
+    - type: ContainerContainer
+      containers:
+        bodypart: !type:Container
+          ents: []
+
+- type: entity
+  id: TorsoNightmare
+  name: "Nightmare torso"
+  parent: PartNightmare
+  components:
+    - type: Sprite
+      state: "torso_m"
+    - type: Icon
+      state: "torso_m"
+    - type: BodyPart
+      partType: Torso
+
+- type: entity
+  id: HeadNightmare
+  name: "Nightmare head"
+  parent: PartNightmare
+  components:
+    - type: Sprite
+      state: "head_m"
+    - type: Icon
+      state: "head_m"
+    - type: BodyPart
+      partType: Head
+    - type: Input
+      context: "ghost"
+    - type: MovementSpeedModifier
+      baseWalkSpeed: 0
+      baseSprintSpeed: 0
+    - type: InputMover
+    - type: GhostOnMove
+
+- type: entity
+  id: LeftArmNightmare
+  name: "left Nightmare arm"
+  parent: PartNightmare
+  components:
+    - type: Sprite
+      state: "l_arm"
+    - type: Icon
+      state: "l_arm"
+    - type: BodyPart
+      partType: Arm
+      symmetry: Left
+
+- type: entity
+  id: RightArmNightmare
+  name: "right Nightmare arm"
+  parent: PartNightmare
+  components:
+    - type: Sprite
+      state: "r_arm"
+    - type: Icon
+      state: "r_arm"
+    - type: BodyPart
+      partType: Arm
+      symmetry: Right
+
+- type: entity
+  id: LeftHandNightmare
+  name: "left Nightmare hand"
+  parent: PartNightmare
+  components:
+    - type: Sprite
+      state: "l_hand"
+    - type: Icon
+      state: "l_hand"
+    - type: BodyPart
+      partType: Hand
+      symmetry: Left
+
+- type: entity
+  id: RightHandNightmare
+  name: "right Nightmare hand"
+  parent: PartNightmare
+  components:
+    - type: Sprite
+      state: "r_hand"
+    - type: Icon
+      state: "r_hand"
+    - type: BodyPart
+      partType: Hand
+      symmetry: Right
+
+- type: entity
+  id: LeftLegNightmare
+  name: "left Nightmare leg"
+  parent: PartNightmare
+  components:
+    - type: Sprite
+      state: "l_leg"
+    - type: Icon
+      state: "l_leg"
+    - type: BodyPart
+      partType: Leg
+      symmetry: Left
+    - type: MovementBodyPart
+
+- type: entity
+  id: RightLegNightmare
+  name: "right Nightmare leg"
+  parent: PartNightmare
+  components:
+    - type: Sprite
+      state: "r_leg"
+    - type: Icon
+      state: "r_leg"
+    - type: BodyPart
+      partType: Leg
+      symmetry: Right
+    - type: MovementBodyPart
+
+- type: entity
+  id: LeftFootNightmare
+  name: "left Nightmare foot"
+  parent: PartNightmare
+  components:
+    - type: Sprite
+      state: "l_foot"
+    - type: Icon
+      state: "l_foot"
+    - type: BodyPart
+      partType: Foot
+      symmetry: Left
+
+- type: entity
+  id: RightFootNightmare
+  name: "right Nightmare foot"
+  parent: PartNightmare
+  components:
+    - type: Sprite
+      state: "r_foot"
+    - type: Icon
+      state: "r_foot"
+    - type: BodyPart
+      partType: Foot
+      symmetry: Right

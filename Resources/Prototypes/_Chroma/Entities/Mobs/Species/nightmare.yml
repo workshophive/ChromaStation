@@ -1,0 +1,90 @@
+- type: entity
+  save: false
+  name: Urist McBridle
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobNightmare
+  abstract: true
+  components:
+  - type: HumanoidAppearance
+    species: Nightmare
+  - type: Hunger
+    baseDecayRate: 0.0083
+  # no thirst atm, need to figure out magma drinking
+  - type: Carriable
+  - type: Icon
+    sprite: _Chroma/Mobs/Species/Nightmare/parts.rsi
+    state: full
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.33
+        density: 190
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Body
+    prototype: Nightmare
+    requiredLegs: 2
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Nightmare
+  - type: Speech
+    allowedEmotes: ['Chitter','Rev']
+  - type: LanguageKnowledge
+    speaks:
+    - TauCetiBasic
+    understands:
+    - TauCetiBasic
+  - type: Bloodstream
+    bloodReagent: BlackBlood # replace w infernal blood later?
+  - type: Flammable
+    damage:
+      types:
+        Cold: 3 # paradoxical creatures!
+  - type: Temperature
+    heatDamageThreshold: 10000 # cant go into a burn chamber, but generally pretty resistent to heat
+    coldDamageThreshold: 255
+    currentTemperature: 400.15
+    specificHeat: 46
+    coldDamage:
+      types:
+        Heat: 0.2
+    heatDamage:
+      types:
+        Cold: 0.2
+  - type: TemperatureSpeed
+    thresholds:
+      500: 1.5
+      400: 1.25
+      301: 0.8
+      275: 0.6
+      255: 0.4
+  - type: Tag
+    tags:
+    - CanPilot
+    - FootstepSound
+    - DoorBumpOpener
+  - type: ProtectedFromStepTriggers
+    whitelist:
+      types:
+      - Shard # hooves
+      - Mousetrap # hooves
+  - type: Inventory
+    templateId: digitigrade
+    speciesId: nightmare
+    
+- type: entity
+  save: false
+  parent: BaseSpeciesDummy
+  categories: [HideSpawnMenu]
+  id: MobNightmareDummy
+  components:
+  - type: HumanoidAppearance
+    species: Nightmare
+  - type: Inventory
+    templateId: digitigrade
+    speciesId: nightmare

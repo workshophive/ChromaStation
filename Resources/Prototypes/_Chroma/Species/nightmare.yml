@@ -1,0 +1,146 @@
+- type: species
+  id: Nightmare
+  name: species-name-nightmare
+  roundStart: true
+  prototype: MobNightmare
+  sprites: MobNightmareSprites
+  markingLimits: MobNightmareMarkingLimits
+  dollPrototype: MobNightmareDummy
+  defaultSkinTone: "#a8684c"
+  skinColoration: Hues
+  minAge: 40
+  maxAge: 550
+  youngAge: 130
+  oldAge: 470
+  naming: First
+  maleFirstNames: names_golem # replace w own dataset later 
+  femaleFirstNames: names_golem # replace w own dataset later
+  sexes:
+  - Unsexed
+  
+- type: speciesBaseSprites
+  id: MobNightmareSprites
+  sprites:
+    Head: MobNightmareHead
+    HeadTop: MobHumanoidAnyMarking
+    HeadSide: MobHumanoidAnyMarking
+    Snout: MobHumanoidAnyMarking
+    Chest: MobNightmareChest
+    Eyes: MobNightmareEyes
+    LArm: MobNightmareLArm
+    RArm: MobNightmareRArm
+    LHand: MobNightmareLHand
+    RHand: MobNightmareRHand
+    LLeg: MobNightmareLLeg
+    RLeg: MobNightmareRLeg
+    LFoot: MobNightmareLFoot
+    RFoot: MobNightmareRFoot
+    
+- type: markingPoints
+  id: MobNightmareMarkingLimits
+  onlyWhitelisted: true
+  points:
+    Snout:
+      points: 2
+      required: false
+    HeadTop:
+      points: 1
+      required: true
+      defaultMarkings: [BaseHornsNightmare]
+    HeadSide:
+      points: 1
+      required: true
+      defaultMarkings: [BaseEarsNightmare]
+    Tail:
+      points: 1
+      required: false
+      
+- type: humanoidBaseSprite
+  id: MobNightmareEyes
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Nightmare/parts.rsi
+    state: eyes
+
+- type: humanoidBaseSprite
+  id: MobNightmareHead
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Nightmare/parts.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobNightmareHeadMale
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Nightmare/parts.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobNightmareHeadFemale
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Nightmare/parts.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobNightmareTorso
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Nightmare/parts.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobNightmareTorsoMale
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Nightmare/parts.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobNightmareTorsoFemale
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Nightmare/parts.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobNightmareLLeg
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Nightmare/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobNightmareLArm
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Nightmare/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobNightmareLHand
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Nightmare/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobNightmareLFoot
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Nightmare/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobNightmareRLeg
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Nightmare/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobNightmareRArm
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Nightmare/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobNightmareRHand
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Nightmare/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobNightmareRFoot
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Nightmare/parts.rsi
+    state: r_foot
