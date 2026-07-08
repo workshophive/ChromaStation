@@ -22,6 +22,9 @@
     - TraitsPhysicalSpecies
 
 - type: traitCategory
+  id: TraitsPhysicalUncategorized
+
+- type: traitCategory
   id: TraitsPhysicalMedical
 
 - type: traitCategory

@@ -41,7 +41,7 @@
 
 - type: trait
   id: HeavyweightDrunk
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -1
   requirements:
     - !type:CharacterJobRequirement
@@ -67,7 +67,7 @@
 
 - type: trait
   id: LiquorLifeline
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -6
   requirements:
     - !type:CharacterJobRequirement
@@ -94,7 +94,7 @@
 
 - type: trait
   id: Thieving
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -3
   functions:
     - !type:TraitReplaceComponent
@@ -112,7 +112,7 @@
 
 - type: trait
   id: Voracious
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -1
   functions:
     - !type:TraitReplaceComponent
@@ -129,7 +129,7 @@
 
 - type: trait
   id: ParkourTraining
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -5
   requirements:
     - !type:CharacterTraitRequirement
@@ -211,7 +211,7 @@
 
 - type: trait
   id: TrapAvoider
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -3
   functions:
     - !type:TraitAddComponent
