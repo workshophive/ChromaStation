@@ -1,0 +1,13 @@
+# immune to rads, tox, & caustic due to hyperactive bodies, at the cost of taking extra asphyx, burn, and pierce 
+- type: damageModifierSet
+  id: Nightmare
+  coefficients: 
+    Radiation: 0.0
+    Poison: 0.0
+    Caustic: 0.0
+    Airloss: 1.2
+    Bloodloss: 1.2
+    Heat: 1.3
+    Cold: 1.3
+    Shock: 1.3
+    Piercing: 1.3

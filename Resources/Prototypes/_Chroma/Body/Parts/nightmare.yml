@@ -23,9 +23,9 @@
   parent: PartNightmare
   components:
     - type: Sprite
-      state: "torso_m"
+      state: "torso"
     - type: Icon
-      state: "torso_m"
+      state: "torso"
     - type: BodyPart
       partType: Torso
 
@@ -35,9 +35,9 @@
   parent: PartNightmare
   components:
     - type: Sprite
-      state: "head_m"
+      state: "head"
     - type: Icon
-      state: "head_m"
+      state: "head"
     - type: BodyPart
       partType: Head
     - type: Input

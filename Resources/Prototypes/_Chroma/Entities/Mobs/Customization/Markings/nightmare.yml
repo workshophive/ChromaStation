@@ -6,8 +6,9 @@
   speciesRestriction: [Nightmare]
   coloring:
     default:
-      !type:SimpleColoring
-      color: "#594942"
+      type:
+        !type:SimpleColoring
+          color: "#594942"
       
 # Ears
 - type: marking
@@ -17,4 +18,5 @@
   speciesRestriction: [Nightmare]
   coloring:
     default:
-      !type:SkinColoring
+      type:
+        !type:SkinColoring
