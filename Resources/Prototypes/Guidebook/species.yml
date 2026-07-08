@@ -20,7 +20,7 @@
     # ImpStation additions
     - Thaven
     # ChromaStation
-    - Tequsti
+    - Nightmare
 
 - type: guideEntry
   id: Arachnid
@@ -93,3 +93,8 @@
   id: Shell
   name: species-name-shell
   text: "/ServerInfo/Guidebook/Mobs/Shell.xml"
+  
+- type: guideEntry
+  id: Nightmare
+  name: species-name-nightmare
+  text: "/ServerInfo/_Chroma/Guidebook/Mobs/Nightmare.xml"
