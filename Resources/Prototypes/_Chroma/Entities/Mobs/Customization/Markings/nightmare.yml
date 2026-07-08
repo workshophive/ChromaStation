@@ -26,3 +26,32 @@
   sprites:
     - sprite: _Chroma/Mobs/Customization/Nightmare/nightmare_ears.rsi
       state: baseEars
+      
+# Legs
+- type: marking
+  id: LeftHoofNightmare
+  bodyPart: LFoot
+  markingCategory: LeftFoot
+  speciesRestriction: [Nightmare]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#594942"
+  sprites:
+    - sprite: _Chroma/Mobs/Customization/Nightmare/nightmare_hooves.rsi
+      state: leftHoof
+          
+- type: marking
+  id: RightHoofNightmare
+  bodyPart: RFoot
+  markingCategory: RightFoot
+  speciesRestriction: [Nightmare]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#594942"
+  sprites:
+    - sprite: _Chroma/Mobs/Customization/Nightmare/nightmare_hooves.rsi
+      state: rightHoof

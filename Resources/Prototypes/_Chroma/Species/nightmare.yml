@@ -54,6 +54,12 @@
     Tail:
       points: 1
       required: false
+    LeftFoot:
+      points: 1
+      required: false
+    RightFoot:
+      points: 1
+      required: false
       
 - type: humanoidBaseSprite
   id: MobNightmareEyes
