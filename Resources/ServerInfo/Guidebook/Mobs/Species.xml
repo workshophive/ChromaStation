@@ -1,7 +1,7 @@
 <Document>
   # Species
 
-  NanoTrasen employs a variety of sapient species, from both the concurrent plane and abberrant ones from realms beyond..
+  NanoTrasen employs a variety of sapient species, from both the concurrent plane and abberrant ones from realms beyond.
 
   <Box>
   <GuideEntityEmbed Entity="MobArachnid" Caption="Arachnid"/>

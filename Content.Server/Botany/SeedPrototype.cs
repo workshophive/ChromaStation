@@ -17,7 +17,7 @@ public sealed partial class SeedPrototype : SeedData, IPrototype
     [IdDataField] public string ID { get; private set; } = default!;
 }
 
-public enum HarvestType : byte
+public enum HarvestType : byte 
 {
     NoRepeat,
     Repeat,

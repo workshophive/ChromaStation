@@ -1,6 +1,6 @@
 - type: trait
   id: Swashbuckler
-  category: Physical
+  category: TraitsPhysicalSpecies
   points: 0
   functions:
     - !type:TraitReplaceComponent
@@ -25,7 +25,7 @@
 
 - type: trait
   id: Spearmaster
-  category: Physical
+  category: TraitsPhysicalSpecies
   points: 0
   functions:
     - !type:TraitReplaceComponent
@@ -49,7 +49,7 @@
 
 - type: trait
   id: WeaponsGeneralist
-  category: Physical
+  category: TraitsPhysicalSpecies
   points: 0
   functions:
     - !type:TraitReplaceComponent
@@ -127,7 +127,7 @@
 
 - type: trait
   id: MothFlight
-  category: Physical
+  category: TraitsPhysicalSpecies
   points: -2
   functions:
     - !type:TraitAddComponent
@@ -145,7 +145,7 @@
 
 - type: trait
   id: IPCInefficientCogitator
-  category: Physical
+  category: TraitsPhysicalSpecies
   points: 3
   functions:
     - !type:TraitModifyComponent
@@ -175,7 +175,7 @@
 
 - type: trait
   id: IPCBrittleBoneDisease
-  category: Physical
+  category: TraitsPhysicalSpecies
   points: 6
   functions:
     - !type:TraitReplaceComponent
@@ -198,7 +198,7 @@
 
 - type: trait
   id: IPCFragileCircuits
-  category: Physical
+  category: TraitsPhysicalSpecies
   points: 4 # shock is rare as-is, maybe raise if it becomes more common
   functions:
     - !type:TraitAddComponent
@@ -216,7 +216,7 @@
 
 - type: trait
   id: IPCFaultyWaterproofing
-  category: Physical
+  category: TraitsPhysicalSpecies
   points: 3
   functions:
     - !type:TraitReplaceComponent

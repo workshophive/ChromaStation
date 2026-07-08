@@ -120,7 +120,7 @@
 
 - type: trait
   id: Uncloneable
-  category: Physical
+  category: TraitsPhysicalMedical
   points: 1
   requirements:
     - !type:CharacterJobRequirement
