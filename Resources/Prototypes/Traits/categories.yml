@@ -16,6 +16,7 @@
   id: Physical
   root: true
   subCategories:
+    - TraitsPhysicalUncategorized
     - TraitsPhysicalMedical
     - TraitsPhysicalCybernetics
     - TraitsPhysicalSpecies

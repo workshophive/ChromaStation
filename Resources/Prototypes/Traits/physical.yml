@@ -1,6 +1,6 @@
 - type: trait
   id: WillToLive
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -1
   requirements:
     - !type:CharacterJobRequirement
@@ -25,7 +25,7 @@
 
 - type: trait
   id: WillToDie
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 1
   requirements:
     - !type:CharacterJobRequirement
@@ -49,7 +49,7 @@
 
 - type: trait
   id: Tenacity
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -1
   requirements:
     - !type:CharacterJobRequirement
@@ -74,7 +74,7 @@
 
 - type: trait
   id: GlassJaw
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 2
   requirements:
     - !type:CharacterJobRequirement
@@ -98,7 +98,7 @@
 
 - type: trait
   id: Vigor
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -6
   requirements:
     - !type:CharacterJobRequirement
@@ -123,7 +123,7 @@
 
 - type: trait
   id: Lethargy
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 4
   requirements:
     - !type:CharacterJobRequirement
@@ -148,7 +148,7 @@
 
 - type: trait
   id: HighAdrenaline
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -2
   requirements:
     - !type:CharacterJobRequirement
@@ -173,7 +173,7 @@
 
 - type: trait
   id: AdrenalDysfunction
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 2
   requirements:
     - !type:CharacterJobRequirement
@@ -197,7 +197,7 @@
 
 - type: trait
   id: Masochism
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -2
   requirements:
     - !type:CharacterJobRequirement
@@ -218,7 +218,7 @@
 
 - type: trait
   id: LowPainTolerance
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 3
   requirements:
     - !type:CharacterJobRequirement
@@ -238,7 +238,7 @@
 
 - type: trait
   id: Steadfast
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -3
   requirements:
     - !type:CharacterJobRequirement
@@ -262,7 +262,7 @@
 
 - type: trait
   id: Feeble
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 4
   requirements:
     - !type:CharacterJobRequirement
@@ -286,7 +286,7 @@
 
 - type: trait
   id: MartialArtist
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -5
   requirements:
   - !type:CharacterJobRequirement
@@ -319,7 +319,7 @@
 
 - type: trait
   id: Small
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 0
   requirements:
     - !type:CharacterSpeciesRequirement
@@ -343,7 +343,7 @@
 
 - type: trait
   id: TemperatureTolerance
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -1
   requirements:
     - !type:CharacterSpeciesRequirement
@@ -363,7 +363,7 @@
 # When declared, componentRemovals work like a "RemComp" that activates upon joining a round.
 - type: trait
   id: Talons
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 0
   requirements:
     - !type:CharacterSpeciesRequirement
@@ -394,7 +394,7 @@
 
 - type: trait
   id: Claws
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -1
   requirements:
     - !type:CharacterSpeciesRequirement
@@ -430,7 +430,7 @@
 
 - type: trait
   id: NaturalWeaponRemoval
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 0
   requirements:
     - !type:CharacterSpeciesRequirement
@@ -467,7 +467,7 @@
 
 - type: trait
   id: StrikingCalluses
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -2
   requirements:
     - !type:CharacterJobRequirement
@@ -560,7 +560,7 @@
 
 - type: trait
   id: PlateletFactories
-  category: Physical
+  category: TraitsPhysicalCybernetics
   points: -10
   requirements:
     - !type:CharacterJobRequirement
@@ -787,7 +787,7 @@
 
 - type: trait
   id: RestrictedGear
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -6
   requirements:
   - !type:CVarRequirement
@@ -800,7 +800,7 @@
 
 - type: trait
   id: Redshirt
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 8
   requirements:
     - !type:CharacterJobRequirement
@@ -824,7 +824,7 @@
 
 - type: trait
   id: BrittleBoneDisease
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 6
   requirements:
     - !type:CharacterJobRequirement
@@ -1178,7 +1178,7 @@
 
 - type: trait
   id: Bodybuilder
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -4
   requirements:
     - !type:CharacterTraitRequirement
@@ -1197,7 +1197,7 @@
 
 - type: trait
   id: Featherweight
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 4
   requirements:
     - !type:CharacterTraitRequirement
@@ -1216,7 +1216,7 @@
 
 - type: trait
   id: Vampirism # You may port this to EE, you have my permission!
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -5
   requirements:
     - !type:CharacterJobRequirement
@@ -1343,7 +1343,7 @@
 
 - type: trait
   id: Dwarf
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -4
   requirements:
     - !type:CharacterHeightRequirement
@@ -1365,7 +1365,7 @@
 
 - type: trait
   id: Kobold
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -4
   requirements:
     - !type:CharacterSpeciesRequirement
@@ -1390,7 +1390,7 @@
 
 - type: trait
   id: ForkedTongue
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -2
   requirements:
     - !type:CharacterSpeciesRequirement
@@ -1403,7 +1403,7 @@
 
 - type: trait
   id: StuntedSnout
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 1
   requirements:
     - !type:CharacterSpeciesRequirement
