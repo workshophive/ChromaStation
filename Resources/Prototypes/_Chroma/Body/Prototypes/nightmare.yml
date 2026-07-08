@@ -9,7 +9,7 @@
       - torso
       organs:
         brain: OrganHumanBrain
-        eyes: OrganNightmareEyes
+        eyes: OrganHumanEyes
     torso:
       part: TorsoNightmare
       connections:

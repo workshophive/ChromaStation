@@ -5,7 +5,6 @@
   id: BaseMobNightmare
   abstract: true
   components:
-  - type: EyeDamageOnFlashing
   - type: HumanoidAppearance
     species: Nightmare
   - type: Hunger
