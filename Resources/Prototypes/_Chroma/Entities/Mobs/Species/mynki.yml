@@ -33,7 +33,6 @@
   - type: Damageable
     damageContainer: BiologicalMynki
     damageModifierSet: Mynki
-#  - type: Speech
   - type: LanguageKnowledge
     speaks:
     - TauCetiBasic
