@@ -1,0 +1,15 @@
+<Document>
+  # Nightmares
+  
+  <Box>
+    <GuideEntityEmbed Entity="MobNightmare" Caption=""/>
+  </Box>
+  
+  [color=#ffa500]Caution! This species has game-limiting mechanics and is not recommended for new players.[/color]
+  
+  Nightmares are an abberant species from a plane they call the Tertiaryie. Similarly to shadowkin, they have adapted to existence in a world devoid of all light, and due to this [color=yellow]have inherent night vision[/color]. However, they are vulnerable to flashes even with protective equipment, and are inherently photophobic.
+
+  Nightmares have an inherent paradoxical phenomenon that makes them take cold damage when on fire or overheated, and heat damage when freezing. This is believed to be due to living within the Tertiaryie, however this isn't known for certain.
+  On the plus side, they take [color=#1e90ff]no poison or caustic damage[/color] in exchange for taking more [color=#ffa500]asphyxiation, burn, and piercing.[/color]
+
+</Document>

@@ -120,7 +120,7 @@
 
 - type: trait
   id: Uncloneable
-  category: Physical
+  category: TraitsPhysicalMedical
   points: 1
   requirements:
     - !type:CharacterJobRequirement
@@ -183,7 +183,7 @@
 
 - type: trait
   id: BadKnees
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 4
   requirements:
     - !type:CharacterTraitRequirement
@@ -207,7 +207,7 @@
 
 - type: trait
   id: Sluggish
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 5
   requirements:
     - !type:CharacterTraitRequirement
@@ -230,7 +230,7 @@
 
 - type: trait
   id: SnailPaced
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 8
   requirements:
     - !type:CharacterTraitRequirement
@@ -253,7 +253,7 @@
 
 - type: trait
   id: BloodDeficiency
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 4
   requirements:
     - !type:CharacterJobRequirement
@@ -279,7 +279,7 @@
 
 - type: trait
   id: Hemophilia
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 4
   requirements:
     - !type:CharacterJobRequirement
@@ -313,6 +313,7 @@
         - Vulpkanin # This trait functions exactly as-is for the Vulpkanin trait.
         - Shadowkin
         - Tajaran
+        - Nightmare # they already have built in photophobia
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -331,7 +332,7 @@
 
 - type: trait
   id: Clumsy
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 5
   requirements:
     - !type:CharacterJobRequirement

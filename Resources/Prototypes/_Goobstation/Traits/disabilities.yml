@@ -1,6 +1,6 @@
 - type: trait
   id: WheelchairBound
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 10
   requirements:
     - !type:CharacterJobRequirement

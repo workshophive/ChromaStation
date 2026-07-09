@@ -15,6 +15,23 @@
 - type: traitCategory
   id: Physical
   root: true
+  subCategories:
+    - TraitsPhysicalUncategorized
+    - TraitsPhysicalMedical
+    - TraitsPhysicalCybernetics
+    - TraitsPhysicalSpecies
+
+- type: traitCategory
+  id: TraitsPhysicalUncategorized
+
+- type: traitCategory
+  id: TraitsPhysicalMedical
+
+- type: traitCategory
+  id: TraitsPhysicalCybernetics
+
+- type: traitCategory
+  id: TraitsPhysicalSpecies
 
 - type: traitCategory
   id: Psionics

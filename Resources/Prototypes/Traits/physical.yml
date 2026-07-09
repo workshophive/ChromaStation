@@ -1,6 +1,6 @@
 - type: trait
   id: WillToLive
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -1
   requirements:
     - !type:CharacterJobRequirement
@@ -25,7 +25,7 @@
 
 - type: trait
   id: WillToDie
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 1
   requirements:
     - !type:CharacterJobRequirement
@@ -49,7 +49,7 @@
 
 - type: trait
   id: Tenacity
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -1
   requirements:
     - !type:CharacterJobRequirement
@@ -74,7 +74,7 @@
 
 - type: trait
   id: GlassJaw
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 2
   requirements:
     - !type:CharacterJobRequirement
@@ -98,7 +98,7 @@
 
 - type: trait
   id: Vigor
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -6
   requirements:
     - !type:CharacterJobRequirement
@@ -123,7 +123,7 @@
 
 - type: trait
   id: Lethargy
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 4
   requirements:
     - !type:CharacterJobRequirement
@@ -148,7 +148,7 @@
 
 - type: trait
   id: HighAdrenaline
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -2
   requirements:
     - !type:CharacterJobRequirement
@@ -173,7 +173,7 @@
 
 - type: trait
   id: AdrenalDysfunction
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 2
   requirements:
     - !type:CharacterJobRequirement
@@ -197,7 +197,7 @@
 
 - type: trait
   id: Masochism
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -2
   requirements:
     - !type:CharacterJobRequirement
@@ -218,7 +218,7 @@
 
 - type: trait
   id: LowPainTolerance
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 3
   requirements:
     - !type:CharacterJobRequirement
@@ -238,7 +238,7 @@
 
 - type: trait
   id: Steadfast
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -3
   requirements:
     - !type:CharacterJobRequirement
@@ -262,7 +262,7 @@
 
 - type: trait
   id: Feeble
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 4
   requirements:
     - !type:CharacterJobRequirement
@@ -286,7 +286,7 @@
 
 - type: trait
   id: MartialArtist
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -5
   requirements:
   - !type:CharacterJobRequirement
@@ -319,7 +319,7 @@
 
 - type: trait
   id: Small
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 0
   requirements:
     - !type:CharacterSpeciesRequirement
@@ -343,7 +343,7 @@
 
 - type: trait
   id: TemperatureTolerance
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -1
   requirements:
     - !type:CharacterSpeciesRequirement
@@ -363,7 +363,7 @@
 # When declared, componentRemovals work like a "RemComp" that activates upon joining a round.
 - type: trait
   id: Talons
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 0
   requirements:
     - !type:CharacterSpeciesRequirement
@@ -394,7 +394,7 @@
 
 - type: trait
   id: Claws
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -1
   requirements:
     - !type:CharacterSpeciesRequirement
@@ -430,7 +430,7 @@
 
 - type: trait
   id: NaturalWeaponRemoval
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 0
   requirements:
     - !type:CharacterSpeciesRequirement
@@ -467,7 +467,7 @@
 
 - type: trait
   id: StrikingCalluses
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -2
   requirements:
     - !type:CharacterJobRequirement
@@ -491,7 +491,7 @@
 
 - type: trait
   id: Spinarette
-  category: Physical
+  category: TraitsPhysicalCybernetics
   points: -2
   requirements:
     - !type:CharacterJobRequirement
@@ -520,7 +520,7 @@
 
 - type: trait
   id: BionicArm
-  category: Physical
+  category: TraitsPhysicalCybernetics
   points: -8
   requirements:
     - !type:CharacterLogicOrRequirement
@@ -560,7 +560,7 @@
 
 - type: trait
   id: PlateletFactories
-  category: Physical
+  category: TraitsPhysicalCybernetics
   points: -10
   requirements:
     - !type:CharacterJobRequirement
@@ -595,7 +595,7 @@
 
 - type: trait
   id: DermalArmor
-  category: Physical
+  category: TraitsPhysicalCybernetics
   points: -6
   requirements:
     - !type:CharacterJobRequirement
@@ -614,7 +614,7 @@
 
 - type: trait
   id: CyberEyes
-  category: Physical
+  category: TraitsPhysicalCybernetics
   points: -1
   slots: 0
   requirements:
@@ -663,7 +663,7 @@
 
 - type: trait
   id: CyberEyesSecurity
-  category: Physical
+  category: TraitsPhysicalCybernetics
   points: -1
   requirements:
     - !type:CharacterJobRequirement
@@ -691,7 +691,7 @@
 
 - type: trait
   id: CyberEyesMedical
-  category: Physical
+  category: TraitsPhysicalCybernetics
   points: -2
   requirements:
     - !type:CharacterJobRequirement
@@ -719,7 +719,7 @@
 
 - type: trait
   id: CyberEyesDiagnostic
-  category: Physical
+  category: TraitsPhysicalCybernetics
   points: -2
   requirements:
     - !type:CharacterJobRequirement
@@ -746,7 +746,7 @@
 
 - type: trait
   id: CyberEyesOmni
-  category: Physical
+  category: TraitsPhysicalCybernetics
   points: -3
   requirements:
     - !type:CharacterJobRequirement
@@ -787,7 +787,7 @@
 
 - type: trait
   id: RestrictedGear
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -6
   requirements:
   - !type:CVarRequirement
@@ -800,7 +800,7 @@
 
 - type: trait
   id: Redshirt
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 8
   requirements:
     - !type:CharacterJobRequirement
@@ -824,7 +824,7 @@
 
 - type: trait
   id: BrittleBoneDisease
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 6
   requirements:
     - !type:CharacterJobRequirement
@@ -848,7 +848,7 @@
 
 - type: trait
   id: LightAmplification
-  category: Physical
+  category: TraitsPhysicalCybernetics
   points: -4
   requirements:
     - !type:CharacterJobRequirement
@@ -865,7 +865,7 @@
 
 - type: trait
   id: ThermographicVision
-  category: Physical
+  category: TraitsPhysicalCybernetics
   points: -4
   requirements:
     - !type:CharacterJobRequirement
@@ -889,7 +889,7 @@
 
 - type: trait
   id: NaniteAutoRepairBots
-  category: Physical
+  category: TraitsPhysicalSpecies
   points: -5
   requirements:
     - !type:CharacterJobRequirement
@@ -940,7 +940,7 @@
 
 - type: trait
   id: CyberneticLeftLeg
-  category: Physical
+  category: TraitsPhysicalCybernetics
   points: 0
   slots: 0
   functions:
@@ -952,7 +952,7 @@
 
 - type: trait
   id: CyberneticRightLeg
-  category: Physical
+  category: TraitsPhysicalCybernetics
   points: 0
   slots: 0
   functions:
@@ -989,7 +989,7 @@
 
 - type: trait
   id: SecurityEyesModule
-  category: Physical
+  category: TraitsPhysicalSpecies
   points: -1
   requirements:
     - !type:CharacterJobRequirement
@@ -1020,7 +1020,7 @@
 
 - type: trait
   id: MedicalEyesModule
-  category: Physical
+  category: TraitsPhysicalSpecies
   points: -2
   requirements:
     - !type:CharacterJobRequirement
@@ -1051,7 +1051,7 @@
 
 - type: trait
   id: DiagnosticEyesModule
-  category: Physical
+  category: TraitsPhysicalSpecies
   points: -2
   requirements:
     - !type:CharacterJobRequirement
@@ -1081,7 +1081,7 @@
 
 - type: trait
   id: OmniEyesModule
-  category: Physical
+  category: TraitsPhysicalSpecies
   points: -3
   requirements:
     - !type:CharacterJobRequirement
@@ -1125,7 +1125,7 @@
 
 - type: trait
   id: LightAmplificationModule
-  category: Physical
+  category: TraitsPhysicalSpecies
   points: -4
   requirements:
     - !type:CharacterJobRequirement
@@ -1148,7 +1148,7 @@
 
 - type: trait
   id: ThermographicVisionModule
-  category: Physical
+  category: TraitsPhysicalSpecies
   points: -4
   requirements:
     - !type:CharacterJobRequirement
@@ -1178,7 +1178,7 @@
 
 - type: trait
   id: Bodybuilder
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -4
   requirements:
     - !type:CharacterTraitRequirement
@@ -1197,7 +1197,7 @@
 
 - type: trait
   id: Featherweight
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 4
   requirements:
     - !type:CharacterTraitRequirement
@@ -1216,7 +1216,7 @@
 
 - type: trait
   id: Vampirism # You may port this to EE, you have my permission!
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -5
   requirements:
     - !type:CharacterJobRequirement
@@ -1241,7 +1241,7 @@
 
 - type: trait
   id: BionicPryArm
-  category: Physical
+  category: TraitsPhysicalCybernetics
   points: -2
   requirements:
     - !type:CharacterJobRequirement
@@ -1275,7 +1275,7 @@
 
 - type: trait
   id: SuperiorRadiationShielding
-  category: Physical
+  category: TraitsPhysicalSpecies
   points: -4
   requirements:
     - !type:CharacterLogicOrRequirement
@@ -1293,7 +1293,7 @@
 
 - type: trait
   id: G2Chassis
-  category: Physical
+  category: TraitsPhysicalSpecies
   points: -5
   requirements:
     - !type:CharacterLogicOrRequirement
@@ -1317,7 +1317,7 @@
 
 - type: trait
   id: HardenedCircuits
-  category: Physical
+  category: TraitsPhysicalSpecies
   points: -3
   requirements:
     - !type:CharacterLogicOrRequirement
@@ -1343,7 +1343,7 @@
 
 - type: trait
   id: Dwarf
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -4
   requirements:
     - !type:CharacterHeightRequirement
@@ -1365,7 +1365,7 @@
 
 - type: trait
   id: Kobold
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -4
   requirements:
     - !type:CharacterSpeciesRequirement
@@ -1390,7 +1390,7 @@
 
 - type: trait
   id: ForkedTongue
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: -2
   requirements:
     - !type:CharacterSpeciesRequirement
@@ -1403,7 +1403,7 @@
 
 - type: trait
   id: StuntedSnout
-  category: Physical
+  category: TraitsPhysicalUncategorized
   points: 1
   requirements:
     - !type:CharacterSpeciesRequirement
@@ -1416,7 +1416,7 @@
 
 - type: trait
   id: Shell
-  category: Physical
+  category: TraitsPhysicalCybernetics # under cybernetics bc. shell
   points: -2
   slots: 0
   requirements:

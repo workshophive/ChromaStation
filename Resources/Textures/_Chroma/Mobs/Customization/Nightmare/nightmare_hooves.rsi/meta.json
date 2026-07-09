@@ -1,0 +1,19 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Made for ChromaStation",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "leftHoof",
+            "directions": 4
+        },
+        {
+            "name": "rightHoof",
+            "directions": 4
+        }
+    ]
+}
