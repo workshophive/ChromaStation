@@ -1,0 +1,128 @@
+# the meebs... the meebs are real....
+
+- type: entity
+  id: MeebBase
+  parent: 
+  - FlyingMobBase
+  - SimpleSpaceMobBase
+  components:
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2
+    baseSprintSpeed: 3
+  - type: Body
+    prototype: Meeb # exclusive body prototype bc msm lore is fucky wucky
+  - type: MobPrice
+    price: 500
+  - type: StandingState
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - VimPilot
+  - type: LanguageKnowledge
+    speaks:
+    - TauCetiBasic
+#    - Aramonic
+    understands:
+    - TauCetiBasic
+#    - Aramonic
+  - type: GhostRole
+    name: ghost-role-information-meeb-name
+    description: ghost-role-information-meeb-description
+    rules: ghost-role-information-nonantagonist-rules # change to crew aligned?
+  - type: GhostTakeoverAvailable
+  
+- type: entity
+  name: Neutral Meeb
+  id: NeutralMeeb
+  description: A little elementally-atuned creature that's not attuned to any element. Seem fine with it, though.
+  parent: MeebBase
+  components:
+  - type: PointLight
+    radius: 1.1
+    color: "#f2ce9d"
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: neutral
+      sprite: _Chroma/Mobs/Animals/meebs.rsi
+
+- type: entity
+  name: Plasma Meeb
+  id: PlasmaMeeb
+  description: A little elementally-attuned creature that's attuned to the element of plasma. Seems goopier than other meebs.
+  parent: MeebBase
+  components:
+  - type: PointLight
+    radius: 1.1
+    color: "#a497ed"
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: plasma
+      sprite: _Chroma/Mobs/Animals/meebs.rsi
+      
+- type: entity
+  name: Shadow Meeb
+  id: ShadowMeeb
+  description: A little elementally-attuned creature that's attuned to the element of shadow. Seems edgier than other meebs.
+  parent: MeebBase
+  components:
+  - type: PointLight
+    radius: 1.1
+    color: "#AF1918"
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: shadow
+      sprite: _Chroma/Mobs/Animals/meebs.rsi
+      
+- type: entity
+  name: Mech Meeb
+  id: MechMeeb
+  description: A little elementally-attuned creature that's attuned to the element of mech. Seems to have a fascination with technology.
+  parent: MeebBase
+  components:
+  - type: PointLight
+    radius: 1.1
+    color: "#FFFFFF"
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: mech
+      sprite: _Chroma/Mobs/Animals/meebs.rsi
+      
+- type: entity
+  name: Crystal Meeb
+  id: CrystalMeeb
+  description: A little elementally-attuned creature that's attuned to the element of crystal. Seems to be metallic.
+  parent: MeebBase
+  components:
+  - type: PointLight
+    radius: 1.1
+    color: "#4BA58C"
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: crystal
+      sprite: _Chroma/Mobs/Animals/meebs.rsi
+      
+- type: entity
+  name: Poison Meeb
+  id: PoisonMeeb
+  description: A little elementally-attuned creature that's attuned to the element of poison. Seems to like flying into vents and hiding there. 
+  parent: MeebBase
+  components:
+  - type: PointLight
+    radius: 1.1
+    color: "#D9DE88"
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: poison
+      sprite: _Chroma/Mobs/Animals/meebs.rsi

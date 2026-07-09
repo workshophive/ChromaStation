@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made for ChromaStation",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "neutral",
+      "directions": 4
+    },
+    {
+      "name": "plasma",
+      "directions": 4
+    },
+    {
+      "name": "shadow",
+      "directions": 4
+    },
+    {
+      "name": "mech",
+      "directions": 4
+    },
+    {
+      "name": "crystal",
+      "directions": 4
+    },
+    {
+      "name": "poison",
+      "directions": 4
+    }
+  ]
+}
