@@ -1,0 +1,83 @@
+- type: entity
+  save: false
+  name: Urist McPlush
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobMynki
+  abstract: true
+  components:
+  - type: HumanoidAppearance
+    species: Mynki
+  - type: Hunger
+    baseDecayRate: 0.0083
+  - type: Thirst
+    baseDecayRate: 0.0083
+  - type: Carriable
+  - type: Icon
+    sprite: _Chroma/Mobs/Species/parts.rsi
+    state: full
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.32
+        density: 95
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Body
+    prototype: Mynki
+    requirdLegs: 2
+  - type: Damageable
+    damageContainer: BiologicalMynki
+    damageModifierSet: Mynki
+#  - type: Speech
+  - type: LanguageKnowledge
+    speaks:
+    - TauCetiBasic
+    understands:
+    - TauCetiBasic
+  - type: Bloodstream
+    bloodReagent: Fiber
+  - type: Flammable
+    damage:
+      types:
+        Heat: 4.5
+  - type: Temperature
+    heatDamageThreshold: 375
+    coldDamageThreshold: 100
+    currentTemperature: 325.15
+    specificHeat: 42
+    coldDamage:
+      types:
+        Cold: 0.1
+    heatDamage:
+      types:
+        heat: 0.5
+  - type: Tag
+    tags:
+    - CanPilot
+    - FootstepSound
+    - DoorBumpOpener
+    - HarpyEmotes
+  - type: ProtectedFromStepTriggers
+    whitelist:
+      types:
+      - Mousetrap
+  - type: Inventory
+    templateId: human
+    speciesId: mynki
+    
+- type: entity
+  save: false
+  parent: BaseSpeciesDummy
+  categories: [HideSpawnMenu]
+  id: MobMynkiDummy
+  components:
+  - type: HumanoidAppearance
+    species: Mynki
+  - type: Inventory
+    templateId: human
+    speciesId: mynki

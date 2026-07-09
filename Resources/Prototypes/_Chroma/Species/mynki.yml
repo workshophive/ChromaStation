@@ -1,0 +1,136 @@
+- type: species
+  id: Mynki
+  name: species-name-mynki
+  roundStart: true
+  protoype: MobMynki
+  sprites: MobMynkiSprites
+  markingLimits: MobMynkiMarkingLimits
+  dollPrototype: MobMynkiDummy
+  defaultSkinTone: "#ebe6d5"
+  skinColoration: TintedHues
+  naming: FirstDashFirst
+  maleFirstNames: MynkiFirstNames
+  femaleFirstNames: MynkiFirstNames
+  sexes:
+  - Male
+  - Female
+  - Unsexed
+  
+- type: speciesBaseSprites
+  id: MobMynkiSprites
+  sprites:
+    Head: MobMynkiHead
+    HeadTop: MobHumanoidAnyMarking
+    Snout: MobHumanoidAnyMarking
+    Chest: MobMynkiTorso
+    Eyes: MobMynkiEyes
+    LArm: MobMynkiLArm
+    RArm: MobMynkiRArm
+    LHand: MobMynkiLHand
+    RHand: MobMynkiRHand
+    LLeg: MobMynkiLLeg
+    RLeg: MobMynkiRLeg
+    LFoot: MobMynkiLFoot
+    RFoot: MobMynkiRFoot
+    Tail: MobHumanoidAnyMarking
+    
+- type: markingPoints
+  id: MobMynkiMarkingLimits
+  onlyWhitelisted: true
+  points:
+    Hair:
+      points: 0
+      required: false
+    FacialHair:
+      points: 0
+      required: false
+      
+- type: humanoidBaseSprite
+  id: MobMynkiEyes
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Mynki/parts.rsi
+    state: eyes
+
+- type: humanoidBaseSprite
+  id: MobMynkiHead
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Mynki/parts.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobMynkiHeadMale
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Mynki/parts.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobMynkiHeadFemale
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Mynki/parts.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobMynkiTorso
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Mynki/parts.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobMynkiTorsoMale
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Mynki/parts.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobMynkiTorsoFemale
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Mynki/parts.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobMynkiLLeg
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Mynki/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobMynkiLArm
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Mynki/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobMynkiLHand
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Mynki/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobMynkiLFoot
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Mynki/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobMynkiRLeg
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Mynki/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobMynkiRArm
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Mynki/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobMynkiRHand
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Mynki/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobMynkiRFoot
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Mynki/parts.rsi
+    state: r_foot

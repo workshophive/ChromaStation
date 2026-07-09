@@ -1,0 +1,10 @@
+- type: damageContainer
+  id: BiologicalMynki
+  supportedGroups:
+    - Brute
+    - Burn
+    - Toxin
+    - Genetic
+  supportedTypes:
+    - Structural
+    - Bloodloss

@@ -1,0 +1,155 @@
+- type: entity
+  id: PartMynki
+  parent: BaseItem
+  name: "Mynki body part"
+  abstract: true
+  components:
+    - type: Sprite
+      netsync: false
+      sprite: _Chroma/Mobs/Species/Mynki/parts.rsi
+    - type: Icon
+      sprite: _Chroma/Mobs/Species/Mynki/parts.rsi
+    - type: Damageable
+      damageContainer: OrganicPart # Shitmed
+    - type: BodyPart
+    - type: ContainerContainer
+      containers:
+        bodypart: !type:Container
+          ents: []
+
+- type: entity
+  id: TorsoMynki
+  name: "Mynki torso"
+  parent: PartMynki
+  components:
+    - type: Sprite
+      state: "torso"
+    - type: Icon
+      state: "torso"
+    - type: BodyPart
+      partType: Torso
+
+- type: entity
+  id: HeadMynki
+  name: "Mynki head"
+  parent: PartMynki
+  components:
+    - type: Sprite
+      state: "head"
+    - type: Icon
+      state: "head"
+    - type: BodyPart
+      partType: Head
+    - type: Input
+      context: "ghost"
+    - type: MovementSpeedModifier
+      baseWalkSpeed: 0
+      baseSprintSpeed: 0
+    - type: InputMover
+    - type: GhostOnMove
+
+- type: entity
+  id: LeftArmMynki
+  name: "left Mynki arm"
+  parent: PartMynki
+  components:
+    - type: Sprite
+      state: "l_arm"
+    - type: Icon
+      state: "l_arm"
+    - type: BodyPart
+      partType: Arm
+      symmetry: Left
+
+- type: entity
+  id: RightArmMynki
+  name: "right Mynki arm"
+  parent: PartMynki
+  components:
+    - type: Sprite
+      state: "r_arm"
+    - type: Icon
+      state: "r_arm"
+    - type: BodyPart
+      partType: Arm
+      symmetry: Right
+
+- type: entity
+  id: LeftHandMynki
+  name: "left Mynki hand"
+  parent: PartMynki
+  components:
+    - type: Sprite
+      state: "l_hand"
+    - type: Icon
+      state: "l_hand"
+    - type: BodyPart
+      partType: Hand
+      symmetry: Left
+
+- type: entity
+  id: RightHandMynki
+  name: "right Mynki hand"
+  parent: PartMynki
+  components:
+    - type: Sprite
+      state: "r_hand"
+    - type: Icon
+      state: "r_hand"
+    - type: BodyPart
+      partType: Hand
+      symmetry: Right
+
+- type: entity
+  id: LeftLegMynki
+  name: "left Mynki leg"
+  parent: PartMynki
+  components:
+    - type: Sprite
+      state: "l_leg"
+    - type: Icon
+      state: "l_leg"
+    - type: BodyPart
+      partType: Leg
+      symmetry: Left
+    - type: MovementBodyPart
+
+- type: entity
+  id: RightLegMynki
+  name: "right Mynki leg"
+  parent: PartMynki
+  components:
+    - type: Sprite
+      state: "r_leg"
+    - type: Icon
+      state: "r_leg"
+    - type: BodyPart
+      partType: Leg
+      symmetry: Right
+    - type: MovementBodyPart
+
+- type: entity
+  id: LeftFootMynki
+  name: "left Mynki foot"
+  parent: PartMynki
+  components:
+    - type: Sprite
+      state: "l_foot"
+    - type: Icon
+      state: "l_foot"
+    - type: BodyPart
+      partType: Foot
+      symmetry: Left
+
+- type: entity
+  id: RightFootMynki
+  name: "right Mynki foot"
+  parent: PartMynki
+  components:
+    - type: Sprite
+      state: "r_foot"
+    - type: Icon
+      state: "r_foot"
+    - type: BodyPart
+      partType: Foot
+      symmetry: Right
