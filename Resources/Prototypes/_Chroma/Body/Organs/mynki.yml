@@ -33,8 +33,7 @@
   components:
   - type: Sprite
     sprite: _Chroma/Mobs/Species/Mynki/organs.rsi
-    layers:
-      - state: eyes
+    state: eyes
       
 - type: entity
   id: OrganMynkiLungs
@@ -44,7 +43,9 @@
   components:
   - type: Sprite
     sprite: _Chroma/Mobs/Species/Mynki/organs.rsi
-    state: lungs
+    layers:
+      - state: lung-l
+      - state: lung-r
   - type: Lung
     alert: LowNitrogen
   - type: Metabolizer
@@ -66,6 +67,7 @@
     metabolizerTypes: [Mynki]
     groups:
     - id: Alcohol
+    - id: Poison
     - id: Medicine
     - id: Narcotic
     

@@ -206,6 +206,14 @@
             Airloss: -10
       - !type:ModifyBloodLevel
         amount: 5
+      - !type:HealthChange
+        conditions: # just to test the system
+          - !type:OrganType
+            type: Mynki
+        damage:
+          groups:
+            Airloss: -10
+            Burn: 1.5
 
 - type: reagent
   id: Doxarubixadone
