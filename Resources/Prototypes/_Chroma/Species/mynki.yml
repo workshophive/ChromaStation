@@ -2,15 +2,15 @@
   id: Mynki
   name: species-name-mynki
   roundStart: true
-  protoype: MobMynki
+  prototype: MobMynki
   sprites: MobMynkiSprites
   markingLimits: MobMynkiMarkingLimits
   dollPrototype: MobMynkiDummy
   defaultSkinTone: "#ebe6d5"
-  skinColoration: TintedHues
+  skinColoration: Hues
   naming: FirstDashFirst
-  maleFirstNames: MynkiFirstNames
-  femaleFirstNames: MynkiFirstNames
+  maleFirstNames: names_mynki
+  femaleFirstNames: names_mynki
   sexes:
   - Male
   - Female
