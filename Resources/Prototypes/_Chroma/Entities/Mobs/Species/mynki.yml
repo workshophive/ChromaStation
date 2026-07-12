@@ -54,7 +54,7 @@
         Cold: 0.1
     heatDamage:
       types:
-        heat: 0.5
+        Heat: 0.5
   - type: Barotrauma
     damage:
       types:

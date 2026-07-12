@@ -1,7 +1,7 @@
 - type: entity
   id: PartMynki
   parent: BaseItem
-  name: "Mynki body part"
+  name: "mynki body part"
   abstract: true
   components:
     - type: Sprite
@@ -19,7 +19,7 @@
 
 - type: entity
   id: TorsoMynki
-  name: "Mynki torso"
+  name: "mynki torso"
   parent: PartMynki
   components:
     - type: Sprite
@@ -31,7 +31,7 @@
 
 - type: entity
   id: HeadMynki
-  name: "Mynki head"
+  name: "mynki head"
   parent: PartMynki
   components:
     - type: Sprite
@@ -50,7 +50,7 @@
 
 - type: entity
   id: LeftArmMynki
-  name: "left Mynki arm"
+  name: "left mynki arm"
   parent: PartMynki
   components:
     - type: Sprite
@@ -63,7 +63,7 @@
 
 - type: entity
   id: RightArmMynki
-  name: "right Mynki arm"
+  name: "right mynki arm"
   parent: PartMynki
   components:
     - type: Sprite
@@ -76,7 +76,7 @@
 
 - type: entity
   id: LeftHandMynki
-  name: "left Mynki hand"
+  name: "left mynki hand"
   parent: PartMynki
   components:
     - type: Sprite
@@ -89,7 +89,7 @@
 
 - type: entity
   id: RightHandMynki
-  name: "right Mynki hand"
+  name: "right mynki hand"
   parent: PartMynki
   components:
     - type: Sprite
@@ -102,7 +102,7 @@
 
 - type: entity
   id: LeftLegMynki
-  name: "left Mynki leg"
+  name: "left mynki leg"
   parent: PartMynki
   components:
     - type: Sprite
@@ -116,7 +116,7 @@
 
 - type: entity
   id: RightLegMynki
-  name: "right Mynki leg"
+  name: "right mynki leg"
   parent: PartMynki
   components:
     - type: Sprite
@@ -130,7 +130,7 @@
 
 - type: entity
   id: LeftFootMynki
-  name: "left Mynki foot"
+  name: "left mynki foot"
   parent: PartMynki
   components:
     - type: Sprite
@@ -143,7 +143,7 @@
 
 - type: entity
   id: RightFootMynki
-  name: "right Mynki foot"
+  name: "right mynki foot"
   parent: PartMynki
   components:
     - type: Sprite

@@ -1,6 +1,6 @@
 - type: body
   id: Mynki
-  name: "Mynki"
+  name: "mynki"
   root: torso
   slots:
     head:

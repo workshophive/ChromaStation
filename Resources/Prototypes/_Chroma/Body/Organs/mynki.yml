@@ -11,7 +11,7 @@
     solutions:
       organ:
         reagents:
-        - ReagentId: Fiber
+        - ReagentId: ArgentideBlood
           Quantity: 10
         - ReagentId: GreyMatter
           Quantity: 5

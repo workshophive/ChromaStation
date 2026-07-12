@@ -39,7 +39,7 @@
     Drink:
       effects:
       - !type:SatiateThirst
-        factor: 0.33
+        factor: -0.33
       - !type:ChemAddMoodlet
         moodPrototype: DrankBlood
         conditions:

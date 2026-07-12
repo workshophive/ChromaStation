@@ -57,12 +57,12 @@
     Poison:
       effects:
       - !type:HealthChange
-      conditions:
-      - !type:OrganType
-        type: Mynki
-      damage:
-        types:
-          Caustic: 1.5
+        conditions:
+        - !type:OrganType
+          type: Mynki
+        damage:
+          types:
+            Caustic: 1.5
   reactiveEffects:
     Flammable:
       methods: [ Touch ]

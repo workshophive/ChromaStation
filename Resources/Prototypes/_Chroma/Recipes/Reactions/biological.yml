@@ -20,7 +20,7 @@
   requiredMixerCategories:
   - Centrifuge
   reactants:
-    ArgentideBlood
+    ArgentideBlood:
       amount: 10
   products:
     Fiber: 5

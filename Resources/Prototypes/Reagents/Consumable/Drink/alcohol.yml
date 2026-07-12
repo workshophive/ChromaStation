@@ -169,13 +169,6 @@
         damage:
           types:
             Poison: 1
-      - !type:HealthChange
-        conditions:
-        - !type:OrganType
-          type: Mynki
-        damage:
-          types:
-            Caustic: 3
       - !type:ChemVomit
         probability: 0.04
         conditions:
