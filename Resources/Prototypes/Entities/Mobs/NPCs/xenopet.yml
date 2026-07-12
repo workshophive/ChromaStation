@@ -88,9 +88,9 @@
     energy: 1
     color: "#E3954D"
   - type: GhostRole
-    name: ghost-role-information-friendlyxeno-name
-    description: ghost-role-information-friendlyxeno-description
-    rules: ghost-role-information-friendlyxeno-rules
+    name: ghost-role-information-patriarch-name
+    description: ghost-role-information-patriarch-description
+    rules: ghost-role-information-nonantagonist-rules
   - type: GhostTakeoverAvailable
   - type: LanguageKnowledge
     speaks:
@@ -171,7 +171,7 @@
   name: Patriach
   parent: MobXenoNeutralPraetorian
   id: MobXenoPatriarch
-  description: A not entirely clearly friend-shaped Xeno.
+  description: A not entirely clearly friend-shaped Xeno. He seems nice enough, though!
   components:
   - type: NpcFactionMember
     factions:
@@ -199,6 +199,15 @@
   - type: IdExaminable
   - type: InventorySlots
   - type: Strippable
+  - type: Loadout
+  
+  - type: LanguageKnowledge
+    speaks:
+    - Xeno
+    - TauCetiBasic
+    understands:
+    - Xeno
+    - TauCetiBasic
   - type: UserInterface
     interfaces:
       enum.StrippingUiKey.Key:
