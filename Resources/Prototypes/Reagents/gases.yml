@@ -283,6 +283,7 @@
         - !type:OrganType
           type: Slime
       - !type:Oxygenate
+        factor: 3
         conditions:
         - !type:OrganType
           type: Mynki
