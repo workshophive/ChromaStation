@@ -21,6 +21,7 @@
     - Thaven
     # ChromaStation
     - Nightmare
+    - Mynki
 
 - type: guideEntry
   id: Arachnid
@@ -98,3 +99,8 @@
   id: Nightmare
   name: species-name-nightmare
   text: "/ServerInfo/_Chroma/Guidebook/Mobs/Nightmare.xml"
+
+- type: guideEntry
+  id: Mynki
+  name: species-name-mynki
+  text: "/ServerInfo/_Chroma/Guidebook/Mobs/Mynki.xml"

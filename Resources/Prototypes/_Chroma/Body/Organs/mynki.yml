@@ -67,6 +67,7 @@
     metabolizerTypes: [Mynki]
     groups:
     - id: Alcohol
+      rateModifier: 1.5
     - id: Poison
     - id: Medicine
     - id: Narcotic
@@ -75,11 +76,17 @@
   id: OrganMynkiStomach
   parent: OrganHumanStomach
   name: mynki stomach
+  description: "Like mothfolk, mynki are able to digest cloth... is that cannibalism though?"
   components:
   - type: Sprite
     sprite: _Chroma/Mobs/Species/Mynki/organs.rsi
     state: stomach
   - type: Stomach
+    specialDigestible:
+      tags:
+      - ClothMade
+      - Paper
+      - Fruit
   - type: Metabolizer
     maxReagents: 4
     metabolizerTypes: [Mynki]
@@ -102,7 +109,7 @@
     metabolizerTypes: [Mynki]
     groups:
     - id: Alcohol
-      rateModifier: 0.35
+      rateModifier: 1.25
     
 - type: entity
   id: OrganMynkiKidneys

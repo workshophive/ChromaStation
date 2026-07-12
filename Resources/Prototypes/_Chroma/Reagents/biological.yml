@@ -18,3 +18,30 @@
         conditions:
           - !type:OrganType
             type: Human
+
+- type: reagent
+  id: ArgentideBlood
+  parent: Blood
+  name: reagent-name-silverblood
+  desc: reagent-desc-silverblood
+  group: Biological
+  flavor: fibermetal
+  color: "#d9d5cf"
+  recognizable: true
+  physicalDesc: reagent-physical-desc-nondescript
+  metabolisms:
+    Food:
+      effects:
+      - !type:SatiateHunger
+        conditions:
+        - !type:OrganType
+          type: Moth # but why
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 0.33
+      - !type:ChemAddMoodlet
+        moodPrototype: DrankBlood
+        conditions:
+          - !type:OrganType
+            type: Human

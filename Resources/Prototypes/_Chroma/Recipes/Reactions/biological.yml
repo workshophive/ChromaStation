@@ -13,3 +13,16 @@
     Sugar: 2
     CarbonDioxide: 1
     Protein: 6
+    
+- type: reaction
+  id: SilverBloodBreakdown
+  source: true
+  requiredMixerCategories:
+  - Centrifuge
+  reactants:
+    ArgentideBlood
+      amount: 10
+  products:
+    Fiber: 5
+    Silver: 2.5
+    Ammonia: 2.5

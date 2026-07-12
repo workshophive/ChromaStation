@@ -39,7 +39,7 @@
     understands:
     - TauCetiBasic
   - type: Bloodstream
-    bloodReagent: Fiber
+    bloodReagent: ArgentideBlood
   - type: Flammable
     damage:
       types:
@@ -55,6 +55,21 @@
     heatDamage:
       types:
         heat: 0.5
+  - type: Barotrauma
+    damage:
+      types:
+        Blunt: 0.5
+        Structural: 0.25
+  - type: PassiveDamage
+    allowedStates:
+      - Alive
+    damageCap: 20
+    damage:
+      types:
+        Cold: -0.07
+        Cellular: -0.07
+      groups:
+        Brute: -0.07
   - type: Tag
     tags:
     - CanPilot
@@ -66,7 +81,7 @@
       types:
       - Mousetrap
   - type: Inventory
-    templateId: human
+    templateId: digitigrade
     speciesId: mynki
     
 - type: entity
@@ -78,5 +93,5 @@
   - type: HumanoidAppearance
     species: Mynki
   - type: Inventory
-    templateId: human
+    templateId: digitigrade
     speciesId: mynki
