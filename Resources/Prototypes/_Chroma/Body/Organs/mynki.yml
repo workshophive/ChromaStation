@@ -38,7 +38,7 @@
 - type: entity
   id: OrganMynkiLungs
   parent: OrganHumanLungs
-  name: mynki luns
+  name: mynki lungs
   description: "They barely seem to move. How strange."
   components:
   - type: Sprite
@@ -50,7 +50,18 @@
     alert: LowNitrogen
   - type: Metabolizer
     metabolizerTypes: [Mynki]
-    maxReagents: 4
+    maxReagents: 1
+    removeEmpty: true
+    solution: "Lung"
+    solutionOnBody: false
+    groups:
+    - id: Gas
+      rateModifier: 50.0
+  - type: SolutionContainerManager
+    solutions:
+      Lung:
+        maxVol: 100.0
+        canReact: false
 
 - type: entity
   id: OrganMynkiHeart
