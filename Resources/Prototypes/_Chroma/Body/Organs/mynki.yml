@@ -24,7 +24,7 @@
     flavors:
       - fibrous
       - people
-      
+
 - type: entity
   id: OrganMynkiEyes
   parent: OrganHumanEyes
