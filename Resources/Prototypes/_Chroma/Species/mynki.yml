@@ -44,6 +44,14 @@
     FacialHair:
       points: 0
       required: false
+    HeadTop:
+      points: 1
+      required: true
+      defaultMarkings: [BaseEarsMynki]
+    Tail:
+      points: 1
+      required: true
+      defaultMarkings: [BaseTailMynki]
       
 - type: humanoidBaseSprite
   id: MobMynkiEyes

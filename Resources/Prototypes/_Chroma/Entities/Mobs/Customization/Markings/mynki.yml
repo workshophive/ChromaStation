@@ -1,0 +1,43 @@
+# Ears
+- type: marking
+  id: BaseEarsMynki
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Mynki]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: _Chroma/Mobs/Customization/Mynki/mynki_ears.rsi
+    state: base-ears-mynki
+    
+# Tails
+- type: marking
+  id: BaseTailMynki
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Mynki]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: _Chroma/Mobs/Customization/Mynki/mynki_tails.rsi
+    state: base-tail-mynki
+
+- type: marking
+  id: BobTailMynki
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Mynki]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: _Chroma/Mobs/Customization/Mynki/mynki_tails.rsi
+    state: bob-tail-mynki
