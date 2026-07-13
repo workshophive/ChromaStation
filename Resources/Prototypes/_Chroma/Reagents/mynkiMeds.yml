@@ -1,0 +1,71 @@
+# medicine intended for mynki lol
+
+- type: reagent
+  id: Nitrate
+  name: reagent-name-nitrate
+  group: Chemicals
+  desc: reagent-desc-nitrate
+  physicalDesc: reagent-physical-desc-pungent
+  flavor: bitter
+  color: "#a3b57b"
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Bloodloss: 1.5 # nitrate causes methemoglobinemia
+            Poison: 1.5
+      - !type:ModifyBloodLevel
+        amount: -2.5
+
+- type: reagent
+  id: SilverOxide
+  name: reagent-name-silveroxide
+  group: Medicine
+  desc: reagent-desc-silveroxide
+  physicalDesc: reagent-physical-desc-powdery
+  flavor: medicine
+  color: "#525252"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:GenericStatusEffect
+        key: Drunk
+        time: 6.0
+        type: Remove
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Mynki
+        damage:
+          types:
+            Caustic: -1.0
+            Cold: -2.0
+            Burn: 0.5
+            
+- type: reagent
+  id: SilverNitrate
+  name: reagent-name-silvernitrate
+  group: Medicine
+  desc: reagent-desc-silvernitrate
+  physicalDesc: reagent-physical-desc-crystalline
+  flavor: medicine
+  color: "#f2f2f2"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:ModifyBleedAmount
+        amount: -0.5
+      - !type:ModifyBleedAmount
+        conditions:
+        - !type:OrganType
+          type: Mynki
+        amount: -2.5
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Dylovene
+          min: 20
+        reagent: Dylovene
+        amount: -4
