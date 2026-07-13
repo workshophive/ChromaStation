@@ -3,7 +3,6 @@
 - type: reagent
   id: Nitrate
   name: reagent-name-nitrate
-  group: Chemicals
   desc: reagent-desc-nitrate
   physicalDesc: reagent-physical-desc-pungent
   flavor: bitter
@@ -42,7 +41,7 @@
           types:
             Caustic: -1.0
             Cold: -2.0
-            Burn: 0.5
+            Heat: 0.5
             
 - type: reagent
   id: SilverNitrate
