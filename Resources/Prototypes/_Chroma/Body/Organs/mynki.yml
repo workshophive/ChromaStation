@@ -56,7 +56,7 @@
     solutionOnBody: false
     groups:
     - id: Gas
-      rateModifier: 50.0
+      rateModifier: 100.0
   - type: SolutionContainerManager
     solutions:
       Lung:
