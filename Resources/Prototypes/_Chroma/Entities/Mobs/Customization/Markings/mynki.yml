@@ -7,8 +7,7 @@
   coloring:
     default:
       type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
+        !type:SkinColoring
   sprites:
   - sprite: _Chroma/Mobs/Customization/Mynki/mynki_ears.rsi
     state: base-ears-mynki
@@ -22,8 +21,7 @@
   coloring:
     default:
       type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
+        !type:SkinColoring
   sprites:
   - sprite: _Chroma/Mobs/Customization/Mynki/mynki_tails.rsi
     state: base-tail-mynki
@@ -36,8 +34,7 @@
   coloring:
     default:
       type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
+        !type:SkinColoring
   sprites:
   - sprite: _Chroma/Mobs/Customization/Mynki/mynki_tails.rsi
     state: bob-tail-mynki
