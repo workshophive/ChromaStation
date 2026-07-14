@@ -1,0 +1,65 @@
+# todo: anomaly snackies ability
+
+- type: entity
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobShiverfolk
+  name: Urist McChimaera
+  save: false
+  abstract: true
+  components:
+  - type: HumanoidAppearance
+    species: Shiverfolk
+    hideLayersOnEquip:
+    - Snout
+  - type: Hunger
+  - type: Thirst
+    baseDecayRate: 0.2 # basically the same as feroxi on other servers. they get thirsty FAST
+  - type: Carriable
+  - type: Icon
+    sprite: _Chroma/Mobs/Species/Shiverfolk/parts.rsi
+    state: full
+  - type: Body
+    prototype: Shiverfolk # dont need required legs as they are capable of floating
+  - type: Speech
+    speechVerb: Shiverfolk
+  - type: MeleeWeapon
+    soundHit:
+      collection: AlienClaw
+    angle: 30
+    animation: WeaponArcBite
+    damage:
+      types:
+        Blunt: 8 # flat tooth-plates
+        Slash: 0.5 
+  - type: SolutionContainerManager
+    solutions:
+      melee:
+        reagents:
+        - ReagentId: NorepinephricAcid
+          Quantity: 60 # can bite 3 & blind three times before having to regen
+  - type: MeleeChemicalInjector
+    solution: melee
+    transferAmount: 20 # enough to temp blind
+  - type: SolutionRegeneration
+    solution: melee
+    generated:
+      reagents:
+      - ReagentId: NorepinephricAcid
+        Quantity: 1 # should take abt 20 seconds for each regen
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - AnomalyHost # despite using them as yummy sneats
+    - CanPilot
+    - FootstepSound
+
+- type: entity
+  save: false
+  parent: BaseSpeciesDummy
+  categories: [HideSpawnMenu]
+  id: MobShiverfolkDummy
+  components:
+  - type: HumanoidAppearance
+    species: Shiverfolk
+    hideLayersOnEquip:
+    - Snout

@@ -10,6 +10,7 @@
   skinColoration: Hues
   maleFirstNames: names_shiverfolk
   femaleFirstNames: names_shiverfolk
+  naming: First
   sexes:
   - Unsexed
 
@@ -52,12 +53,6 @@
       points: 1
       required: false
     Tail:
-      points: 1
-      required: false
-    LeftFoot:
-      points: 1
-      required: false
-    RightFoot:
       points: 1
       required: false
       

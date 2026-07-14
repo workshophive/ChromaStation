@@ -66,4 +66,4 @@
     Drink:
       effects:
         - !type:ChemAddMoodlet
-        moodPrototype: DrankLunarBlood
+          moodPrototype: DrankLunarBlood
