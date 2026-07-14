@@ -45,3 +45,25 @@
         conditions:
           - !type:OrganType
             type: Human
+            
+- type: reagent
+  id: LunarBlood
+  parent: Blood
+  name: reagent-name-lunarblood
+  desc: reagent-desc-lunarblood
+  group: Biological
+  flavor: strange
+  color: "#d492ff"
+  viscosity: 0.45
+  physicalDesc: reagent-physical-desc-crystalline
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Cold: 5
+    Drink:
+      effects:
+        - !type:ChemAddMoodlet
+        moodPrototype: DrankLunarBlood
