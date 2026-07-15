@@ -51,6 +51,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
 using Timer = Robust.Shared.Timing.Timer;
+using Content.Shared.Gravity;
 
 namespace Content.Server.Administration.Systems;
 
@@ -674,6 +675,11 @@ public sealed partial class AdminVerbSystem
                 grav.Weightless = true;
 
                 Dirty(args.Target, grav);
+				
+				EnsureComp<GravityAffectedComponent>(args.Target, out var weightless);
+                weightless.Weightless = true;
+
+                Dirty(args.Target, weightless);
             },
             Impact = LogImpact.Extreme,
             Message = string.Join(": ", noGravityName, Loc.GetString("admin-smite-remove-gravity-description"))
