@@ -11,7 +11,10 @@
             "name": "brain"
         },
         {
-            "name": "eyes"
+            "name": "eyeball-l"
+        },
+        {
+            "name": "eyeball-r"
         },
         {
             "name": "heart"

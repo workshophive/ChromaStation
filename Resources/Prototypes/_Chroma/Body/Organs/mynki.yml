@@ -33,7 +33,9 @@
   components:
   - type: Sprite
     sprite: _Chroma/Mobs/Species/Mynki/organs.rsi
-    state: eyes
+    layers:
+      - state: eyeball-l
+      - state: eyeball-r
       
 - type: entity
   id: OrganMynkiLungs
