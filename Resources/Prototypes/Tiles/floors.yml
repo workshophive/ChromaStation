@@ -1333,6 +1333,7 @@
   - 1.0
   baseTurf: Plating
   isSubfloor: false
+  transparent: true # why the actual FUCK is this in here. one change in this over 1000 line yml AND ITS THIS????
   deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepTile
