@@ -38,3 +38,53 @@
   sprites:
   - sprite: _Chroma/Mobs/Customization/Mynki/mynki_tails.rsi
     state: bob-tail-mynki
+    
+# Chest
+- type: marking
+  id: UnderbellyMynki
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Mynki]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+      fallbackTypes:
+        - !type:SkinColoring
+  sprites:
+  - sprite: _Chroma/Mobs/Customization/Mynki/mynki.rsi
+    state: mynki-underbelly
+    
+# Feet/Paws
+- type: marking
+  id: PawLeftMynki
+  bodyPart: LFoot
+  markingCategory: LeftFoot
+  speciesRestriction: [Mynki]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+      fallbackTypes:
+        - !type:SkinColoring
+  sprites:
+  - sprite: _Chroma/Mobs/Customization/Mynki/mynki.rsi
+    state: mynki-paw-left
+    
+- type: marking
+  id: PawRightMynki
+  bodyPart: RFoot
+  markingCategory: RightFoot
+  speciesRestriction: [Mynki]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+      fallbackTypes:
+        - !type:SkinColoring
+  sprites:
+  - sprite: _Chroma/Mobs/Customization/Mynki/mynki.rsi
+    state: mynki-paw-right
