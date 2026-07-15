@@ -88,6 +88,9 @@
     LeftHand:
       points: 6
       required: false
+    Overlay:
+      points: 4
+      required: false
       
 - type: humanoidBaseSprite
   id: MobMynkiEyes

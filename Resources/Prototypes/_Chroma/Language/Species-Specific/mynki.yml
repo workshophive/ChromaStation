@@ -1,0 +1,65 @@
+# dont make a translator for this. mynki are INCREDIBLY secretive, it wouldnt make sense to have!
+- type: language
+  id: Plushchirp
+  isVisibleLanguage: true
+  speech:
+    color: "#ffc7d5"
+    fontId: PlaypenSans
+  obfuscation:
+    !type:SyllableObfuscation
+    minSyllables: 1
+    maxSyllables: 5
+    replacement:
+    - chu
+    - cu
+    - su
+    - kuu
+    - rr
+    - vrr
+    - kii
+    - chi
+    - ruu
+    - miu
+    - chr
+    - hr
+    - ufufu
+    - kis
+    - nyaa
+    - kusu
+    - rur
+    - zwichs
+    - mir
+    - rawr
+    - rar
+    - wra
+    - onn
+    - bin
+    - ket
+    - jarl
+    - beau
+    - bojn
+    - boj
+    - sci
+    - sek
+    - shi
+    - sku
+    - su
+    - ven
+    - vi
+    - vir
+    - vu
+    - ca
+    - bris
+    - ce
+    - cit
+    - ci
+    - ibus
+    - idor
+    - ador
+    - num
+    - pars
+    - par
+    - paw
+    - paws
+    - mar
+    - mwrrr

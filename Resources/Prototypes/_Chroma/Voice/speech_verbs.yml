@@ -1,0 +1,7 @@
+- type: speechVerb
+  id: Mynki
+  name: chat-speech-verb-name-mynki
+  speechVerbStrings:
+  - chat-speech-verb-mynki-1
+  - chat-speech-verb-mynki-2
+  - chat-speech-verb-mynki-3

@@ -21,7 +21,7 @@
         shape:
           !type:PhysShapeCircle
           radius: 0.32
-        density: 95
+        density: 95 # itty bitty thangs
         restitution: 0.0
         mask:
         - MobMask
@@ -33,21 +33,42 @@
   - type: Damageable
     damageContainer: BiologicalMynki
     damageModifierSet: Mynki
+  - type: Speech
+    speechVerb: Mynki
   - type: LanguageKnowledge
     speaks:
     - TauCetiBasic
+    - Plushchirp
     understands:
     - TauCetiBasic
+    - Plushchirp
   - type: Bloodstream
     bloodReagent: ArgentideBlood
+    bloodlossDamage:
+      types:
+        Cellular: 0.25
+        Bloodloss: 1
+    bloodlossHealDamage:
+      types:
+        Bloodloss: -0.25 # they passively heal cellular damage, so. shrugs
   - type: Flammable
     damage:
       types:
         Heat: 4.5
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    animation: WeaponArcBite
+    angle: 30
+    damage:
+      types:
+        Piercing: 3 # fucking bites you
+  - type: BloodstreamAffectedByMass
+    power: 0.5
   - type: Temperature
-    heatDamageThreshold: 375
+    heatDamageThreshold: 385
     coldDamageThreshold: 100
-    currentTemperature: 325.15
+    currentTemperature: 325.15 # they be Warm
     specificHeat: 42
     coldDamage:
       types:
@@ -55,6 +76,8 @@
     heatDamage:
       types:
         Heat: 0.5
+  - type: ThermalRegulator
+    normalBodyTemperature: 325.15
   - type: Barotrauma
     damage:
       types:
@@ -75,7 +98,6 @@
     - CanPilot
     - FootstepSound
     - DoorBumpOpener
-    - HarpyEmotes
   - type: ProtectedFromStepTriggers
     whitelist:
       types:
