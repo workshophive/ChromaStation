@@ -1,0 +1,4 @@
+- type: moodEffect
+  id: DrankLunarBlood
+  moodChange: -30
+  timeout: 300 #5 minutes

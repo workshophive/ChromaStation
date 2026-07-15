@@ -1,0 +1,155 @@
+- type: entity
+  id: PartShiverfolk
+  parent: BaseItem
+  name: "shiverfolk body part"
+  abstract: true
+  components:
+    - type: Sprite
+      netsync: false
+      sprite: _Chroma/Mobs/Species/Shiverfolk/parts.rsi
+    - type: Icon
+      sprite: _Chroma/Mobs/Species/Shiverfolk/parts.rsi
+    - type: Damageable
+      damageContainer: OrganicPart # Shitmed
+    - type: BodyPart
+    - type: ContainerContainer
+      containers:
+        bodypart: !type:Container
+          ents: []
+
+- type: entity
+  id: TorsoShiverfolk
+  name: "shiverfolk torso"
+  parent: PartShiverfolk
+  components:
+    - type: Sprite
+      state: "torso"
+    - type: Icon
+      state: "torso"
+    - type: BodyPart
+      partType: Torso
+
+- type: entity
+  id: HeadShiverfolk
+  name: "shiverfolk head"
+  parent: PartShiverfolk
+  components:
+    - type: Sprite
+      state: "head"
+    - type: Icon
+      state: "head"
+    - type: BodyPart
+      partType: Head
+    - type: Input
+      context: "ghost"
+    - type: MovementSpeedModifier
+      baseWalkSpeed: 0
+      baseSprintSpeed: 0
+    - type: InputMover
+    - type: GhostOnMove
+
+- type: entity
+  id: LeftArmShiverfolk
+  name: "left shiverfolk arm"
+  parent: PartShiverfolk
+  components:
+    - type: Sprite
+      state: "l_arm"
+    - type: Icon
+      state: "l_arm"
+    - type: BodyPart
+      partType: Arm
+      symmetry: Left
+
+- type: entity
+  id: RightArmShiverfolk
+  name: "right shiverfolk arm"
+  parent: PartShiverfolk
+  components:
+    - type: Sprite
+      state: "r_arm"
+    - type: Icon
+      state: "r_arm"
+    - type: BodyPart
+      partType: Arm
+      symmetry: Right
+
+- type: entity
+  id: LeftHandShiverfolk
+  name: "left shiverfolk hand"
+  parent: PartShiverfolk
+  components:
+    - type: Sprite
+      state: "l_hand"
+    - type: Icon
+      state: "l_hand"
+    - type: BodyPart
+      partType: Hand
+      symmetry: Left
+
+- type: entity
+  id: RightHandShiverfolk
+  name: "right shiverfolk hand"
+  parent: PartShiverfolk
+  components:
+    - type: Sprite
+      state: "r_hand"
+    - type: Icon
+      state: "r_hand"
+    - type: BodyPart
+      partType: Hand
+      symmetry: Right
+
+- type: entity
+  id: LeftLegShiverfolk
+  name: "left shiverfolk leg"
+  parent: PartShiverfolk
+  components:
+    - type: Sprite
+      state: "l_leg"
+    - type: Icon
+      state: "l_leg"
+    - type: BodyPart
+      partType: Leg
+      symmetry: Left
+    - type: MovementBodyPart
+
+- type: entity
+  id: RightLegShiverfolk
+  name: "right shiverfolk leg"
+  parent: PartShiverfolk
+  components:
+    - type: Sprite
+      state: "r_leg"
+    - type: Icon
+      state: "r_leg"
+    - type: BodyPart
+      partType: Leg
+      symmetry: Right
+    - type: MovementBodyPart
+
+- type: entity
+  id: LeftFootShiverfolk
+  name: "left shiverfolk foot"
+  parent: PartShiverfolk
+  components:
+    - type: Sprite
+      state: "l_foot"
+    - type: Icon
+      state: "l_foot"
+    - type: BodyPart
+      partType: Foot
+      symmetry: Left
+
+- type: entity
+  id: RightFootShiverfolk
+  name: "right shiverfolk foot"
+  parent: PartShiverfolk
+  components:
+    - type: Sprite
+      state: "r_foot"
+    - type: Icon
+      state: "r_foot"
+    - type: BodyPart
+      partType: Foot
+      symmetry: Right

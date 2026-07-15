@@ -1,0 +1,147 @@
+- type: species
+  id: Shiverfolk
+  name: species-name-shiverfolk
+  roundStart: false
+  prototype: MobShiverfolk
+  sprites: MobShiverfolkSprites
+  markingLimits: MobShiverfolkMarkingLimits
+  dollPrototype: MobShiverfolkDummy
+  defaultSkinTone: "#d1ebe4"
+  skinColoration: Hues
+  maleFirstNames: names_shiverfolk
+  femaleFirstNames: names_shiverfolk
+  naming: First
+  sexes:
+  - Unsexed
+
+- type: speciesBaseSprites
+  id: MobShiverfolkSprites
+  sprites:
+    Head: MobShiverfolkHead
+    HeadTop: MobHumanoidAnyMarking
+    HeadSide: MobHumanoidAnyMarking
+    Snout: MobHumanoidAnyMarking
+    Chest: MobShiverfolkTorso
+    Eyes: MobShiverfolkEyes
+    LArm: MobShiverfolkLArm
+    RArm: MobShiverfolkRArm
+    LHand: MobShiverfolkLHand
+    RHand: MobShiverfolkRHand
+    LLeg: MobShiverfolkLLeg
+    RLeg: MobShiverfolkRLeg
+    LFoot: MobShiverfolkLFoot
+    RFoot: MobShiverfolkRFoot
+    Tail: MobHumanoidAnyMarking
+    
+- type: markingPoints
+  id: MobShiverfolkMarkingLimits
+  onlyWhitelisted: true
+  points:
+    Hair:
+      points: 0
+      required: false
+    FacialHair:
+      points: 0
+      required: false
+    Snout:
+      points: 2
+      required: false
+    HeadTop:
+      points: 1
+      required: false
+    HeadSide:
+      points: 1
+      required: false
+    Tail:
+      points: 1
+      required: false
+      
+- type: humanoidBaseSprite
+  id: MobShiverfolkEyes
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Shiverfolk/parts.rsi
+    state: eyes
+
+- type: humanoidBaseSprite
+  id: MobShiverfolkHead
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Shiverfolk/parts.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobShiverfolkHeadMale
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Shiverfolk/parts.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobShiverfolkHeadFemale
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Shiverfolk/parts.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobShiverfolkTorso
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Shiverfolk/parts.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobShiverfolkTorsoMale
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Shiverfolk/parts.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobShiverfolkTorsoFemale
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Shiverfolk/parts.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobShiverfolkLLeg
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Shiverfolk/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobShiverfolkLArm
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Shiverfolk/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobShiverfolkLHand
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Shiverfolk/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobShiverfolkLFoot
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Shiverfolk/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobShiverfolkRLeg
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Shiverfolk/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobShiverfolkRArm
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Shiverfolk/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobShiverfolkRHand
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Shiverfolk/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobShiverfolkRFoot
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Shiverfolk/parts.rsi
+    state: r_foot

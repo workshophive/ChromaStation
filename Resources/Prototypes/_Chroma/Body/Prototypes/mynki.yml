@@ -1,0 +1,50 @@
+- type: body
+  id: Mynki
+  name: "mynki"
+  root: torso
+  slots:
+    head:
+      part: HeadMynki
+      connections:
+      - torso
+      organs:
+        brain: OrganMynkiBrain
+        eyes: OrganMynkiEyes
+    torso:
+      part: TorsoMynki
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      - head # Shitmed
+      organs:
+        heart: OrganMynkiHeart
+        stomach: OrganMynkiStomach
+        liver: OrganMynkiLiver
+        kidneys: OrganMynkiKidneys
+        lungs: OrganMynkiLungs
+    right arm:
+      part: RightArmMynki
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmMynki
+      connections:
+      - left hand
+    right hand:
+      part: RightHandMynki
+    left hand:
+      part: LeftHandMynki
+    right leg:
+      part: RightLegMynki
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegMynki
+      connections:
+      - left foot
+    right foot:
+      part: RightFootMynki
+    left foot:
+      part: LeftFootMynki

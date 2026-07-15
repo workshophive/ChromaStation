@@ -1,0 +1,30 @@
+- type: reaction
+  id: SilverNitrate
+  reactants:
+    Nitrate:
+      amount: 1
+    Silver:
+      amount: 1
+  products:
+    SilverNitrate: 2
+    
+- type: reaction
+  id: SilverOxide
+  reactants:
+    SilverNitrate:
+      amount: 2
+    Lithium: 
+      amount: 1
+  products:
+    Water: 1
+    SilverOxide: 2
+    
+# meant to be the fact that silver oxide reduces to metallic silver at high temps
+- type: reaction
+  id: AG2OReduction
+  minTemperature: 460 # reduced to only 186.85 C due to technical limitations
+  reactants:
+    SilverOxide:
+      amount: 1
+  products:
+    Silver: 2

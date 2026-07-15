@@ -1,0 +1,140 @@
+- type: entity
+  id: OrganMynkiBrain
+  parent: OrganHumanBrain
+  name: mynki brain
+  description: "The source of incredible, unending intelligence. Now in plushie form!"
+  components:
+  - type: Sprite
+    sprite: _Chroma/Mobs/Species/Mynki/organs.rsi
+    state: brain
+  - type: SolutionContainerManager
+    solutions:
+      organ:
+        reagents:
+        - ReagentId: ArgentideBlood
+          Quantity: 10
+        - ReagentId: GreyMatter
+          Quantity: 5
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: GreyMatter
+          Quantity: 5
+  - type: FlavorProfile
+    flavors:
+      - fibrous
+      - people
+
+- type: entity
+  id: OrganMynkiEyes
+  parent: OrganHumanEyes
+  name: mynki eyes
+  description: "Wait, how does a creature made of fabric and cotton see?"
+  components:
+  - type: Sprite
+    sprite: _Chroma/Mobs/Species/Mynki/organs.rsi
+    layers:
+      - state: eyeball-l
+      - state: eyeball-r
+      
+- type: entity
+  id: OrganMynkiLungs
+  parent: OrganHumanLungs
+  name: mynki lungs
+  description: "They barely seem to move. How strange."
+  components:
+  - type: Sprite
+    sprite: _Chroma/Mobs/Species/Mynki/organs.rsi
+    layers:
+      - state: lung-l
+      - state: lung-r
+  - type: Lung
+    alert: LowNitrogen
+  - type: Metabolizer
+    metabolizerTypes: [Mynki]
+    maxReagents: 1
+    removeEmpty: true
+    solution: "Lung"
+    solutionOnBody: false
+    groups:
+    - id: Gas
+      rateModifier: 100.0
+  - type: SolutionContainerManager
+    solutions:
+      Lung:
+        maxVol: 100.0
+        canReact: false
+
+- type: entity
+  id: OrganMynkiHeart
+  name: mynki heart
+  parent: OrganHumanHeart
+  description: "Oh, it's... soggy. Ew. Also smells faintly of alcohol."
+  components:
+  - type: Heart
+  - type: Sprite
+    sprite: _Chroma/Mobs/Species/Mynki/organs.rsi
+    state: heart
+  - type: Metabolizer
+    maxReagents: 4
+    metabolizerTypes: [Mynki]
+    groups:
+    - id: Alcohol
+      rateModifier: 1.5
+    - id: Poison
+    - id: Medicine
+    - id: Narcotic
+    
+- type: entity
+  id: OrganMynkiStomach
+  parent: OrganHumanStomach
+  name: mynki stomach
+  description: "Like mothfolk, mynki are able to digest cloth... is that cannibalism though?"
+  components:
+  - type: Sprite
+    sprite: _Chroma/Mobs/Species/Mynki/organs.rsi
+    state: stomach
+  - type: Stomach
+    specialDigestible:
+      tags:
+      - ClothMade
+      - Paper
+      - Fruit
+  - type: Metabolizer
+    maxReagents: 4
+    metabolizerTypes: [Mynki]
+    groups:
+    - id: Food
+    - id: Drink
+
+- type: entity
+  id: OrganMynkiLiver
+  parent: OrganHumanLiver
+  name: mynki liver
+  description: "Somehow, this also processes alcohol alongside a mynki's heart."
+  components:
+  - type: Liver
+  - type: Sprite
+    sprite: _Chroma/Mobs/Species/Mynki/organs.rsi
+    state: liver
+  - type: Metabolizer
+    maxReagents: 2
+    metabolizerTypes: [Mynki]
+    groups:
+    - id: Alcohol
+      rateModifier: 1.25
+    
+- type: entity
+  id: OrganMynkiKidneys
+  parent: OrganHumanKidneys
+  name: mynki kidneys
+  description: "Toxin filters, like human kidneys. They seem to be beating too, ew."
+  components:
+  - type: Sprite
+    sprite: _Chroma/Mobs/Species/Mynki/organs.rsi
+    layers:
+     - state: kidneys
+  - type: Metabolizer
+    maxReagents: 2
+    metabolizerTypes: [Mynki]
+    removeEmpty: true

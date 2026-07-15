@@ -1,0 +1,1 @@
+flavor-complex-fibermetal = like metal-coated fiber

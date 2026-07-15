@@ -2,7 +2,7 @@
   id: TattooHiveChest
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Human, Dwarf, Felinid, Oni, Shadowkin, Arachne, Lamia, Tajaran] # Delta V - Felinid, Oni
+  speciesRestriction: [Human, Dwarf, Felinid, Oni, Shadowkin, Arachne, Lamia, Tajaran, Mynki] # Delta V - Felinid, Oni
   coloring:
     default:
       type:
@@ -16,7 +16,7 @@
   id: TattooNightlingChest
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Human, Dwarf, Felinid, Oni, Shadowkin, Arachne, Lamia, Tajaran] # Delta V - Felinid, Oni
+  speciesRestriction: [Human, Dwarf, Felinid, Oni, Shadowkin, Arachne, Lamia, Tajaran, Mynki] # Delta V - Felinid, Oni
   coloring:
     default:
       type:
@@ -72,7 +72,7 @@
   id: TattooCampbellLeftArm
   bodyPart: LArm
   markingCategory: LeftArm
-  speciesRestriction: [Human, Dwarf, Felinid, Oni, Shadowkin, Arachne, Lamia, Tajaran] # Delta V - Felinid, Oni
+  speciesRestriction: [Human, Dwarf, Felinid, Oni, Shadowkin, Arachne, Lamia, Tajaran, Mynki] # Delta V - Felinid, Oni
   coloring:
     default:
       type:
@@ -86,7 +86,7 @@
   id: TattooCampbellRightArm
   bodyPart: RArm
   markingCategory: RightArm
-  speciesRestriction: [Human, Dwarf, Felinid, Oni, Shadowkin, Arachne, Lamia, Tajaran] # Delta V - Felinid, Oni
+  speciesRestriction: [Human, Dwarf, Felinid, Oni, Shadowkin, Arachne, Lamia, Tajaran, Mynki] # Delta V - Felinid, Oni
   coloring:
     default:
       type:

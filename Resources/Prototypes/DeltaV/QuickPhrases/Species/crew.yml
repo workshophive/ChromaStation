@@ -68,3 +68,13 @@
   id: SpeciesRodentiaPhrase
   parent: BaseCrewSpeciesPhrase
   text: species-name-rodentia  
+
+- type: quickPhrase
+  id: SpeciesNightmarePhrase
+  parent: BaseCrewSpeciesPhrase
+  text: species-name-nightmare
+  
+- type: quickPhrase
+  id: SpeciesMynkiPhrase
+  parent: BaseCrewSpeciesPhrase
+  text: species-name-mynki

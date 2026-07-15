@@ -169,6 +169,13 @@
         damage:
           types:
             Poison: 1
+      - !type:HealthChange # cant drink alcohol lol
+        conditions:
+        - !type:OrganType
+          type: Mynki
+        damage:
+          types:
+            Caustic: 1.5
       - !type:ChemVomit
         probability: 0.04
         conditions:

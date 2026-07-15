@@ -335,3 +335,6 @@ ghost-role-information-shiva-description = The first defender of the station.
 
 ghost-role-information-wizard-name = Wizard
 ghost-role-information-wizard-desc = YER A WIZARD! Show the station what your magic is made of.
+
+ghost-role-information-patriarch-name = Patriarch
+ghost-role-information-patriarch-desc = Sssss! You're a friendly xeno rejected by your hive, adopted onto a Nanotrasen station. Randomly hug people, pry your way into the surgery room, or watch them from dark corners.

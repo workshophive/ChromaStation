@@ -1,0 +1,119 @@
+- type: entity
+  save: false
+  name: Urist McPlush
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobMynki
+  abstract: true
+  components:
+  - type: HumanoidAppearance
+    species: Mynki
+  - type: Hunger
+    baseDecayRate: 0.0083
+  - type: Thirst
+    baseDecayRate: 0.0083
+  - type: Carriable
+  - type: Icon
+    sprite: _Chroma/Mobs/Species/parts.rsi
+    state: full
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.32
+        density: 95 # itty bitty thangs
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Body
+    prototype: Mynki
+    requirdLegs: 2
+  - type: Damageable
+    damageContainer: BiologicalMynki
+    damageModifierSet: Mynki
+  - type: Speech
+    speechVerb: Mynki
+  - type: LanguageKnowledge
+    speaks:
+    - TauCetiBasic
+    - Plushchirp
+    understands:
+    - TauCetiBasic
+    - Plushchirp
+  - type: Bloodstream
+    bloodReagent: ArgentideBlood
+    bloodlossDamage:
+      types:
+        Cellular: 0.25
+        Bloodloss: 1
+    bloodlossHealDamage:
+      types:
+        Bloodloss: -0.25 # they passively heal cellular damage, so. shrugs
+  - type: Flammable
+    damage:
+      types:
+        Heat: 4.5
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    animation: WeaponArcBite
+    angle: 30
+    damage:
+      types:
+        Piercing: 3 # fucking bites you
+  - type: BloodstreamAffectedByMass
+    power: 0.5
+  - type: Temperature
+    heatDamageThreshold: 385
+    coldDamageThreshold: 100
+    currentTemperature: 325.15 # they be Warm
+    specificHeat: 42
+    coldDamage:
+      types:
+        Cold: 0.1
+    heatDamage:
+      types:
+        Heat: 0.5
+  - type: ThermalRegulator
+    normalBodyTemperature: 325.15
+  - type: Barotrauma
+    damage:
+      types:
+        Blunt: 0.5
+        Structural: 0.25
+  - type: PassiveDamage
+    allowedStates:
+      - Alive
+    damageCap: 20
+    damage:
+      types:
+        Cold: -0.07
+        Cellular: -0.07
+      groups:
+        Brute: -0.07
+  - type: Tag
+    tags:
+    - CanPilot
+    - FootstepSound
+    - DoorBumpOpener
+  - type: ProtectedFromStepTriggers
+    whitelist:
+      types:
+      - Mousetrap
+  - type: Inventory
+    templateId: digitigrade
+    speciesId: mynki
+    
+- type: entity
+  save: false
+  parent: BaseSpeciesDummy
+  categories: [HideSpawnMenu]
+  id: MobMynkiDummy
+  components:
+  - type: HumanoidAppearance
+    species: Mynki
+  - type: Inventory
+    templateId: digitigrade
+    speciesId: mynki

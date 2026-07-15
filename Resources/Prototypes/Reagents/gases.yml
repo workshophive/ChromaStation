@@ -282,6 +282,11 @@
         conditions:
         - !type:OrganType
           type: Slime
+      - !type:Oxygenate
+        factor: 3
+        conditions:
+        - !type:OrganType
+          type: Mynki
       # Converts Nitrogen into CO2
       - !type:ModifyLungGas
         conditions:
@@ -296,6 +301,13 @@
           type: Slime
         ratios:
           NitrousOxide: 1.0
+          Nitrogen: -1.0
+      - !type:ModifyLungGas
+        conditions:
+        - !type:OrganType
+          type: Mynki
+        ratios:
+          Ammonia: 1.0
           Nitrogen: -1.0
 
 - type: reagent

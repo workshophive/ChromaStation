@@ -1,0 +1,4 @@
+- type: flavor
+  id: fibermetal
+  flavorType: Complex
+  description: flavor-complex-fibermetal

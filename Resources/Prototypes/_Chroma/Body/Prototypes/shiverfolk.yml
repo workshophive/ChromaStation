@@ -1,0 +1,50 @@
+- type: body
+  id: Shiverfolk
+  name: "shiverfolk"
+  root: torso
+  slots:
+    head:
+      part: HeadShiverfolk
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganHumanEyes
+    torso:
+      part: TorsoShiverfolk
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      - head # Shitmed
+      organs:
+        heart: OrganHumanHeart
+        stomach: OrganReptilianStomach
+        liver: OrganDwarfLiver
+        kidneys: OrganHumanKidneys
+        lungs: OrganHumanLungs
+    right arm:
+      part: RightArmShiverfolk
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmShiverfolk
+      connections:
+      - left hand
+    right hand:
+      part: RightHandShiverfolk
+    left hand:
+      part: LeftHandShiverfolk
+    right leg:
+      part: RightLegShiverfolk
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegShiverfolk
+      connections:
+      - left foot
+    right foot:
+      part: RightFootShiverfolk
+    left foot:
+      part: LeftFootShiverfolk

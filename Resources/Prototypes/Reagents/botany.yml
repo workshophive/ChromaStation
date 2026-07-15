@@ -272,6 +272,11 @@
         - !type:OrganType
           type: Vox
         factor: -4
+      - !type:Oxygenate # above, but for mynki
+        conditions:
+        - !type:OrganType
+          type: Mynki
+        factor: -2
 
 
 - type: reagent

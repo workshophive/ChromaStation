@@ -1,0 +1,2 @@
+language-Plushchirp-name = Plushchirp
+language-Plushchirp-description = A practically incomprehensible mish-mash of languages into a singular tongue really only understood by the Mynki. There's translators, but they refuse to give them out to anyone.

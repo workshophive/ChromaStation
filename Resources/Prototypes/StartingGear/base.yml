@@ -23,6 +23,8 @@
     - Thaven
     - Vulpkanin
     - Xelthia
+    - Nightmare
+    - Mynki
 
 - type: startingGear
   id: NitrogenBreather
@@ -32,6 +34,7 @@
     species:
     - SlimePerson
     - Vox
+    - Mynki
 
 - type: startingGear
   id: PlasmaBreather

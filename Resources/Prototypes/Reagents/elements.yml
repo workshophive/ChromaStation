@@ -286,6 +286,16 @@
   color: "#d0d0d0"
   boilingPoint: 2212.0
   meltingPoint: 960.5
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Mynki
+        damage:
+          types:
+            Structural: -1.5
 
 - type: reagent
   id: Sulfur

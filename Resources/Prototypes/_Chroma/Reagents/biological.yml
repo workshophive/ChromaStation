@@ -18,3 +18,52 @@
         conditions:
           - !type:OrganType
             type: Human
+
+- type: reagent
+  id: ArgentideBlood
+  parent: Blood
+  name: reagent-name-silverblood
+  desc: reagent-desc-silverblood
+  group: Biological
+  flavor: fibermetal
+  color: "#d9d5cf"
+  recognizable: true
+  physicalDesc: reagent-physical-desc-nondescript
+  metabolisms:
+    Food:
+      effects:
+      - !type:SatiateHunger
+        conditions:
+        - !type:OrganType
+          type: Moth # but why
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: -0.33
+      - !type:ChemAddMoodlet
+        moodPrototype: DrankBlood
+        conditions:
+          - !type:OrganType
+            type: Human
+            
+- type: reagent
+  id: LunarBlood
+  parent: Blood
+  name: reagent-name-lunarblood
+  desc: reagent-desc-lunarblood
+  group: Biological
+  flavor: strange
+  color: "#d492ff"
+  viscosity: 0.45
+  physicalDesc: reagent-physical-desc-crystalline
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Cold: 5
+    Drink:
+      effects:
+        - !type:ChemAddMoodlet
+          moodPrototype: DrankLunarBlood

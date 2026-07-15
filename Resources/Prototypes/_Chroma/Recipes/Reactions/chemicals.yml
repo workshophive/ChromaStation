@@ -1,0 +1,9 @@
+- type: reaction
+  id: Nitrate
+  reactants:
+    Oxygen:
+      amount: 3
+    Nitrogen:
+      amount: 1
+  products:
+    Nitrate: 2
