@@ -1,4 +1,4 @@
-# Einstein Engines
+# ChromaStation 14
 
 <p align="center"><img src="https://raw.githubusercontent.com/workshophive/ChromaStation/refs/heads/master/Resources/Textures/Logo/splashlogo.png" width="512px" /></p>
 
