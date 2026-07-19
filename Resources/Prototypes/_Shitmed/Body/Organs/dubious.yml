@@ -100,18 +100,19 @@
     - type: PressureImmunity
     - type: BreathingImmunity
 
-- type: entity
-  id: OrganDubiousArtifact
-  parent: OrganDubiousBase
-  components:
-  - type: Sprite
-    state: mindshock
-  - type: Organ
-    onAdd:
-    - type: Artifact
-    - type: RandomStatusActivation
-      statusEffects:
-        ActivateArtifactEffect: ActivateArtifactEffect
+# NO. JUST FUCKING NO.
+# - type: entity
+#  id: OrganDubiousArtifact
+#  parent: OrganDubiousBase
+#  components:
+#  - type: Sprite
+#    state: mindshock
+#  - type: Organ
+#    onAdd:
+#    - type: Artifact
+#    - type: RandomStatusActivation
+#      statusEffects:
+#        ActivateArtifactEffect: ActivateArtifactEffect
 
 - type: entity
   id: OrganDubiousScrambleDna
