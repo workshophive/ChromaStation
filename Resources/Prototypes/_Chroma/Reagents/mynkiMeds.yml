@@ -84,9 +84,29 @@
           min: 20
         reagent: Dylovene
         amount: -4
-      - !type:ChemAddMoodlet
+
+- type: reagent
+  id: ColloidalSilver
+  name: reagent-name-colloidalsilver
+  group: Toxins # mostly because it's dangerous as fuck to any species but mynki lol
+  desc: reagent-desc-colloidalsilver
+  physicalDesc: reagent-physical-desc-heterogeneous
+  flavor: paintthinner
+  color: "#c6dade"
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 2.5
+    Medicine:
+      effects:
+      - !type:HealthChange
         conditions:
         - !type:OrganType
           type: Mynki
-          inverted: true
-        moodPrototype: MildPaincauser
+        damage:
+          types:
+            Caustic: -2
+            Poison: -3.5
