@@ -11,9 +11,9 @@ public static class SkinColor
 
     public const float MinHuesLightness = 0.175f;
 
-    public const float MinFeathersHue = 29f / 360;
-    public const float MaxFeathersHue = 174f / 360;
-    public const float MinFeathersSaturation = 20f / 100;
+    public const float MinFeathersHue = 0f / 360;
+    public const float MaxFeathersHue = 360f / 360;
+    public const float MinFeathersSaturation = 0f / 100;
     public const float MaxFeathersSaturation = 88f / 100;
     public const float MinFeathersValue = 36f / 100;
     public const float MaxFeathersValue = 55f / 100;
@@ -25,6 +25,15 @@ public static class SkinColor
     public const float MaxAnimalFurSaturation = 100f / 100;
     public const float MinAnimalFurValue = 0f / 100;
     public const float MaxAnimalFurValue = 100f / 100;
+
+	// ChromaStation - Prippi
+	public const float MinPrippiFluffHue = 120f / 360;
+	public const float MaxPrippiFluffHue = 345f / 360;
+	public const float MinPrippiFluffSaturation = 0f / 100;
+	public const float MaxPrippiFluffSaturation = 50f / 100;
+	public const float MinPrippiFluffValue = 0f / 100;
+	public const float MaxPrippiFluffValue = 100f / 100;
+
 
     public static Color ValidHumanSkinTone => Color.FromHsv(new Vector4(0.07f, 0.2f, 1f, 1f));
 
@@ -285,6 +294,45 @@ public static class SkinColor
 
         return true;
     }
+	
+	/// Converts a color proportionally to the allowed prippi fluff color range
+	public static Color ProportionalPrippiFluffColor (Color color)
+	{
+		var newColor = Color.ToHsv(color);
+		
+		newColor.X = newColor.X * (MaxPrippiFluffHue - MinPrippiFluffHue) + MinPrippiFluffHue;
+		newColor.Y = newColor.Y * (MaxPrippiFluffSaturation - MinPrippiFluffSaturation) + MinPrippiFluffSaturation;
+		newColor.Z = newColor.Z * (MaxPrippiFluffValue - MinPrippiFluffValue) + MinPrippiFluffValue;
+		
+		return Color.FromHsv(newColor);
+	}
+	
+	/// Ensures input color is within the allowed prippi fluff color range
+	public static Color ClosestPrippiFluffColor(Color color)
+	{
+		var hsv = Color.ToHsv(color);
+		
+		hsv.X = Math.Clamp(hsv.X, MinPrippiFluffHue, MaxPrippiFluffHue);
+		hsv.Y = Math.Clamp(hsv.Y, MinPrippiFluffSaturation, MaxPrippiFluffSaturation);
+		hsv.Z = Math.Clamp(hsv.Z, MinPrippiFluffValue, MaxPrippiFluffValue);
+		
+		return Color.FromHsv(hsv);
+	}
+	
+	/// Verify if this color is a valid prippi fluff coloration or not
+	public static bool VerifyPrippiFluff(Color color) 
+	{
+		var colorHsv = Color.ToHsv(color);
+		
+		if (colorHsv.X < MinPrippiFluffHue || colorHsv.X > MaxPrippiFluffHue)
+			return false;
+		if (colorHsv.Y < MinPrippiFluffSaturation || colorHsv.Y > MaxPrippiFluffSaturation)
+			return false;
+		if (colorHsv.Z < MinPrippiFluffValue || colorHsv.Z > MaxPrippiFluffValue)
+			return false;
+		
+		return true;
+	}
 
     /// <summary>
     ///     This takes in a color, and returns a color guaranteed to be above MinHuesLightness
@@ -318,6 +366,7 @@ public static class SkinColor
             HumanoidSkinColor.Hues => VerifyHues(color),
             HumanoidSkinColor.VoxFeathers => VerifyVoxFeathers(color),
             HumanoidSkinColor.AnimalFur => VerifyAnimalFur(color), // Einsetin Engines - Tajaran
+			HumanoidSkinColor.PrippiFluff => VerifyPrippiFluff(color), // ChromaStation - Prippi
             _ => false,
         };
     }
@@ -332,6 +381,7 @@ public static class SkinColor
             HumanoidSkinColor.Hues => MakeHueValid(color),
             HumanoidSkinColor.VoxFeathers => ClosestVoxColor(color),
             HumanoidSkinColor.AnimalFur => ClosestAnimalFurColor(color), // Einsetin Engines - Tajaran
+			HumanoidSkinColor.PrippiFluff => ClosestPrippiFluffColor(color), // ChromaStation - Prippi
             _ => color
         };
     }
@@ -345,4 +395,5 @@ public enum HumanoidSkinColor : byte
     TintedHues, //This gives a color tint to a humanoid's skin (10% saturation with full hue range).
     TintedHuesSkin, // DeltaV - Default TintedHues assumes the texture will have the proper skin color, but moths dont
     AnimalFur, // Einstein Engines - limits coloration to more or less what earthen animals might have
+	PrippiFluff, // ChromaStation - limits coloration to mostly cool colours
 }

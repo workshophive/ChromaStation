@@ -1,0 +1,154 @@
+- type: species
+  id: Prippi
+  name: species-name-prippi
+  roundStart: true
+  prototype: MobPrippi
+  sprites: MobPrippiSprites
+  markingLimits: MobPrippiMarkingLimits
+  dollPrototype: MobPrippiDummy
+  skinColoration: PrippiFluff
+  defaultSkinTone: "#d9f6ff"
+  minAge: 200
+  maxAge: 5000
+  youngAge: 650
+  oldAge: 4580
+  naming: First
+  maleFirstNames: names_prippi
+  femaleFirstNames: names_prippi
+  sexes:
+  - Unsexed
+  - Male
+  - Female
+  # male & female sexes serve no purpose, they're just for how the prippi wants to present
+  
+- type: speciesBaseSprites
+  id: MobPrippiSprites
+  sprites:
+    Head: MobPrippiHead
+    HeadTop: MobHumanoidAnyMarking
+    HeadSide: MobHumanoidAnyMarking
+    Snout: MobHumanoidAnyMarking
+    Chest: MobPrippiTorso
+    Eyes: MobPrippiEyes
+    LArm: MobPrippiLArm
+    RArm: MobPrippiRArm
+    LHand: MobPrippiLHand
+    RHand: MobPrippiRHand
+    LLeg: MobPrippiLLeg
+    RLeg: MobPrippiRLeg
+    LFoot: MobPrippiLFoot
+    RFoot: MobPrippiRFoot
+    Tail: MobHumanoidAnyMarking
+    
+- type: markingPoints
+  id: MobPrippiMarkingLimits
+  onlyWhitelisted: true
+  points:
+    Snout:
+      points: 2
+      required: false
+    HeadTop:
+      points: 1
+      required: false
+    HeadSide:
+      points: 1
+      required: false
+    Tail:
+      points: 1
+      required: false
+    LeftFoot:
+      points: 1
+      required: false
+    RightFoot:
+      points: 1
+      required: false
+      
+- type: humanoidBaseSprite
+  id: MobPrippiEyes
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Prippi/parts.rsi
+    state: eyes
+
+- type: humanoidBaseSprite
+  id: MobPrippiHead
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Prippi/parts.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobPrippiHeadMale
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Prippi/parts.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobPrippiHeadFemale
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Prippi/parts.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobPrippiTorso
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Prippi/parts.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobPrippiTorsoMale
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Prippi/parts.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobPrippiTorsoFemale
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Prippi/parts.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobPrippiLLeg
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Prippi/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobPrippiLArm
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Prippi/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobPrippiLHand
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Prippi/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobPrippiLFoot
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Prippi/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobPrippiRLeg
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Prippi/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobPrippiRArm
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Prippi/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobPrippiRHand
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Prippi/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobPrippiRFoot
+  baseSprite:
+    sprite: _Chroma/Mobs/Species/Prippi/parts.rsi
+    state: r_foot
