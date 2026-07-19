@@ -97,6 +97,9 @@
     Poison:
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType # make this every species BUT mynki at some point
+          type: Human
         damage:
           types:
             Poison: 2.5
@@ -110,3 +113,26 @@
           types:
             Caustic: -2
             Poison: -3.5
+            
+# todo: make argyrol an anti-septic when viro is ported
+# currently just oculine but for mynki that also satiates their hunger
+- type: reagent
+  id: Argyrol
+  name: reagent-name-argyrol
+  group: Medicine
+  desc: reagent-desc-argyrol
+  physicalDesc: reagent-physical-desc-fizzy
+  flavor: medicine
+  color: "#ab995e"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:ChemHealEyeDamage
+        conditions:
+        - !type:OrganType
+          type: Mynki
+      - !type:SatiateHunger
+        factor: 0.33
+        conditions:
+        - !type:OrganType
+          type: Mynki
