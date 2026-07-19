@@ -178,17 +178,17 @@
       statusEffects:
         SpawnEmp: SpawnEmp
 
-- type: entity
-  id: OrganDubiousGravityWell
-  parent: OrganDubiousBase
-  components:
-  - type: Sprite
-    state: emp
-  - type: Organ
-    onAdd:
-    - type: RandomStatusActivation
-      statusEffects:
-        SpawnGravityWell: SpawnGravityWell
+# - type: entity
+#  id: OrganDubiousGravityWell
+#  parent: OrganDubiousBase
+#  components:
+#  - type: Sprite
+#    state: emp
+#  - type: Organ
+#    onAdd:
+#    - type: RandomStatusActivation
+#      statusEffects:
+#        SpawnGravityWell: SpawnGravityWell
 
 - type: entity
   id: OrganDubiousFlash
