@@ -116,6 +116,13 @@
         key: Drunk
         time: 6.0
         type: Remove
+      - !type:GenericStatusEffect
+        conditions:
+        - !type:OrganType
+          type: Mynki
+        key: Drunk
+        time: 12.0
+        type: Remove
       - !type:HealthChange
         damage:
           types:
@@ -1360,6 +1367,13 @@
       - !type:GenericStatusEffect
         key: Drunk
         time: 6.0
+        type: Remove
+      - !type:GenericStatusEffect
+        conditions:
+        - !type:OrganType
+          type: Mynki
+        key: Drunk
+        time: 12.0
         type: Remove
       - !type:ChemAddMoodlet
         moodPrototype: PsicodineEffect
