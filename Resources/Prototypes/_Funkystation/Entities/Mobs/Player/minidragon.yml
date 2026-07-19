@@ -116,8 +116,8 @@
       damage:
         types: {}
     - type: Temperature
-    - type: TemperatureDamage
       heatDamageThreshold: 2400
+      coldDamageThreshold: 0
     - type: Prying # Open door from xeno.yml.
       pryPowered: true
       force: true
