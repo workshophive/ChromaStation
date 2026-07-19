@@ -64,7 +64,6 @@
   - Slimes may [bold]deal extra cellular or poison damage[/bold], based upon their color. Water hurts them just as it would hurt a slime person.
   - Spiders have a venomous bite and can [bold]create webs[/bold] that are hard to move though. Webs are easily destroyed with a blade. They can also pry open airlocks.
   
-    <!-- Funky start -->
   # Mini Dragon
   <Box>
     <GuideEntityEmbed Entity="MobMiniDragon" Scale="2.4"/>
@@ -77,5 +76,4 @@
   - Be careful not to be hunted! You can be butchered into dragon flesh that provides valuable [bold]ichor[/bold] to the crew, so try to stay alive!
   - Your sharp claws and powerful muscles allow you to [bold]pry doors[/bold] quickly. You are able to even pry [bold]bolted[/bold] doors!
   - Your draconic descent means you can fly and survive in space. When hurt, you can always retreat to the safety of the cosmos!
-  <!-- Funky end -->
 </Document>
