@@ -5,3 +5,12 @@
   - chat-speech-verb-mynki-1
   - chat-speech-verb-mynki-2
   - chat-speech-verb-mynki-3
+  
+- type: speechVerb
+  id: Prippi
+  name: chat-speech-verb-name-prippi
+  speechVerbStrings:
+  - chat-speech-verb-prippi-1
+  - chat-speech-verb-prippi-2
+  - chat-speech-verb-prippi-3
+  - chat-speech-verb-prippi-4

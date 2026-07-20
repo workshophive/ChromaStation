@@ -1,0 +1,137 @@
+- type: entity
+  save: false
+  name: Urist McGeist
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobPrippi
+  abstract: true
+  components:
+  - type: HumanoidAppearance
+    species: Prippi
+  - type: Hunger
+  - type: Thirst
+  - type: Carriable # maybe change this later??
+  - type: Icon
+    sprite: _Chroma/Mobs/Species/Prippi/parts.rsi
+    state: full
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.29
+        density: 95
+        restituion: 0.0
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Body
+    prototype: Prippi
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Prippi
+  - type: Speech
+    speechVerb: Prippi
+    allowedEmotes: ['Wurble', 'Trill', 'Wail']
+  - type: Vocal
+    sounds:
+      Male: UnisexPrippi
+      Female: UnisexPrippi
+      Unsexed: UnisexPrippi
+  - type: IgnoreKudzu
+  - type: Tag
+    tags:
+    - CanPilot
+    - FootstepSound
+    - DoorBumpOpener
+    - AnomalyHost # reasonably, shouldn't have this due to spectral nature. however i dont feel like tryna figure it out right now
+    - PrippiEmotes
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+    fitsInCharger: true
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-prippi
+        startingItem: PrippiCoreBasic
+  - type: BatteryDrinker
+  - type: SiliconEmitSoundOnDrained
+    sound: "/Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg"
+    minInterval: 15
+    maxInterval: 30
+    popUp: "silicon-power-low"
+  - type: Flammable
+    fireSpread: true
+    canResistFire: true
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      120: Dead
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTypeTrigger
+          damageType: Holy
+          damage: 200
+        behaviours:
+          - !type:GibBehavior {}
+          - !type:SpawnGasBehavior
+            gasMixture:
+              moles:
+              - 0 # oxy
+              - 0 # nitro
+              - 0 # co2
+              - 0 # plasma
+              - 0 # trit
+              - 0 # water vapor
+              - 0 # ammonia
+              - 0 # n20
+              - 100 # frezon
+      - trigger:
+          !type:DamageTypeTrigger
+          damageType: Blunt
+          damage: 400
+       behaviors:
+         - !type:GibBehavior { }
+         - !type:SpawnGasBehavior
+            gasMixture:
+              moles:
+              - 0 # oxy
+              - 0 # nitro
+              - 0 # co2
+              - 0 # plasma
+              - 0 # trit
+              - 0 # water vapor
+              - 0 # ammonia
+              - 0 # n20
+              - 100 # frezon
+  - type: Temperature
+    heatDamageThreshold: 308 # 35 celsius
+    currentTemperature: 100 # -173.15 celsius
+    coldDamage:
+      types:
+        Cold: 0
+    heatDamage:
+      types:
+        Heat: 1
+  - type: ThermalRegulator
+    normalBodyTemperature: 100
+  - type: LanguageKnowledge
+    speaks:
+    - TauCetiBasic
+    - Psychomantic
+    understands:
+    - TauCetiBasic
+    - Psychomantic
+  - type: Inventory
+    templateId: digitigrade
+
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobPrippiDummy
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HumanoidAppearance
+    species: Prippi
+  - type: Inventory
+    templateId: digitigrade

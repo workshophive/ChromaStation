@@ -1,0 +1,45 @@
+- type: emoteSounds
+  id: UnisexPrippi
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      path: /Audio/_Chroma/Voice/Prippi/PrippiScream.ogg
+    Laugh:
+      path: /Audio/Voice/Moth/moth_laugh.ogg
+    Wurble:
+      path: /Audio/_Chroma/Voice/Prippi/PrippiWurble.ogg
+    Trill:
+      path: /Audio/_Chroma/Voice/Prippi/PrippiTrill.ogg
+    Wail:
+      path: /Audio/_Chroma/Voice/Prippi/PrippiWail.ogg
+    Gasp:
+      path: /Audio/_Chroma/Voice/Prippi/PrippiGasp.ogg
+    DefaultDeathgasp:
+      collection: FemaleDeathGasp
+    Whistle:
+      path: /Audio/_Chroma/Voice/Prippi/PrippiWhistle.ogg
+    Crying:
+      path: /Audio/_Chroma/Voice/Prippi/PrippiCry.ogg
+    Sigh:
+      path: /Audio/_Chroma/Voice/Prippi/PrippiSigh.ogg
+    Weh:
+      collection: Weh
+    Hew:
+      collection: Hew
+    Hiss:
+      collection: FelinidHisses
+    Meow:
+      collection: FelinidMeows
+    Mew:
+      collection: FelinidMews
+    Growl:
+      collection: FelinidGrowls
+    Purr:
+      collection: FelinidPurrs
+    Growl:
+      collection: FelinidGrowls
+    Snore:
+      collection: Snores
+    Honk:
+      collection: BikeHorn

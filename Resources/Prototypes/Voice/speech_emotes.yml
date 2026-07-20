@@ -493,6 +493,7 @@
     tags:
     - ShadowkinEmotes
     - HarpyEmotes
+    - PrippiEmotes
   blacklist:
     components:
     - BorgChassis
