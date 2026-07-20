@@ -77,9 +77,10 @@ public sealed partial class SpeciesPrototype : IPrototype
 
     /// <summary>
     /// Allow Custom Specie Name for this Specie.
+	/// ChromaStation - Set this to true for all species
     /// </summary>
     [DataField]
-    public Boolean CustomName { get; private set; } = false;
+    public Boolean CustomName { get; private set; } = true;
 
     /// <summary>
     /// Method of skin coloration used by the species.
