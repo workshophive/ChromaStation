@@ -16,6 +16,7 @@
 - type: damageModifierSet
   id: Mynki
   coefficients:
+    Asphyxiaton: 0.0
     Cold: 0.35
     Blunt: 0.4
     Cellular: 0.5
@@ -26,3 +27,14 @@
     Piercing: 1.4
     Caustic: 1.5
     
+# no cold or asphyx or cellular, but takes holy & increased brute
+- type: damageModifierSet
+  id: Prippi
+  coefficients:
+    Cold: 0.0
+    Asphyxiaton: 0.0
+    Cellular: 0.0
+    Holy: 1.2
+    Blunt: 1.2
+    Piercing: 1.2
+    Slash: 1.2

@@ -1,3 +1,7 @@
 - type: metabolizerType
   id: Mynki
   name: metabolizer-type-mynki
+  
+- type: metabolizerType
+  id: Prippi
+  name: metabolizer-type-prippi

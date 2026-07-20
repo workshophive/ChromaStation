@@ -37,8 +37,6 @@
       collection: FelinidGrowls
     Purr:
       collection: FelinidPurrs
-    Growl:
-      collection: FelinidGrowls
     Snore:
       collection: Snores
     Honk:

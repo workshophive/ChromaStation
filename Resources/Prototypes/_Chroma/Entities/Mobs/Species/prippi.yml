@@ -73,7 +73,7 @@
           !type:DamageTypeTrigger
           damageType: Holy
           damage: 200
-        behaviours:
+        behaviors:
           - !type:GibBehavior {}
           - !type:SpawnGasBehavior
             gasMixture:
@@ -91,9 +91,9 @@
           !type:DamageTypeTrigger
           damageType: Blunt
           damage: 400
-       behaviors:
-         - !type:GibBehavior { }
-         - !type:SpawnGasBehavior
+        behaviors:
+          - !type:GibBehavior { }
+          - !type:SpawnGasBehavior
             gasMixture:
               moles:
               - 0 # oxy

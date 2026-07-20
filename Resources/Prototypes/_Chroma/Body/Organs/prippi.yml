@@ -10,7 +10,7 @@
     - type: Stomach
     - type: Organ
       slotId: core
-    - type: Lungs # can breathe every gas, similarly to hydrakin, but certain ones oxygenate more (plasma & frezon)
+    - type: Lung # can breathe every gas, similarly to hydrakin, but certain ones oxygenate more (plasma & frezon)
     - type: Metabolizer
       maxReagents: 8
       metabolizerTypes: [Prippi]
@@ -31,7 +31,7 @@
       solutions:
         organ:
           reagents:
-          - ReagentId: Ectoplasma
+          - ReagentId: Ectoplasm
             Quantity: 5
           - ReagentId: Slime
             Quantity: 5
