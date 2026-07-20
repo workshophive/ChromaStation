@@ -27,8 +27,8 @@ public static class SkinColor
     public const float MaxAnimalFurValue = 100f / 100;
 
 	// ChromaStation - Prippi
-	public const float MinPrippiFluffHue = 120f / 360;
-	public const float MaxPrippiFluffHue = 345f / 360;
+	public const float MinPrippiFluffHue = 0f / 360;
+	public const float MaxPrippiFluffHue = 360f / 360;
 	public const float MinPrippiFluffSaturation = 0f / 100;
 	public const float MaxPrippiFluffSaturation = 50f / 100;
 	public const float MinPrippiFluffValue = 0f / 100;
@@ -395,5 +395,5 @@ public enum HumanoidSkinColor : byte
     TintedHues, //This gives a color tint to a humanoid's skin (10% saturation with full hue range).
     TintedHuesSkin, // DeltaV - Default TintedHues assumes the texture will have the proper skin color, but moths dont
     AnimalFur, // Einstein Engines - limits coloration to more or less what earthen animals might have
-	PrippiFluff, // ChromaStation - limits coloration to mostly cool colours
+	PrippiFluff, // ChromaStation - limits coloration to pastels
 }
