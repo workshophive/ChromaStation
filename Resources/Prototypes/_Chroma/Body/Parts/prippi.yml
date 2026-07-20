@@ -1,0 +1,155 @@
+- type: entity
+  id: PartPrippi
+  parent: BaseItem
+  name: "prippi body part"
+  abstract: true
+  components:
+    - type: Sprite
+      netsync: false
+      sprite: _Chroma/Mobs/Species/Prippi/parts.rsi
+    - type: Icon
+      sprite: _Chroma/Mobs/Species/Prippi/parts.rsi
+    - type: Damageable
+      damageContainer: OrganicPart # Shitmed
+    - type: BodyPart
+    - type: ContainerContainer
+      containers:
+        bodypart: !type:Container
+          ents: []
+
+- type: entity
+  id: TorsoPrippi
+  name: "prippi torso"
+  parent: PartPrippi
+  components:
+    - type: Sprite
+      state: "torso"
+    - type: Icon
+      state: "torso"
+    - type: BodyPart
+      partType: Torso
+
+- type: entity
+  id: HeadPrippi
+  name: "prippi head"
+  parent: PartPrippi
+  components:
+    - type: Sprite
+      state: "head"
+    - type: Icon
+      state: "head"
+    - type: BodyPart
+      partType: Head
+    - type: Input
+      context: "ghost"
+    - type: MovementSpeedModifier
+      baseWalkSpeed: 0
+      baseSprintSpeed: 0
+    - type: InputMover
+    - type: GhostOnMove
+
+- type: entity
+  id: LeftArmPrippi
+  name: "left prippi arm"
+  parent: PartPrippi
+  components:
+    - type: Sprite
+      state: "l_arm"
+    - type: Icon
+      state: "l_arm"
+    - type: BodyPart
+      partType: Arm
+      symmetry: Left
+
+- type: entity
+  id: RightArmPrippi
+  name: "right prippi arm"
+  parent: PartPrippi
+  components:
+    - type: Sprite
+      state: "r_arm"
+    - type: Icon
+      state: "r_arm"
+    - type: BodyPart
+      partType: Arm
+      symmetry: Right
+
+- type: entity
+  id: LeftHandPrippi
+  name: "left prippi hand"
+  parent: PartPrippi
+  components:
+    - type: Sprite
+      state: "l_hand"
+    - type: Icon
+      state: "l_hand"
+    - type: BodyPart
+      partType: Hand
+      symmetry: Left
+
+- type: entity
+  id: RightHandPrippi
+  name: "right prippi hand"
+  parent: PartPrippi
+  components:
+    - type: Sprite
+      state: "r_hand"
+    - type: Icon
+      state: "r_hand"
+    - type: BodyPart
+      partType: Hand
+      symmetry: Right
+
+- type: entity
+  id: LeftLegPrippi
+  name: "left prippi leg"
+  parent: PartPrippi
+  components:
+    - type: Sprite
+      state: "l_leg"
+    - type: Icon
+      state: "l_leg"
+    - type: BodyPart
+      partType: Leg
+      symmetry: Left
+    - type: MovementBodyPart
+
+- type: entity
+  id: RightLegPrippi
+  name: "right prippi leg"
+  parent: PartPrippi
+  components:
+    - type: Sprite
+      state: "r_leg"
+    - type: Icon
+      state: "r_leg"
+    - type: BodyPart
+      partType: Leg
+      symmetry: Right
+    - type: MovementBodyPart
+
+- type: entity
+  id: LeftFootPrippi
+  name: "left prippi foot"
+  parent: PartPrippi
+  components:
+    - type: Sprite
+      state: "l_foot"
+    - type: Icon
+      state: "l_foot"
+    - type: BodyPart
+      partType: Foot
+      symmetry: Left
+
+- type: entity
+  id: RightFootPrippi
+  name: "right prippi foot"
+  parent: PartPrippi
+  components:
+    - type: Sprite
+      state: "r_foot"
+    - type: Icon
+      state: "r_foot"
+    - type: BodyPart
+      partType: Foot
+      symmetry: Right

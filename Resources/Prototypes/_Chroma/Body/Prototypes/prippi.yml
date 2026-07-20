@@ -1,0 +1,45 @@
+- type: body
+  id: Prippi
+  name: "prippi"
+  root: torso
+  slots:
+    head:
+      part: HeadPrippi
+      connections:
+      - torso
+      organs:
+        eyes: OrganPrippiEyes
+    torso:
+      part: TorsoPrippi
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      - head # Shitmed
+      organs:
+        core: OrganPrippiNexus
+    right arm:
+      part: RightArmPrippi
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmPrippi
+      connections:
+      - left hand
+    right hand:
+      part: RightHandPrippi
+    left hand:
+      part: LeftHandPrippi
+    right leg:
+      part: RightLegPrippi
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegPrippi
+      connections:
+      - left foot
+    right foot:
+      part: RightFootPrippi
+    left foot:
+      part: LeftFootPrippi

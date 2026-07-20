@@ -1,0 +1,58 @@
+- type: entity
+  id: OrganPrippiNexus
+  parent: OrganHumanBrain
+  name: prippi nexus
+  description: "The source of incredible, unending spookiness. Holding it in your hands feels rather gross."
+  components:
+    - type: Sprite
+      sprite: _Chroma/Mobs/Species/Prippi/organs.rsi
+      state: nexus
+    - type: Stomach
+    - type: Organ
+      slotId: core
+    - type: Lungs # can breathe every gas, similarly to hydrakin, but certain ones oxygenate more (plasma & frezon)
+    - type: Metabolizer
+      maxReagents: 8
+      metabolizerTypes: [Prippi]
+      removeEmpty: true
+      solutionOnBody: false
+      solution: "Nexus"
+      groups:
+        - id: Food
+        - id: Drink
+        - id: Medicine
+        - id: Poison
+        - id: Narcotic
+        - id: Alcohol
+          rateModifier: 0.25
+        - id: Gas
+          rateModifier: 100.0
+    - type: SolutionContainerManager
+      solutions:
+        organ:
+          reagents:
+          - ReagentId: Ectoplasma
+            Quantity: 5
+          - ReagentId: Slime
+            Quantity: 5
+        Nexus:
+          maxVol: 150.0
+          canReact: false # KEEP IT THIS WAY. DO NOT CAUSE A TRITFIRE IN THEIR FUCKING LUNGS.
+        food:
+          maxVol: 10
+          reagents:
+          - ReagentId: Slime
+            Quantity: 5
+        stomach:
+          maxVol: 100.0
+          
+- type: entity
+  id: OrganPrippiEyes
+  parent: OrganHumanEyes
+  name: prippi eyes
+  description: "The gross, goopy eyes of a prippi."
+  components:
+  - type: Sprite
+    sprite: _Chroma/Mobs/Species/Prippi/organs.rsi
+    layers:
+    - state: eyes
