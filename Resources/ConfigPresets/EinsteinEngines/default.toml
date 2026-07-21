@@ -6,9 +6,9 @@ deadmin_on_join = true
 rich_main_icon_id = "einstein-engines"
 
 [game]
-hostname           = "Einstein Engines (change this)"
-desc               = "An alternative upstream that favors content intended for RP servers. If you are reading this, please change it."
-soft_max_players   = 60
+hostname           = "ChromaStation"
+desc               = "A prototype server, forked from Einstein Engines. Better description will be added later."
+soft_max_players   = 20
 lobbyenabled       = true
 lobbyduration      = 240
 
@@ -21,9 +21,9 @@ flavor_text = true
 
 [infolinks]
 discord    = "https://discord.gg/X4QEXxUrsJ"
-github     = "https://github.com/Simple-Station/Einstein-Engines"
+github     = "https://github.com/workshophive/ChromaStation"
 website    = "https://simplestation.org/"
-bug_report = "https://github.com/Simple-Station/Einstein-Engines/issues/new/choose"
+bug_report = "https://github.com/workshophive/ChromaStation/issues"
 
 [net]
 max_connections = 1024
@@ -34,7 +34,7 @@ limit = 10.0
 
 [build]
 #! PLEASE set this for your fork
-fork_id = "EinsteinEngines"
+fork_id = "ChromaStation14"
 
 [server]
 rules_file   = "DefaultRuleset"
