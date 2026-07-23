@@ -109,7 +109,7 @@
         Slash: 6.25
   - type: Temperature
     heatDamageThreshold: 310
-    coldDamageThreshold: 223
+    coldDamageThreshold: 193
     currentTemperature: 261
     specificHeat: 48
   - type: ThermalRegulator

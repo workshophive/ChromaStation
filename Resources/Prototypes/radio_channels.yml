@@ -96,3 +96,11 @@
   color: "#f6ce64"
   # long range since otherwise it'd defeat the point of a handheld radio independent of telecomms
   longRange: true
+
+- type: radioChannel
+  id: Nexus
+  name: chat-radio-nexus
+  keycode: 'x'
+  frequency: 0000
+  color: "#ffa847"
+  longRange: true

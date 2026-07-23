@@ -78,3 +78,14 @@
           - SalvageSpecialist
   items:
     - ClothingNeckMantleMag
+    
+- type: loadout
+  id: LoadoutSpeciesNexusKey
+  category: Species
+  cost: 0
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+        - Avali
+  items:
+    - EncryptionKeyNexus
