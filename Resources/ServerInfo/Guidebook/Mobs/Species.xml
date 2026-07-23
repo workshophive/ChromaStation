@@ -3,25 +3,24 @@
 
   NanoTrasen employs a variety of sapient species, from both the concurrent plane and abberrant ones from realms beyond.
 
-  <Box>
-  <GuideEntityEmbed Entity="MobArachnid" Caption="Arachnid"/>
-  <GuideEntityEmbed Entity="MobDiona" Caption="Diona"/>
-  <GuideEntityEmbed Entity="MobHuman" Caption="Human"/>
-  <GuideEntityEmbed Entity="MobMoth" Caption="Moth Person"/>
-  </Box>
-  <Box>
-  <GuideEntityEmbed Entity="MobOni" Caption="Oni"/>
-  <GuideEntityEmbed Entity="MobReptilian" Caption="Reptilian"/>
-  <GuideEntityEmbed Entity="MobSlimePerson" Caption="Slime Person"/>
-  <GuideEntityEmbed Entity="MobShadowkinDummy" Caption="Shadowkin"/>
-  <GuideEntityEmbed Entity="MobThaven" Caption="Thaven"/>
-  </Box>
-  <Box>
-  <GuideEntityEmbed Entity="MobXelthia" Caption="Xelthia"/>
-  <GuideEntityEmbed Entity="MobIPCDummy" Caption="I.P.C."/>
-  <GuideEntityEmbed Entity="MobNightmareDummy" Caption="Nightmare"/>
-  <GuideEntityEmbed Entity="MobMynkiDummy" Caption="Mynki"/>
-  <GuideEntityEmbed Entity="MobAvali" Caption="Avali"/>
-  </Box>
+  - [textlink="Arachnids"link="Arachnid"], of Syeben'Altch.
+  - [textlink="Avali"link="Avali"], of Avalon.
+  - [textlink="Dionae"link="Diona"], of the Gestalt.
+  - [textlink="Harpies"link="Harpy"], of Valyrian 4b.
+  - [textlink="Humans"link="Human"], of Sol-Lepiton Alpha.
+  - [textlink="I.P.C"link="IPC"], of multiple origins.
+  - [textlink="Mothfolk"link="Moth"], of Chizichi KK1.
+  - [textlink="Mynki"link="Mynki"], of [REDACTED].
+  - [textlink="Nightmares"link="Nightmare"], of the Tertiaryie.
+  - [textlink="Oni"link="Oni"], of Linarve-C.
+  - [textlink="Plasmamen"link="Plasmaman"], of Llagua ETS.
+  - [textlink="Slimepeople"link="SlimePeople"], of Who-Knows-Where.
+  - [textlink="Shadowkin"link="Shadowkin"], of the World At The End of All Time.
+  - [textlink="Tajara"link="Tajaran"], of Adhomai.
+  - [textlink="Thaven"link="Thaven], of the Home Amongst The Many Distant Stars.
+  - [textlink="Unathi"link="Reptilian"], of Uueoa-Esa.
+  - Vox, of the Shoal.
+  - Vulpkanin, of Zagua 735.
+  - [textlink="Xelthia"link=Xelthia], of the Qiimaeru Constellation.
 
 </Document>
