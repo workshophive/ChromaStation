@@ -33,6 +33,13 @@
         key: Drunk
         time: 6.0
         type: Remove
+      - !type:GenericStatusEffect # higher effect on mynki bc silver based & antidrunk 
+        conditions:
+        - !type:OrganType
+          type: Mynki
+        key: Drunk
+        time: 16.0
+        type: Remove
       - !type:HealthChange
         conditions:
         - !type:OrganType
@@ -42,6 +49,15 @@
             Caustic: -1.0
             Cold: -2.0
             Heat: 0.5
+      - !type:AdjustReagent
+        conditions:
+        - !type:OrganType
+          type: Mynki
+        - !type:ReagentThreshold
+          reagent: Ethanol
+          min: 0.5
+        reagent: Ethanol
+        amount: -3
             
 - type: reagent
   id: SilverNitrate
@@ -68,3 +84,55 @@
           min: 20
         reagent: Dylovene
         amount: -4
+
+- type: reagent
+  id: ColloidalSilver
+  name: reagent-name-colloidalsilver
+  group: Toxins # mostly because it's dangerous as fuck to any species but mynki lol
+  desc: reagent-desc-colloidalsilver
+  physicalDesc: reagent-physical-desc-heterogeneous
+  flavor: paintthinner
+  color: "#c6dade"
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType # make this every species BUT mynki at some point
+          type: Human
+        damage:
+          types:
+            Poison: 2.5
+    Medicine:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Mynki
+        damage:
+          types:
+            Caustic: -2
+            Poison: -3.5
+            
+# todo: make argyrol an anti-septic when viro is ported
+# currently just oculine but for mynki that also satiates their hunger
+- type: reagent
+  id: Argyrol
+  name: reagent-name-argyrol
+  group: Medicine
+  desc: reagent-desc-argyrol
+  physicalDesc: reagent-physical-desc-fizzy
+  flavor: medicine
+  color: "#ab995e"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:ChemHealEyeDamage
+        conditions:
+        - !type:OrganType
+          type: Mynki
+      - !type:SatiateHunger
+        factor: 0.33
+        conditions:
+        - !type:OrganType
+          type: Mynki

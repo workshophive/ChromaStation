@@ -761,6 +761,22 @@
           components:
           - type: PressureProtection # can't get through this to reach the bodyparts!
           invert: true
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: false
+        damage:
+          types:
+            Heat: -3.5
+            Cold: -3.5
+            Shock: -3
+            Caustic: -3
+        conditions:
+        - !type:HasComponentOnEquipmentCondition
+          components:
+          - type: PressureProtection # can't get through this to reach the bodyparts!
+          invert: true
+        - !type:OrganType
+          type: Mynki
   metabolisms:
     Medicine:
       metabolismRate: 3
@@ -770,6 +786,14 @@
           types:
             Heat: -1
             Cold: -1
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Mynki
+        damage:
+          types:
+            Heat: -4
+            Cold: -4
       - !type:HealthChange
         damage:
           types:
