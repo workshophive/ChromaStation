@@ -44,6 +44,7 @@
         conditions:
         - !type:OrganType
           type: Mynki
+          shouldHave: true
         damage:
           types:
             Caustic: -1.0
@@ -76,6 +77,7 @@
         conditions:
         - !type:OrganType
           type: Mynki
+          shouldHave: true
         amount: -2.5
       - !type:AdjustReagent
         conditions:
@@ -99,7 +101,8 @@
       - !type:HealthChange
         conditions:
         - !type:OrganType # make this every species BUT mynki at some point
-          type: Human
+          type: Mynki
+          shouldHave: false
         damage:
           types:
             Poison: 2.5
@@ -109,6 +112,7 @@
         conditions:
         - !type:OrganType
           type: Mynki
+          shouldHave: true
         damage:
           types:
             Caustic: -2
@@ -131,8 +135,10 @@
         conditions:
         - !type:OrganType
           type: Mynki
+          shouldHave: true
       - !type:SatiateHunger
         factor: 0.33
         conditions:
         - !type:OrganType
           type: Mynki
+          shouldHave: true

@@ -3,3 +3,6 @@ reagent-desc-silvernitrate = A cheap salt of silver that employs mild anti-bleed
 
 reagent-name-silveroxide = silver oxide
 reagent-desc-silveroxide = Also known as silver rust. Can help the drunk recover due to oxidizing, but also sees usage by mynki for its anti-caustic properties.
+
+reagent-name-argyrol = argyrol
+reagent-desc-argyrol = An antiseptic consisting of compounded solutions of mild silver protein. Also quite useful in treating mynki eye damage.

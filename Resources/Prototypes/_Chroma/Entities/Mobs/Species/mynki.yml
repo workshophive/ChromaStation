@@ -35,6 +35,7 @@
     damageModifierSet: Mynki
   - type: Speech
     speechVerb: Mynki
+    speechSounds: Pai
   - type: LanguageKnowledge
     speaks:
     - TauCetiBasic

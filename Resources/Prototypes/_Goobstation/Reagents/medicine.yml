@@ -777,11 +777,16 @@
           invert: true
         - !type:OrganType
           type: Mynki
+          shouldHave: true
   metabolisms:
     Medicine:
       metabolismRate: 3
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Mynki
+          shouldHave: false
         damage:
           types:
             Heat: -1
@@ -790,11 +795,16 @@
         conditions:
         - !type:OrganType
           type: Mynki
+          shouldHave: true
         damage:
           types:
             Heat: -4
             Cold: -4
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Mynki
+          shouldHave: false
         damage:
           types:
             Poison: 2
