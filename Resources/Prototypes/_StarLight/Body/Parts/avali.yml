@@ -39,7 +39,7 @@
   - type: Sprite
     state: "head_m"
   - type: BodyPart
-      partType: Head
+    partType: Head
   - type: Extractable
     juiceSolution:
       reagents:
@@ -56,8 +56,8 @@
   - type: Sprite
     state: "l_arm"
   - type: BodyPart
-      partType: Arm
-      symmetry: Left
+    partType: Arm
+    symmetry: Left
 
 - type: entity
   parent: [ PartAvali, BaseRightArm ]
@@ -67,8 +67,8 @@
   - type: Sprite
     state: "r_arm"
   - type: BodyPart
-      partType: Arm
-      symmetry: Right
+    partType: Arm
+    symmetry: Right
 
 - type: entity
   parent: [ PartAvali, BaseLeftHand ]
@@ -78,8 +78,8 @@
   - type: Sprite
     state: "l_hand"
   - type: BodyPart
-      partType: Hand
-      symmetry: Left
+    partType: Hand
+    symmetry: Left
 
 - type: entity
   parent: [ PartAvali, BaseRightHand ]
@@ -89,8 +89,8 @@
   - type: Sprite
     state: "r_hand"
   - type: BodyPart
-      partType: Hand
-      symmetry: Right
+    partType: Hand
+    symmetry: Right
 
 - type: entity
   parent: [ PartAvali, BaseLeftLeg ]
@@ -100,8 +100,8 @@
   - type: Sprite
     state: "l_leg"
   - type: BodyPart
-      partType: Leg
-      symmetry: Left
+    partType: Leg
+    symmetry: Left
   - type: MovementBodyPart
     sprintSpeed : 4.77
     maxDensity: 100
@@ -114,8 +114,8 @@
   - type: Sprite
     state: "r_leg"
   - type: BodyPart
-      partType: Leg
-      symmetry: Right
+    partType: Leg
+    symmetry: Right
   - type: MovementBodyPart
     sprintSpeed : 4.77
     maxDensity: 100
@@ -128,8 +128,8 @@
   - type: Sprite
     state: "l_foot"
   - type: BodyPart
-      partType: Foot
-      symmetry: Left
+    partType: Foot
+    symmetry: Left
 
 - type: entity
   parent: [ PartAvali, BaseRightFoot ]
@@ -139,5 +139,5 @@
   - type: Sprite
     state: "r_foot"
   - type: BodyPart
-      partType: Foot
-      symmetry: Right
+    partType: Foot
+    symmetry: Right
