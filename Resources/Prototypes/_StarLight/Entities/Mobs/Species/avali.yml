@@ -22,6 +22,8 @@
   - type: Body
     prototype: Avali
     requiredLegs: 2
+  - type: Preenable
+    featherPrototype: AvaliFeather
   - type: Inventory
     speciesId: avali
     displacements:
