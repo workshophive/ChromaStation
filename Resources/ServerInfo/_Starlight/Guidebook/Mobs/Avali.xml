@@ -23,10 +23,4 @@
   - ..Saline, Dex and Dex+ is lethal to you. Remember to remind doctors about it!
   - Fall into crit at 90 and dead at 180.
   
-  ## Feathers & Preening
-  <Box>
-    <GuideEntityEmbed Entity="AvaliFeather" Caption=""/>
-  </Box>
-  Being injured has a chance to cause an Avali to drop a feather, granting them a [color=#1e90ff]short burst of adrenaline[/color]. They can lose up to three feathers at once, which will very slowly regrow over time. Feathers can also be [color=#1e90ff]manually preened[/color] via the context menu, by yourself or others.
-  
 </Document>
