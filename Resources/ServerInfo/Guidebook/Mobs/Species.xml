@@ -21,6 +21,7 @@
   <GuideEntityEmbed Entity="MobIPCDummy" Caption="I.P.C."/>
   <GuideEntityEmbed Entity="MobNightmareDummy" Caption="Nightmare"/>
   <GuideEntityEmbed Entity="MobMynkiDummy" Caption="Mynki"/>
+  <GuideEntityEmbed Entity="MobAvali" Caption="Avali"/>
   </Box>
 
 </Document>

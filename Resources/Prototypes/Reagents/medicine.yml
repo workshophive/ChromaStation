@@ -273,6 +273,10 @@
     Medicine:
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Avali
+          shouldHave: false
         damage:
           types:
             Asphyxiation: -1
@@ -285,6 +289,16 @@
           types:
             Asphyxiation: 3
             Cold: 1
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Avali
+          shouldHave: true
+        damage:
+          types:
+            Poison: 1.5
+            Asphyxiation: 1
+            Bloodloss: 1
 
 - type: reagent
   id: DexalinPlus
@@ -298,6 +312,10 @@
     Medicine:
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Avali
+          shouldHave: false
         damage:
           types:
             Asphyxiation: -3.5
@@ -317,6 +335,16 @@
           types:
             Asphyxiation: 5
             Cold: 3
+      - !type:HealthChange #Starlight
+        conditions:
+        - !type:OrganType
+          type: Avali
+          shouldHave: true
+        damage:
+          types:
+            Poison: 2.5
+            Asphyxiation: 1.5
+            Bloodloss: 1
 
 # this ones a doozy
 - type: reagent
@@ -697,6 +725,29 @@
         factor: 6
       - !type:ModifyBloodLevel
         amount: 6
+    Medicine:
+      effects:
+        - !type:ModifyBloodLevel
+          conditions:
+          - !type:OrganType
+           type: Avali
+           shouldHave: true
+          amount: -7
+        - !type:ModifyBleedAmount
+          conditions:
+          - !type:OrganType
+           type: Avali
+           shouldHave: true
+          amount: 1
+        - !type:HealthChange
+          conditions:
+          - !type:OrganType
+           type: Avali
+           shouldHave: true
+          damage:
+            types:
+              Poison: 20 #This is on par with giving someone the wrong blood-type (very lethal), value is so high because saline doesn't linger like other meds (Lethal Dose: 10u, VERY FAST ACTING)
+              Slash: 0.7 #Needed to be able to stop bloodloss
 
 - type: reagent
   id: Siderlac
