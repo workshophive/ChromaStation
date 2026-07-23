@@ -18,6 +18,6 @@ guide-entry-sol-alliance = Solarian Alliance
 guide-entry-tcfl = Tau-Ceti Foreign Legion
 
 guide-entry-chromasector = Chroma Sector
-guide-entry-versuius = The Planes
+guide-entry-versuis = The Planes
 guide-entry-nightmare = The Tertiaryie
 guide-entry-WATEOAT = The Dark
