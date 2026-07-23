@@ -3,6 +3,7 @@ using System.Linq;
 using Content.Shared.Dataset;
 using Content.Shared.FixedPoint;
 using Robust.Shared.Random;
+using Robust.Shared.Timing;
 
 namespace Content.Shared.Random.Helpers
 {

@@ -372,6 +372,7 @@
         - Harpy # Harpies already have talons
         - Arachnid # Apparently they have a "piercing" bite
         - Xelthia # Talons don't make sense on tentacle arms
+        - Avali
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -405,7 +406,8 @@
         - Reptilian # Reptilians also have cat claws.
         - Shadowkin # Shadowkins also have claws.
         - Xelthia # Claws don't make sense on tentacle arms
-        # - Vulpkanin # Vulpkanin have "Blunt" claws. One could argue this trait "Sharpens" their claws.
+        - Vulpkanin # Vulpkanin have "Blunt" claws. One could argue this trait "Sharpens" their claws.
+        - Avali
     - !type:CharacterTraitRequirement
       inverted: true
       traits:

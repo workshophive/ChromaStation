@@ -265,3 +265,32 @@
       layers:
         - state: crypt_rusted
         - state: pirate_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyNexus
+  name: nexus encryption key
+  description: An encryption key mostly used only in the Chroma Sector by Avali. Due to the influence of the Noosphere in the sector, the biotechnical Nexus is unavailable to them.
+  components:
+  - type: EncryptionKey
+    channels:
+    - Nexus
+    defaultChannel: Nexus
+  - type: Sprite
+    layers:
+    - state: crypt_rusted
+    - state: nexus_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyNexusSyndicate
+  description: Congrats, it's the other subset of people that use Nexus encryption keys. Who even owns this thing?
+  components:
+  - type: EncryptionKey
+    channels:
+    - Nexus
+    defaultChannel: Nexus
+  - type: Sprite
+    layers:
+    - state: crypt_red
+    - state: nexus_label
