@@ -62,7 +62,7 @@
           type: Mynki
         damage:
           types:
-            Caustic: 1.5
+            Caustic: 0.5
   reactiveEffects:
     Flammable:
       methods: [ Touch ]

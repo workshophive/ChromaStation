@@ -36,7 +36,7 @@
       - !type:HealthChange
         damage:
           types:
-            Caustic: 11.0
+            Caustic: 6.0
       - !type:PopupMessage
         type: Local
         visualType: Large
