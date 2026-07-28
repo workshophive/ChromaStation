@@ -11,3 +11,5 @@ chat-manager-shadowling-channel-name = Shadowmind
 shadowling-dead = You strangely regain your mind.
 
 shadowling-thrall-examined = This is your Thrall.
+
+guide-entry-shadowlings = Shadowlings
