@@ -1,0 +1,17 @@
+<Document>
+  # Vox
+  
+  <Box>
+	<GuideEntityEmbed Entity="MobVox" Caption=""/>
+  </Box>
+  
+  [color=#ffa500]Warning! This species is not recommended for new players due to their fatal allergy to oxygen![/color]
+  
+   Vox breathe nitrogen, and [color=#ffa500]oxygen is toxic to them.[/color] Unfortunately, space stations tend to be full of oxygen, so Vox must use an internal nitrogen supply at almost all times to avoid fatal exposure.
+   
+   As a plus side, Vox can also eat various snack packaging, banana peels, eggshells, and raw meat without any ill effects. They also like to drink welding fuel. Vox also [color=#1e90ff]slowly recover from low levels of poison damage[/color]- if their health doesn't seem to improve after brief exposure to oxygen or other minor toxins, they should seek medical attention.
+   
+   Vox biology is based on a mixture of both carbon and silicon, and as such they do not rot like most other species- though they cannot be cloned because of this.
+   
+   They deal slash damage with their unarmed attack.
+</Document>

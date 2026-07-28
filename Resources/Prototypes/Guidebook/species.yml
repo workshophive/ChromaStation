@@ -3,7 +3,7 @@
   name: guide-entry-species
   text: "/ServerInfo/Guidebook/Mobs/Species.xml"
   children:
-    - Avali # starlight
+    - Avali # starlight, resomi nested under IF they get added
     - Arachnid
     - Diona
     - Human
@@ -11,7 +11,7 @@
     - Oni
     - Reptilian
     - SlimePerson
-    - IPC
+    - IPC # shell nested under
     - Harpy
     - Nightmare # chroma
     - Mynki # chroma
@@ -19,6 +19,8 @@
     - Plasmaman
     - Tajaran
     - Thaven # impstation
+    - Vox
+    - Vulpkanin
     - Xelthia
 
 - type: guideEntry
@@ -35,6 +37,13 @@
   id: Human
   name: species-name-human
   text: "/ServerInfo/Guidebook/Mobs/Human.xml"
+  children:
+    - Felinid
+    
+- type: guideEntry
+  id: Felinid
+  name: species-name-felinid
+  text: "/ServerInfo/Nyanotrasen/Guidebook/Mobs/Felinid.xml"
 
 - type: guideEntry
   id: Moth
@@ -107,3 +116,13 @@
   id: Mynki
   name: species-name-mynki
   text: "/ServerInfo/_Chroma/Guidebook/Mobs/Mynki.xml"
+  
+- type: guideEntry
+  id: Vox
+  name: species-name-vox
+  text: "/ServerInfo/Guidebook/Mobs/Vox.xml"
+  
+- type: guideEntry
+  id: Vulpkanin
+  name: species-name-vulpkanin
+  text: "/ServerInfo/Guidebook/Mobs/Vulpkanin.xml"

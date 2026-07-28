@@ -1,0 +1,25 @@
+<Document>
+  # Felinid
+  
+  <Box>
+    <GuideEntityEmbed Entity="MobFelinid" Caption=""/>
+  </Box>
+  
+  Felinids are an offshoot of humans from decades of genetic modification of experimentation.
+  
+  Their signature features are the fact they sport feline ears and tails, giving them exceptional senses of hearing and balance. Due to this, they take [color=#1e90ff]80% less damage from falling or high-speed impacts[/color]. In exchange they're more fragile, taking [color=#ffa500]15% more brute damage[/color].
+  
+  Felinids are small, and can fit in duffelbags. They deal a mixture of [color=#ec3a3a]slash and piercing[/color] with their unarmed attacks thanks to their claws.
+  
+  They inherently walk silently when not wearing any footwear, and are great thieves... much to their own chagrin.
+  
+  ## Ew, Hairballs
+  <Box>
+    <GuideEntityEmbed Entity="Hairball" Caption=""/>
+	<GuideEntityEmbed Entity="MobMouse" Caption=""/>
+  </Box>
+  
+  Felinids are also capable of eating live mice, which will allow them to cough up a disgusting hairball.
+  Be careful when touching them, as they can [color=#ffa500]cause you to throwup when held.[/color]
+  Felinids will use this to their advantage to gross out adversaries.
+</Document>
