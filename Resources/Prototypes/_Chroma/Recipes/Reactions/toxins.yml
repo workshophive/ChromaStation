@@ -1,0 +1,9 @@
+- type: reaction
+  id: ColloidalSilver
+  reactants:
+    Silver:
+      amount: 1
+    Water:
+      amount: 2
+  products:
+    ColloidalSilver: 3

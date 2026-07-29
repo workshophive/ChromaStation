@@ -22,7 +22,8 @@
 # meant to be the fact that silver oxide reduces to metallic silver at high temps
 - type: reaction
   id: AG2OReduction
-  minTemperature: 460 # reduced to only 186.85 C due to technical limitations
+  impact: Low
+  minTemp: 460 # reduced to only 186.85 C due to technical limitations
   reactants:
     SilverOxide:
       amount: 1
