@@ -1,0 +1,7 @@
+- type: entity
+  save: false
+  name: Urist McBitrunner
+  parent: BaseMobDigikith
+  id: MobDigikith
+  
+# cyberspace guardianship to add here later
