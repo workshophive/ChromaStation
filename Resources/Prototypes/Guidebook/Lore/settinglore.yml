@@ -5,6 +5,8 @@
   children:
     - Corporations
     - Nations
+    - ChromaSector
+    - Planes
 
 # Corporations
 - type: guideEntry
@@ -94,3 +96,26 @@
   id: TCFL
   name: guide-entry-tcfl
   text: "/ServerInfo/Guidebook/Lore/Nations/TCFL.xml"
+
+- type: guideEntry
+  id: ChromaSector
+  name: guide-entry-chromasector
+  text: "/ServerInfo/_Chroma/Guidebook/Lore/ChromaSector.xml"
+
+- type: guideEntry
+  id: Planes
+  name: guide-entry-versuis
+  text: "/ServerInfo/_Chroma/Guidebook/Lore/Planes.xml"
+  children:
+  - NightmareWorld
+  - WATEOAT
+  
+- type: guideEntry
+  id: NightmareWorld
+  name: guide-entry-nightmare
+  text: "/ServerInfo/_Chroma/Guidebook/Lore/Nightmares.xml"
+
+- type: guideEntry
+  id: WATEOAT
+  name: guide-entry-WATEOAT
+  text: "/ServerInfo/_Chroma/Guidebook/Lore/TheDark.xml"
