@@ -56,6 +56,7 @@
       Male: UnisexIPC
       Female: UnisexIPC
       Unsexed: UnisexIPC
+  - type: ZombieImmune
   - type: PassiveDamage
     allowedStates:
     - Alive

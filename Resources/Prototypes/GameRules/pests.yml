@@ -15,7 +15,7 @@
     - id: KingRatMigration
     - id: SnailMigration
     - id: CarpSpawn
-    - id: MiniDragonMigration # from funky@
+    - id: MiniDragonMigration # from funky!
 
 # events
 

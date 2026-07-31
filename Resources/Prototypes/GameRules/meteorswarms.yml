@@ -32,6 +32,14 @@
     - id: GameRuleMeteorSwarmSmall
     - id: GameRuleMeteorSwarmMedium
     - id: GameRuleMeteorSwarmLarge
+#    - id: GameRuleUristSwarm
+#    - id: ImmovableRodSpawn - WHY ARE THESE INCLUDED BY DEFAULT WHAT THE FUCK
+
+# moved these into their own table of bullshiiiit for basically everyone's sanity lol
+- type: entityTable
+  id: MeteorSwarmBullshitEventsTable
+  table: !type:AllSelector # we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp
+    children:
     - id: GameRuleUristSwarm
     - id: ImmovableRodSpawn
 
@@ -85,6 +93,15 @@
   - type: RampingStationEventScheduler
     scheduledGameRules: !type:NestedSelector
       tableId: BasicMeteorSwarmEventsTable
+
+- type: entity
+  parent: BaseGameRule
+  id: MeteorSwarmBullshitScheduler
+  components:
+  - type: GameRule
+  - type: RampingStationEventScheduler
+    scheduledGameRules: !type:NestedSelector
+      tableId: MeteorSwarmBullshitEventsTable
 
 # Game Rules
 
