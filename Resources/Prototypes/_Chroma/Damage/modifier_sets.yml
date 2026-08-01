@@ -26,3 +26,14 @@
     Piercing: 1.4
     Caustic: 1.5
     
+- type: damageModifierSet
+  id: Digikith
+  coefficients:
+    Radiation: 0.25
+    Shock: 0.5
+    Blunt: 1
+    Slash: 1
+    Piercing: 1
+    Cold: 1.2
+  flatReductions:
+    Heat: 4

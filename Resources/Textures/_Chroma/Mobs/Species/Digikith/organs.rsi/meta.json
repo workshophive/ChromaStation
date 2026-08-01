@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Yogstation, currently a placeholder",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "heart-off"
+    },
+    {
+      "name": "heart-on",
+      "delays": [
+        [
+          0.6,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "eyes"
+    },
+    {
+      "name": "eyeball-r"
+    },
+    {
+      "name": "eyeball-l"
+    },
+    {
+      "name": "stomach"
+    }
+  ]
+}
