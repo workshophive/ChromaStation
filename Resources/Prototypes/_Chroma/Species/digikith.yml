@@ -7,10 +7,9 @@
   dollPrototype: MobDigikithDummy
   defaultSkinTone: "#98ff1f"
   skinColoration: Hues
-  naming: FirstDashLast
+  naming: First
   maleFirstNmaes: names_digikith_first
   femaleFirstNames: names_digikith_first
-  lastNames: names_digikith_last
   sexes:
   - Male
   - Female
