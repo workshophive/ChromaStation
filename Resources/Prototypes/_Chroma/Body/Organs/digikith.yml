@@ -44,14 +44,15 @@
     slotId: lungs
   - type: Sprite
     sprite: _Chroma/Mobs/Species/Digikith/organs.rsi
-    state: core
+    layers:
+    - state: core
   - type: Lung
   - type: BadFood
   - type: Metabolizer
     maxReagents: 1
     removeEmpty: true
     solutionOnBody: false
-    solution: "Core"
+    solution: "Lung"
     metabolizerTypes: [Digikith]
     groups:
     - id: Gas
@@ -62,13 +63,13 @@
         reagents:
         - ReagentId: Synthmass
           Quantity: 10
-      Core:
-        maxVol: 150.0
+      Lung:
+        maxVol: 100.0
         canReact: false
   
 - type: entity
   id: OrganDigikithHeart
-  parent: BaseHumanHeart
+  parent: OrganHumanHeart
   name: digikith anatomopump
   description: "A cursed mixture of digital and organic, that serves as the heart of a digikith."
   components:

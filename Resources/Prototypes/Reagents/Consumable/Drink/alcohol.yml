@@ -169,7 +169,7 @@
         damage:
           types:
             Poison: 1
-      - !type: AdjustTemperature # heats them up a shit ton!
+      - !type:AdjustTemperature # heats them up a shit ton!
         conditions:
         - !type:OrganType
           type: Digikith

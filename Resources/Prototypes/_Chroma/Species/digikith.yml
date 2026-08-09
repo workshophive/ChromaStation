@@ -5,6 +5,7 @@
   prototype: MobDigikith
   sprites: MobDigikithSprites
   dollPrototype: MobDigikithDummy
+  markingLimits: MobDigikithMarkingLimits
   defaultSkinTone: "#98ff1f"
   skinColoration: Hues
   naming: First
@@ -27,7 +28,6 @@
   sprites:
     Head: MobDigikithHead
     HeadTop: MobHumanoidAnyMarking
-    Snout: MobHumanoidAnyMarking
     Chest: MobDigikithTorso
     Eyes: MobDigikithEyes
     LArm: MobDigikithLArm

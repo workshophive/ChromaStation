@@ -102,6 +102,9 @@
         - !type:OrganType
           type: Plasmaman
           shouldHave: false
+        - !type:OrganType
+          type: Digikith
+          shouldHave: false
         damage:
           types:
             Poison: 3
@@ -109,6 +112,9 @@
         conditions:
         - !type:OrganType
           type: Plasmaman
+          shouldHave: false
+        - !type:OrganType
+          type: Digikith
           shouldHave: false
         reagent: Inaprovaline
         amount: -2.0
@@ -118,6 +124,9 @@
         conditions:
         - !type:OrganType
           type: Plasmaman
+          shouldHave: false
+        - !type:OrganType
+          type: Digikith
           shouldHave: false
         scaleByQuantity: true
         ignoreResistances: true
@@ -149,6 +158,8 @@
         conditions:
         - !type:OrganType
           type: Plasmaman
+        - !type:OrganType
+          type: Digikith
         ratios:
           Nitrogen: 1.0 # Interesting exhale for plasmamen
           Plasma: -1.0
@@ -211,6 +222,10 @@
         - !type:OrganType
           type: Digkith
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Digikith
+          shouldHave: false
         scaleByQuantity: true
         ignoreResistances: true
         damage:
@@ -312,6 +327,8 @@
         conditions:
         - !type:OrganType
           type: Vox
+        - !type:OrganType
+          type: Digikith
         ratios:
           Ammonia: 1.0
           Nitrogen: -1.0
@@ -355,6 +372,9 @@
         - !type:OrganType
           type: Slime
           shouldHave: false
+        - !type:OrganType
+          type: Digikith
+          shouldHave: false
         emote: Laugh
         showInChat: true
         probability: 0.1
@@ -378,6 +398,9 @@
         - !type:OrganType
           type: Slime
           shouldHave: false
+        - !type:OrganType
+          type: Digikith
+          shouldHave: false
         walkSpeedModifier: 0.65
         sprintSpeedModifier: 0.65
       - !type:GenericStatusEffect
@@ -387,6 +410,9 @@
           min: 1
         - !type:OrganType
           type: Slime
+          shouldHave: false
+        - !type:OrganType
+          type: Digikith
           shouldHave: false
         key: ForcedSleep
         component: ForcedSleeping
@@ -399,6 +425,9 @@
           min: 3.5
         - !type:OrganType
           type: Slime
+          shouldHave: false
+        - !type:OrganType
+          type: Digikith
           shouldHave: false
         ignoreResistances: true
         damage:
@@ -426,6 +455,9 @@
         - !type:ReagentThreshold
           reagent: Frezon
           min: 0.5
+        - !type:OrganType
+          type: Digikith
+          shouldHave: false
         scaleByQuantity: true
         ignoreResistances: true
         damage:
@@ -436,6 +468,9 @@
         - !type:ReagentThreshold
           reagent: Frezon
           min: 1
+        - !type:OrganType
+          type: Digikith
+          shouldHave: false
         key: SeeingRainbows
         component: SeeingRainbows
         type: Add
@@ -447,6 +482,9 @@
         - !type:ReagentThreshold
           reagent: Frezon
           min: 1
+        - !type:OrganType
+          type: Digikith
+          shouldHave: false
       - !type:PopupMessage
         type: Local
         messages: [ "frezon-lungs-cold" ]
@@ -455,6 +493,9 @@
         - !type:ReagentThreshold
           reagent: Frezon
           min: 0.5
+        - !type:OrganType
+          type: Digikith
+          shouldHave: false
       - !type:PopupMessage
         type: Local
         visualType: Medium
@@ -464,3 +505,6 @@
         - !type:ReagentThreshold
           reagent: Frezon
           min: 1
+        - !type:OrganType
+          type: Digikith
+          shouldHave: false

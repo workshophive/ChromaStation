@@ -1,13 +1,13 @@
 # Horns
 - type: marking
   id: BaseHornsDigikith
-  bodyPart: HeadTop
+  bodyPart: Head
   markingCategory: HeadTop
   speciesRestriction: [Digikith]
   coloring:
     default:
       type:
         !type:SkinColoring
-   sprites:
-   - sprite: _Chroma/Mobs/Customization/Digikith/digi_horns.rsi
-     state: base-horns
+  sprites:
+  - sprite: _Chroma/Mobs/Customization/Digikith/digi_horns.rsi
+    state: base-horns
