@@ -2,3 +2,8 @@
   id: fibermetal
   flavorType: Complex
   description: flavor-complex-fibermetal
+  
+- type: flavor
+  id: digikith
+  flavorType: Complex
+  description: flavor-complex-digikith

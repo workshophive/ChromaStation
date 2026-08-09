@@ -1,0 +1,48 @@
+- type: body
+  id: Digikith
+  name: "digikith"
+  root: torso
+  slots:
+    head:
+      part: HeadDigikith
+      connections:
+      - torso
+      organs:
+        brain: OrganDigikithBrain
+        eyes: OrganDigikithEyes
+    torso:
+      part: TorsoDigikith
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      - head # Shitmed
+      organs:
+        heart: OrganDigikithHeart
+        stomach: OrganDigikithDigestive
+        lungs: OrganDigikithCore
+    right arm:
+      part: RightArmDigikith
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmDigikith
+      connections:
+      - left hand
+    right hand:
+      part: RightHandDigikith
+    left hand:
+      part: LeftHandDigikith
+    right leg:
+      part: RightLegDigikith
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegDigikith
+      connections:
+      - left foot
+    right foot:
+      part: RightFootDigikith
+    left foot:
+      part: LeftFootDigikith

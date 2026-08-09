@@ -67,3 +67,39 @@
       effects:
         - !type:ChemAddMoodlet
           moodPrototype: DrankLunarBlood
+          
+- type: reagent
+  id: Synthmass
+  parent: Blood
+  name: reagent-name-synthmass
+  desc: reagent-desc-synthmass
+  group: Biological
+  flavor: digikith
+  color: "#679441"
+  physicalDesc: reagent-physical-desc-neural
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Vox
+          shouldHave: true
+        - !type:OrganType
+          type: Digikith
+          shouldHave: true
+        damage:
+          types:
+            Cellular: -5
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Vox
+          shouldHave: false
+        - !type:OrganType
+          type: Digikith
+          shouldHave: false
+        damage:
+          types:
+            Asphyxiation: 1
+            Cellular: 0.5

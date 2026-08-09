@@ -169,6 +169,11 @@
         damage:
           types:
             Poison: 1
+      - !type: AdjustTemperature # heats them up a shit ton!
+        conditions:
+        - !type:OrganType
+          type: Digikith
+        amount: 12000
       - !type:HealthChange # cant drink alcohol lol
         conditions:
         - !type:OrganType
@@ -185,6 +190,10 @@
         # dwarves immune to vomiting from alcohol
         - !type:OrganType
           type: Dwarf
+          shouldHave: false
+        # digikith ALSO immune to vomiting from alcohol
+        - !type:OrganType
+          type: Digikith
           shouldHave: false
       # Drunken Resilience
       - !type:HealthChange

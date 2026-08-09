@@ -32,7 +32,13 @@
       "name": "eyeball-l"
     },
     {
-      "name": "stomach"
-    }
+      "name": "core"
+    },
+	{
+	  "name": "cortical-stack"
+	},
+	{
+	  "name": "fraxinus"
+	}
   ]
 }

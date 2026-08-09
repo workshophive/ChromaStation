@@ -21,10 +21,23 @@
   - type: Damageable
     damageContainer: SiliconUnshielded
     damageModifierSet: Digikith
+  - type: Bloodstream
+    bloodReagent: Synthmass
+  - type: Temperature
+    heatDamageThreshold: 1500
+    coldDamageThreshold: 295
+    currentTemperature: 500
+    specificHeat: 42
+    coldDamage:
+      types:
+        Cold: 0.5
+    heatDamage:
+      types:
+        Heat: 0.1
   - type: BatteryDrinker
   - type: Silicon
     entityType: enum.SiliconType.Player
-    batteryPowered: true
+    batteryPowered: false
     drainPerSecond: 2
     chargeThresholdMid: 0.90
     chargeThresholdLow: 0.45

@@ -233,6 +233,10 @@
             Asphyxiation: -1
     Gas:
       effects:
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
+          type: Digkith
       - !type:HealthChange
         conditions:
         - !type:OrganType

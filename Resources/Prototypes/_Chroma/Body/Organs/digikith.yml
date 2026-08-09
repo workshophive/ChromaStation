@@ -1,1 +1,129 @@
-# do this later lol
+- type: entity
+  id: OrganDigikithBrain
+  parent: OrganHumanBrain
+  description: "You're not sure if this is biological or digital- and it's definitely not a vox."
+  name: digikith cortical stack
+  components:
+  - type: BadFood
+  - type: Sprite
+    sprite: _Chroma/Mobs/Species/Digikith/organs.rsi
+    state: cortical-stack
+  - type: Extractable
+    grindableSolutionName: organ
+  - type: SolutionContainerManager
+    solutions:
+      organ:
+        reagents:
+        - ReagentId: Synthmass
+          Quantity: 10
+  - type: FlavorProfile
+    flavors:
+      - people
+      - digikith
+      
+- type: entity
+  id: OrganDigikithEyes
+  parent: OrganHumanEyes
+  name: digikith eyes
+  description: "While they look like robotic eyes, a digikith's eyes are functionally incompatible with organic species."
+  components:
+  - type: BadFood
+  - type: Sprite
+    sprite: _Chroma/Mobs/Species/Digikith/organs.rsi
+    layers:
+      - state: eyeball-l
+      - state: eyeball-r
+
+- type: entity
+  id: OrganDigikithCore
+  parent: [OrganHumanLungs]
+  name: digikith core
+  description: "A digikith's core serves the function of the lungs... somehow. You're not sure if they even need that."
+  components:
+  - type: Organ
+    slotId: lungs
+  - type: Sprite
+    sprite: _Chroma/Mobs/Species/Digikith/organs.rsi
+    state: core
+  - type: Lung
+  - type: BadFood
+  - type: Metabolizer
+    maxReagents: 1
+    removeEmpty: true
+    solutionOnBody: false
+    solution: "Core"
+    metabolizerTypes: [Digikith]
+    groups:
+    - id: Gas
+      rateModifier: 100.0 # ideally, make them breathe slower
+  - type: SolutionContainerManager
+    solutions:
+      organ:
+        reagents:
+        - ReagentId: Synthmass
+          Quantity: 10
+      Core:
+        maxVol: 150.0
+        canReact: false
+  
+- type: entity
+  id: OrganDigikithHeart
+  parent: BaseHumanHeart
+  name: digikith anatomopump
+  description: "A cursed mixture of digital and organic, that serves as the heart of a digikith."
+  components:
+  - type: Sprite
+    sprite: _Chroma/Mobs/Species/Digikith/organs.rsi
+    state: heart-on
+  - type: BadFood
+  - type: Metabolizer
+    maxReagents: 5
+    metabolizerTypes: [Digikith]
+    groups:
+    - id: Medicine
+      rateModifier: 1.5
+    - id: Poison
+      rateModifier: 1.5
+    - id: Narcotic
+      rateModifier: 1.5
+      
+# serves as kidneys, stomach, and liver
+- type: entity
+  id: OrganDigikithDigestive
+  parent: BaseItem
+  name: digikith fraxinus
+  description: "An odd, tangled mess of superheated tubing that extracts material from food and incinerates what's left."
+  components:
+  - type: Organ
+    slotId: stomach
+  - type: Sprite
+    sprite: _Chroma/Mobs/Species/Digikith/organs.rsi
+    state: fraxinus
+  - type: Stomach
+    specialDigestible:
+      tags:
+      - ClothMade
+      - Digikith
+      - Trash
+      - Soap
+  - type: Liver
+  - type: BadFood
+  - type: Metabolizer
+    maxReagents: 5
+    metabolizerTypes: [Digikith, LiquorLifeline]
+    removeEmpty: true
+    groups:
+    - id: Food
+    - id: Drink
+    - id: Alcohol
+      rateModifier: 0.5
+  - type: SolutionContainerManager
+    solutions:
+      stomach:
+        maxVol: 100
+      organ:
+        reagents:
+        - ReagentId: Synthmass
+          Quantity: 10
+        - ReagentId: Ash
+          Quantity: 5

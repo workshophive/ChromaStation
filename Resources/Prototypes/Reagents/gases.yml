@@ -26,6 +26,10 @@
         conditions:
         - !type:OrganType
           type: Plant
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
+          type: Digkith
       # Convert Oxygen into CO2.
       - !type:ModifyLungGas
         conditions:
@@ -137,6 +141,10 @@
         conditions:
         - !type:OrganType
           type: Plasmaman
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
+          type: Digkith
       - !type:ModifyLungGas
         conditions:
         - !type:OrganType
@@ -198,6 +206,10 @@
             Radiation: 3
     Gas:
       effects:
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
+          type: Digkith
       - !type:HealthChange
         scaleByQuantity: true
         ignoreResistances: true
@@ -224,6 +236,10 @@
   metabolisms:
     Gas:
       effects:
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
+          type: Digkith
       - !type:Oxygenate
         conditions:
         - !type:OrganType
@@ -287,6 +303,10 @@
         conditions:
         - !type:OrganType
           type: Mynki
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
+          type: Digkith
       # Converts Nitrogen into CO2
       - !type:ModifyLungGas
         conditions:
@@ -322,6 +342,10 @@
   metabolisms:
     Gas:
       effects:
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
+          type: Digkith
       - !type:Emote
         conditions:
         - !type:ReagentThreshold
@@ -393,6 +417,10 @@
   metabolisms:
     Gas:
       effects:
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
+          type: Digkith
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold

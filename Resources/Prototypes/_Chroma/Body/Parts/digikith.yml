@@ -1,0 +1,155 @@
+- type: entity
+  id: PartDigikith
+  parent: BaseItem
+  name: "digikith body part"
+  abstract: true
+  components:
+    - type: Sprite
+      netsync: false
+      sprite: _Chroma/Mobs/Species/Digikith/parts.rsi
+    - type: Icon
+      sprite: _Chroma/Mobs/Species/Digikith/parts.rsi
+    - type: Damageable
+      damageContainer: OrganicPart # Shitmed
+    - type: BodyPart
+    - type: ContainerContainer
+      containers:
+        bodypart: !type:Container
+          ents: []
+
+- type: entity
+  id: TorsoDigikith
+  name: "digikith torso"
+  parent: PartDigikith
+  components:
+    - type: Sprite
+      state: "torso"
+    - type: Icon
+      state: "torso"
+    - type: BodyPart
+      partType: Torso
+
+- type: entity
+  id: HeadDigikith
+  name: "digikith head"
+  parent: PartDigikith
+  components:
+    - type: Sprite
+      state: "head"
+    - type: Icon
+      state: "head"
+    - type: BodyPart
+      partType: Head
+    - type: Input
+      context: "ghost"
+    - type: MovementSpeedModifier
+      baseWalkSpeed: 0
+      baseSprintSpeed: 0
+    - type: InputMover
+    - type: GhostOnMove
+
+- type: entity
+  id: LeftArmDigikith
+  name: "left digikith arm"
+  parent: PartDigikith
+  components:
+    - type: Sprite
+      state: "l_arm"
+    - type: Icon
+      state: "l_arm"
+    - type: BodyPart
+      partType: Arm
+      symmetry: Left
+
+- type: entity
+  id: RightArmDigikith
+  name: "right digikith arm"
+  parent: PartDigikith
+  components:
+    - type: Sprite
+      state: "r_arm"
+    - type: Icon
+      state: "r_arm"
+    - type: BodyPart
+      partType: Arm
+      symmetry: Right
+
+- type: entity
+  id: LeftHandDigikith
+  name: "left digikith hand"
+  parent: PartDigikith
+  components:
+    - type: Sprite
+      state: "l_hand"
+    - type: Icon
+      state: "l_hand"
+    - type: BodyPart
+      partType: Hand
+      symmetry: Left
+
+- type: entity
+  id: RightHandDigikith
+  name: "right digikith hand"
+  parent: PartDigikith
+  components:
+    - type: Sprite
+      state: "r_hand"
+    - type: Icon
+      state: "r_hand"
+    - type: BodyPart
+      partType: Hand
+      symmetry: Right
+
+- type: entity
+  id: LeftLegDigikith
+  name: "left digikith leg"
+  parent: PartDigikith
+  components:
+    - type: Sprite
+      state: "l_leg"
+    - type: Icon
+      state: "l_leg"
+    - type: BodyPart
+      partType: Leg
+      symmetry: Left
+    - type: MovementBodyPart
+
+- type: entity
+  id: RightLegDigikith
+  name: "right digikith leg"
+  parent: PartDigikith
+  components:
+    - type: Sprite
+      state: "r_leg"
+    - type: Icon
+      state: "r_leg"
+    - type: BodyPart
+      partType: Leg
+      symmetry: Right
+    - type: MovementBodyPart
+
+- type: entity
+  id: LeftFootDigikith
+  name: "left digikith foot"
+  parent: PartDigikith
+  components:
+    - type: Sprite
+      state: "l_foot"
+    - type: Icon
+      state: "l_foot"
+    - type: BodyPart
+      partType: Foot
+      symmetry: Left
+
+- type: entity
+  id: RightFootDigikith
+  name: "right digikith foot"
+  parent: PartDigikith
+  components:
+    - type: Sprite
+      state: "r_foot"
+    - type: Icon
+      state: "r_foot"
+    - type: BodyPart
+      partType: Foot
+      symmetry: Right

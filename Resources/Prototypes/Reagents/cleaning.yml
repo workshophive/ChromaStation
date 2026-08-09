@@ -55,6 +55,9 @@
         conditions:
         - !type:ReagentThreshold
           min: 6
+        - !type:OrganType
+          type: Digikith
+          shouldHave: false
         probability: 0.20
     Drink:
       effects:
@@ -62,6 +65,9 @@
         conditions:
         - !type:ReagentThreshold
           min: 6
+        - !type:OrganType
+          type: Digikith
+          shouldHave: false
         probability: 0.20
 
 - type: reagent
