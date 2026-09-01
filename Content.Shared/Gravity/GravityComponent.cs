@@ -5,6 +5,7 @@ using Robust.Shared.Serialization;
 namespace Content.Shared.Gravity
 {
     [RegisterComponent]
+	[AutoGenerateComponentState]
     [NetworkedComponent]
     public sealed partial class GravityComponent : Component
     {
