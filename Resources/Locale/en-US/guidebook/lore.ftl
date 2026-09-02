@@ -16,8 +16,9 @@ guide-entry-loadout-info-security-weapons = Security Weapons
 guide-entry-nations = Nations
 guide-entry-sol-alliance = Solarian Alliance
 guide-entry-tcfl = Tau-Ceti Foreign Legion
+guide-entry-sekkan-empire = Coalition Empire of the Seki-Sekkan
 
-guide-entry-chromasector = Chroma Sector
+guide-entry-chromasector = Sector Chroma
 guide-entry-versuis = The Planes
 guide-entry-nightmare = The Tertiaryie
 guide-entry-WATEOAT = The Dark
